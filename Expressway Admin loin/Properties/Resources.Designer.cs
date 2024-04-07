@@ -79,5 +79,15 @@ namespace Expressway_Admin_loin.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_08_at_00_59_25_2162efe0 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-04-08 at 00.59.25_2162efe0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
