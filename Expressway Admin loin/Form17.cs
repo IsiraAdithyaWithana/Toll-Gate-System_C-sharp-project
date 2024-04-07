@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Expressway_Admin_loin
 {
-    public partial class Form1 : Form
+    public partial class Form17 : Form
     {
-        public Form1()
+        public Form17()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
