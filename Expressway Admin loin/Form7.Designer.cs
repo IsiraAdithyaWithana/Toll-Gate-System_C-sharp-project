@@ -36,6 +36,8 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkBox7
@@ -46,9 +48,9 @@
             this.checkBox7.ForeColor = System.Drawing.Color.White;
             this.checkBox7.Location = new System.Drawing.Point(586, 398);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(180, 42);
+            this.checkBox7.Size = new System.Drawing.Size(171, 42);
             this.checkBox7.TabIndex = 20;
-            this.checkBox7.Text = "checkBox7";
+            this.checkBox7.Text = "Seat Belts";
             this.checkBox7.UseVisualStyleBackColor = false;
             // 
             // checkBox8
@@ -59,9 +61,9 @@
             this.checkBox8.ForeColor = System.Drawing.Color.White;
             this.checkBox8.Location = new System.Drawing.Point(586, 351);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(180, 42);
+            this.checkBox8.Size = new System.Drawing.Size(313, 42);
             this.checkBox8.TabIndex = 19;
-            this.checkBox8.Text = "checkBox8";
+            this.checkBox8.Text = "Dashboard indicators";
             this.checkBox8.UseVisualStyleBackColor = false;
             // 
             // checkBox9
@@ -72,9 +74,9 @@
             this.checkBox9.ForeColor = System.Drawing.Color.White;
             this.checkBox9.Location = new System.Drawing.Point(586, 305);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(180, 42);
+            this.checkBox9.Size = new System.Drawing.Size(336, 42);
             this.checkBox9.TabIndex = 18;
-            this.checkBox9.Text = "checkBox9";
+            this.checkBox9.Text = "Windshield and Mirrors";
             this.checkBox9.UseVisualStyleBackColor = false;
             // 
             // checkBox4
@@ -85,9 +87,9 @@
             this.checkBox4.ForeColor = System.Drawing.Color.White;
             this.checkBox4.Location = new System.Drawing.Point(586, 256);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(180, 42);
+            this.checkBox4.Size = new System.Drawing.Size(101, 42);
             this.checkBox4.TabIndex = 17;
-            this.checkBox4.Text = "checkBox4";
+            this.checkBox4.Text = "Tires";
             this.checkBox4.UseVisualStyleBackColor = false;
             // 
             // checkBox5
@@ -98,9 +100,9 @@
             this.checkBox5.ForeColor = System.Drawing.Color.White;
             this.checkBox5.Location = new System.Drawing.Point(586, 209);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(180, 42);
+            this.checkBox5.Size = new System.Drawing.Size(129, 42);
             this.checkBox5.TabIndex = 16;
-            this.checkBox5.Text = "checkBox5";
+            this.checkBox5.Text = "Brakes";
             this.checkBox5.UseVisualStyleBackColor = false;
             // 
             // checkBox6
@@ -111,9 +113,9 @@
             this.checkBox6.ForeColor = System.Drawing.Color.White;
             this.checkBox6.Location = new System.Drawing.Point(586, 163);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(180, 42);
+            this.checkBox6.Size = new System.Drawing.Size(117, 42);
             this.checkBox6.TabIndex = 15;
-            this.checkBox6.Text = "checkBox6";
+            this.checkBox6.Text = "Lights";
             this.checkBox6.UseVisualStyleBackColor = false;
             // 
             // label4
@@ -128,6 +130,27 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Vehical Conditions";
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.fotor_2024040612533__1_;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(1172, 592);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(80, 77);
+            this.panel1.TabIndex = 21;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(968, 590);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 51);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "OK";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -135,6 +158,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.checkBox9);
@@ -158,5 +183,7 @@
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }
