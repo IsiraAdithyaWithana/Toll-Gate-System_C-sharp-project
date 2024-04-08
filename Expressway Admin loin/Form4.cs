@@ -16,5 +16,10 @@ namespace Expressway_Admin_loin
         {
             InitializeComponent();
         }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

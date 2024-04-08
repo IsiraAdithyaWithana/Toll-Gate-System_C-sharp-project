@@ -83,6 +83,36 @@ namespace Expressway_Admin_loin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bus_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bus-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bus_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bus-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vehicle__2_ {
+            get {
+                object obj = ResourceManager.GetObject("vehicle (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_08_at_00_59_25_2162efe0 {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2024-04-08 at 00.59.25_2162efe0", resourceCulture);
