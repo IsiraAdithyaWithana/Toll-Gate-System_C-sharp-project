@@ -63,6 +63,16 @@ namespace Expressway_Admin_loin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fotor_2024040612533 {
+            get {
+                object obj = ResourceManager.GetObject("fotor-2024040612533", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fotor_2024040612533__1_ {
             get {
                 object obj = ResourceManager.GetObject("fotor-2024040612533 (1)", resourceCulture);
