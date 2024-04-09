@@ -140,7 +140,6 @@
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Location = new System.Drawing.Point(1768, 851);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
