@@ -34,6 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.WhatsApp_Image_2024_04_08_at_00_59_25_2162efe0;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Name = "Form19";
             this.Text = "Form19";
