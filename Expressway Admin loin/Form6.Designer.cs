@@ -125,7 +125,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(551, 460);
+            this.button1.Location = new System.Drawing.Point(551, 457);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(229, 58);
             this.button1.TabIndex = 6;
