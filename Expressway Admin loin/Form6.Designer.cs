@@ -61,7 +61,7 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(176, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 51);
+            this.label1.Size = new System.Drawing.Size(286, 50);
             this.label1.TabIndex = 1;
             this.label1.Text = "Vehicle Status";
             // 
@@ -102,9 +102,9 @@
             this.checkBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.checkBox3.Location = new System.Drawing.Point(551, 285);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(160, 42);
+            this.checkBox3.Size = new System.Drawing.Size(398, 42);
             this.checkBox3.TabIndex = 4;
-            this.checkBox3.Text = "checkbox";
+            this.checkBox3.Text = "Running in a good condition";
             this.checkBox3.UseVisualStyleBackColor = false;
             // 
             // checkBox4
@@ -116,9 +116,9 @@
             this.checkBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.checkBox4.Location = new System.Drawing.Point(551, 347);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(160, 42);
+            this.checkBox4.Size = new System.Drawing.Size(209, 42);
             this.checkBox4.TabIndex = 5;
-            this.checkBox4.Text = "checkbox";
+            this.checkBox4.Text = "Tire Pressure";
             this.checkBox4.UseVisualStyleBackColor = false;
             // 
             // button1
