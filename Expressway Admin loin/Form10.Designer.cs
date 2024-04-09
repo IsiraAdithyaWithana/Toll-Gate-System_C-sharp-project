@@ -299,7 +299,7 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlText;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1038, 548);
+            this.pictureBox1.Location = new System.Drawing.Point(1114, 577);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 63);
