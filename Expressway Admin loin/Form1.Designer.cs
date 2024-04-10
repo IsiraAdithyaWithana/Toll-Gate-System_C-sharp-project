@@ -65,7 +65,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(531, 360);
+            this.button1.Location = new System.Drawing.Point(547, 438);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 49);
             this.button1.TabIndex = 9;
