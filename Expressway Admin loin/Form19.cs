@@ -22,5 +22,15 @@ namespace Expressway_Admin_loin
             Form18 form18 = new Form18();
             form18.ShowDialog();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form19_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
