@@ -47,5 +47,10 @@ namespace Expressway_Admin_loin
         {
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
