@@ -38,5 +38,10 @@ namespace Expressway_Admin_loin
         {
 
         }
+
+        private void selectall_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
