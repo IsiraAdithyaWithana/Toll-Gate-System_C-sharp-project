@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form11));
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
@@ -44,9 +43,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(968, 590);
+            this.button1.Location = new System.Drawing.Point(726, 479);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 51);
+            this.button1.Size = new System.Drawing.Size(114, 41);
             this.button1.TabIndex = 30;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,9 +58,10 @@
             this.checkBox8.BackColor = System.Drawing.Color.Transparent;
             this.checkBox8.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox8.ForeColor = System.Drawing.Color.White;
-            this.checkBox8.Location = new System.Drawing.Point(172, 502);
+            this.checkBox8.Location = new System.Drawing.Point(129, 408);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(884, 42);
+            this.checkBox8.Size = new System.Drawing.Size(710, 34);
             this.checkBox8.TabIndex = 29;
             this.checkBox8.Text = "Not having a license to drive a specific class of vehicles - Rs.1000";
             this.checkBox8.UseVisualStyleBackColor = false;
@@ -72,9 +73,10 @@
             this.checkBox7.BackColor = System.Drawing.Color.Transparent;
             this.checkBox7.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox7.ForeColor = System.Drawing.Color.White;
-            this.checkBox7.Location = new System.Drawing.Point(172, 454);
+            this.checkBox7.Location = new System.Drawing.Point(129, 369);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(893, 42);
+            this.checkBox7.Size = new System.Drawing.Size(694, 34);
             this.checkBox7.TabIndex = 28;
             this.checkBox7.Text = "Excessive use of noise                                                      - Rs." +
     "1000 ";
@@ -87,9 +89,10 @@
             this.checkBox6.BackColor = System.Drawing.Color.Transparent;
             this.checkBox6.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox6.ForeColor = System.Drawing.Color.White;
-            this.checkBox6.Location = new System.Drawing.Point(172, 406);
+            this.checkBox6.Location = new System.Drawing.Point(129, 330);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(881, 42);
+            this.checkBox6.Size = new System.Drawing.Size(686, 34);
             this.checkBox6.TabIndex = 27;
             this.checkBox6.Text = "Avoid Using Mobile Phones                                              - Rs.1000";
             this.checkBox6.UseVisualStyleBackColor = false;
@@ -101,9 +104,10 @@
             this.checkBox5.BackColor = System.Drawing.Color.Transparent;
             this.checkBox5.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox5.ForeColor = System.Drawing.Color.White;
-            this.checkBox5.Location = new System.Drawing.Point(172, 358);
+            this.checkBox5.Location = new System.Drawing.Point(129, 291);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(880, 42);
+            this.checkBox5.Size = new System.Drawing.Size(681, 34);
             this.checkBox5.TabIndex = 26;
             this.checkBox5.Text = "Speeding (>100km/h)                                                     - Rs.3000" +
     "";
@@ -117,9 +121,10 @@
             this.checkBox4.BackColor = System.Drawing.Color.Transparent;
             this.checkBox4.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.ForeColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(172, 310);
+            this.checkBox4.Location = new System.Drawing.Point(129, 252);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(881, 42);
+            this.checkBox4.Size = new System.Drawing.Size(682, 34);
             this.checkBox4.TabIndex = 25;
             this.checkBox4.Text = "Left side Overtake                                                            - R" +
     "s.1000";
@@ -132,9 +137,10 @@
             this.checkBox3.BackColor = System.Drawing.Color.Transparent;
             this.checkBox3.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(172, 262);
+            this.checkBox3.Location = new System.Drawing.Point(129, 213);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(903, 42);
+            this.checkBox3.Size = new System.Drawing.Size(695, 34);
             this.checkBox3.TabIndex = 24;
             this.checkBox3.Text = "Drunk Driving                                                                    " +
     "- Rs.25000";
@@ -147,9 +153,10 @@
             this.checkBox2.BackColor = System.Drawing.Color.Transparent;
             this.checkBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(172, 212);
+            this.checkBox2.Location = new System.Drawing.Point(129, 172);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(883, 42);
+            this.checkBox2.Size = new System.Drawing.Size(681, 34);
             this.checkBox2.TabIndex = 23;
             this.checkBox2.Text = "Invalid License                                                                  " +
     "- Rs.1000";
@@ -160,9 +167,10 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.fotor_2024040612533__1_;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(1170, 584);
+            this.panel1.Location = new System.Drawing.Point(878, 474);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(80, 77);
+            this.panel1.Size = new System.Drawing.Size(60, 63);
             this.panel1.TabIndex = 22;
             // 
             // label1
@@ -171,19 +179,20 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(172, 117);
+            this.label1.Location = new System.Drawing.Point(129, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 50);
+            this.label1.Size = new System.Drawing.Size(249, 41);
             this.label1.TabIndex = 31;
             this.label1.Text = "Type of the fine";
             // 
             // Form11
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(946, 547);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox8);
@@ -194,7 +203,6 @@
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form11";
             this.Text = "Form11";
             this.Load += new System.EventHandler(this.Form11_Load);
