@@ -38,6 +38,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // txtCardDetails
@@ -101,9 +102,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(919, 514);
+            this.button2.Location = new System.Drawing.Point(889, 478);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 35);
+            this.button2.Size = new System.Drawing.Size(117, 37);
             this.button2.TabIndex = 5;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
@@ -111,9 +112,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(841, 604);
+            this.button3.Location = new System.Drawing.Point(852, 575);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 35);
+            this.button3.Size = new System.Drawing.Size(137, 46);
             this.button3.TabIndex = 6;
             this.button3.Text = "Done";
             this.button3.UseVisualStyleBackColor = true;
@@ -142,6 +143,16 @@
             this.textBox3.Size = new System.Drawing.Size(200, 35);
             this.textBox3.TabIndex = 9;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.fotor_2024040612533;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(1172, 592);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(80, 77);
+            this.panel1.TabIndex = 10;
+            // 
             // Form14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,6 +161,7 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -179,5 +191,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Panel panel1;
     }
 }
