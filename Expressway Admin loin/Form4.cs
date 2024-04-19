@@ -36,5 +36,10 @@ namespace Expressway_Admin_loin
         {
 
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
