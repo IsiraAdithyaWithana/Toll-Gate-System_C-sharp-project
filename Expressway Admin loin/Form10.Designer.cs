@@ -47,6 +47,8 @@
             this.btnNX = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.sosbox = new System.Windows.Forms.PictureBox();
+            this.invalidDL = new System.Windows.Forms.CheckBox();
+            this.specificDL = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.sosbox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +86,7 @@
             this.littering.BackColor = System.Drawing.Color.Transparent;
             this.littering.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.littering.ForeColor = System.Drawing.SystemColors.Control;
-            this.littering.Location = new System.Drawing.Point(1001, 367);
+            this.littering.Location = new System.Drawing.Point(1001, 430);
             this.littering.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.littering.Name = "littering";
             this.littering.Size = new System.Drawing.Size(203, 33);
@@ -218,7 +220,7 @@
             this.parkinglane.BackColor = System.Drawing.Color.Transparent;
             this.parkinglane.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parkinglane.ForeColor = System.Drawing.SystemColors.Control;
-            this.parkinglane.Location = new System.Drawing.Point(1001, 496);
+            this.parkinglane.Location = new System.Drawing.Point(1001, 551);
             this.parkinglane.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.parkinglane.Name = "parkinglane";
             this.parkinglane.Size = new System.Drawing.Size(354, 33);
@@ -233,7 +235,7 @@
             this.collision.BackColor = System.Drawing.Color.Transparent;
             this.collision.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.collision.ForeColor = System.Drawing.SystemColors.Control;
-            this.collision.Location = new System.Drawing.Point(1001, 425);
+            this.collision.Location = new System.Drawing.Point(1001, 491);
             this.collision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.collision.Name = "collision";
             this.collision.Size = new System.Drawing.Size(335, 33);
@@ -257,7 +259,7 @@
             // 
             this.btnBK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBK.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBK.Location = new System.Drawing.Point(985, 672);
+            this.btnBK.Location = new System.Drawing.Point(1061, 738);
             this.btnBK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBK.Name = "btnBK";
             this.btnBK.Size = new System.Drawing.Size(131, 50);
@@ -270,7 +272,7 @@
             // 
             this.btnNX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNX.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNX.Location = new System.Drawing.Point(1149, 672);
+            this.btnNX.Location = new System.Drawing.Point(1269, 738);
             this.btnNX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNX.Name = "btnNX";
             this.btnNX.Size = new System.Drawing.Size(127, 50);
@@ -307,6 +309,36 @@
             this.sosbox.TabIndex = 28;
             this.sosbox.TabStop = false;
             // 
+            // invalidDL
+            // 
+            this.invalidDL.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.invalidDL.AutoSize = true;
+            this.invalidDL.BackColor = System.Drawing.Color.Transparent;
+            this.invalidDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invalidDL.ForeColor = System.Drawing.SystemColors.Control;
+            this.invalidDL.Location = new System.Drawing.Point(1001, 367);
+            this.invalidDL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.invalidDL.Name = "invalidDL";
+            this.invalidDL.Size = new System.Drawing.Size(244, 33);
+            this.invalidDL.TabIndex = 29;
+            this.invalidDL.Text = "Invalid Driver License";
+            this.invalidDL.UseVisualStyleBackColor = false;
+            // 
+            // specificDL
+            // 
+            this.specificDL.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.specificDL.AutoSize = true;
+            this.specificDL.BackColor = System.Drawing.Color.Transparent;
+            this.specificDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.specificDL.ForeColor = System.Drawing.SystemColors.Control;
+            this.specificDL.Location = new System.Drawing.Point(1001, 610);
+            this.specificDL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.specificDL.Name = "specificDL";
+            this.specificDL.Size = new System.Drawing.Size(503, 33);
+            this.specificDL.TabIndex = 30;
+            this.specificDL.Text = "Not having the license  specific class of vehicles";
+            this.specificDL.UseVisualStyleBackColor = false;
+            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -314,6 +346,8 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1685, 838);
+            this.Controls.Add(this.specificDL);
+            this.Controls.Add(this.invalidDL);
             this.Controls.Add(this.sosbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNX);
@@ -365,5 +399,7 @@
         private System.Windows.Forms.Button btnNX;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox sosbox;
+        private System.Windows.Forms.CheckBox invalidDL;
+        private System.Windows.Forms.CheckBox specificDL;
     }
 }

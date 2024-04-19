@@ -47,6 +47,18 @@ namespace Expressway_Admin_loin
         private void btnNX_Click(object sender, EventArgs e)
         {
             int IDDL = int.Parse(txtDL.Text);
+            bool selectAll = bool.Parse(selectall.Text);
+            bool overSpeed = bool.Parse(overspeed.Text);
+            bool lowSpeed = bool.Parse(lowspeed.Text);
+            bool seatBelts = bool.Parse(seatbelts.Text);
+            bool Signals = bool.Parse(signal.Text);
+            bool Drugs = bool.Parse(drugs.Text);
+            bool mobilePhone = bool.Parse(mobilephone.Text);
+            bool invalidLicense = bool.Parse(invalidDL.Text);
+            bool Littering = bool.Parse(littering.Text);
+            bool collisionLC = bool.Parse(collision.Text);
+            bool parkingLane = bool.Parse(parkinglane.Text);
+            bool specificLicense = bool.Parse(specificDL.Text); 
 
 
 
