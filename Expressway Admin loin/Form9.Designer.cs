@@ -33,7 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.butDone = new System.Windows.Forms.Button();
+            this.butNext = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -98,19 +100,42 @@
             this.panel1.Size = new System.Drawing.Size(80, 77);
             this.panel1.TabIndex = 8;
             // 
-            // radioButton1
+            // butDone
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton1.Location = new System.Drawing.Point(491, 420);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(114, 45);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Clear";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.butDone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.butDone.Font = new System.Drawing.Font("Franklin Gothic Medium", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butDone.Location = new System.Drawing.Point(491, 344);
+            this.butDone.Margin = new System.Windows.Forms.Padding(2);
+            this.butDone.Name = "butDone";
+            this.butDone.Size = new System.Drawing.Size(119, 41);
+            this.butDone.TabIndex = 10;
+            this.butDone.Text = "Done";
+            this.butDone.UseVisualStyleBackColor = true;
+            // 
+            // butNext
+            // 
+            this.butNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.butNext.Font = new System.Drawing.Font("Franklin Gothic Medium", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butNext.Location = new System.Drawing.Point(491, 523);
+            this.butNext.Margin = new System.Windows.Forms.Padding(2);
+            this.butNext.Name = "butNext";
+            this.butNext.Size = new System.Drawing.Size(119, 41);
+            this.butNext.TabIndex = 11;
+            this.butNext.Text = "Next";
+            this.butNext.UseVisualStyleBackColor = true;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblStatus.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblStatus.Location = new System.Drawing.Point(484, 420);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(96, 41);
+            this.lblStatus.TabIndex = 12;
+            this.lblStatus.Text = "Clear";
             // 
             // Form9
             // 
@@ -119,7 +144,9 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.butNext);
+            this.Controls.Add(this.butDone);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -140,6 +167,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button butDone;
+        private System.Windows.Forms.Button butNext;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
