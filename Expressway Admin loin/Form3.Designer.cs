@@ -61,6 +61,7 @@
             this.txtPoliceID.Name = "txtPoliceID";
             this.txtPoliceID.Size = new System.Drawing.Size(300, 38);
             this.txtPoliceID.TabIndex = 7;
+            this.txtPoliceID.TextChanged += new System.EventHandler(this.txtPoliceID_TextChanged);
             // 
             // label5
             // 
@@ -163,6 +164,7 @@
             this.txtGateNumber.Name = "txtGateNumber";
             this.txtGateNumber.Size = new System.Drawing.Size(300, 38);
             this.txtGateNumber.TabIndex = 17;
+            this.txtGateNumber.TextChanged += new System.EventHandler(this.txtGateNumber_TextChanged);
             // 
             // Form3
             // 

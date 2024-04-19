@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Expressway_Admin_loin
 {
@@ -24,7 +25,40 @@ namespace Expressway_Admin_loin
 
         private void button4_Click(object sender, EventArgs e)
         {
-           
+            if (string.IsNullOrEmpty(txtGateNumber.Text))
+            {
+                MessageBox.Show("Please enter the gate number.");
+                return; // Exit the event handler
+            }
+            if (string.IsNullOrEmpty(txtPoliceID.Text))
+            {
+                MessageBox.Show("Please enter the Police ID.");
+                return; // Exit the event handler
+            }
+
+
+
+
+
+
+
+            if (radioEntrance.Checked)
+            {
+                Form4 form4 = new Form4();
+                form4.Show();
+                this.Hide();
+            }
+            else if (radioExit.Checked)
+            {
+
+                Form9 form9 = new Form9();
+                form9.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Please select the gate.");
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -33,6 +67,16 @@ namespace Expressway_Admin_loin
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtGateNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPoliceID_TextChanged(object sender, EventArgs e)
         {
 
         }
