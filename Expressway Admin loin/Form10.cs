@@ -36,11 +36,18 @@ namespace Expressway_Admin_loin
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void selectall_CheckedChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnNX_Click(object sender, EventArgs e)
+        {
+            int IDDL = int.Parse(txtDL.Text);
+
 
         }
     }

@@ -236,9 +236,9 @@
             this.collision.Location = new System.Drawing.Point(1001, 425);
             this.collision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.collision.Name = "collision";
-            this.collision.Size = new System.Drawing.Size(329, 33);
+            this.collision.Size = new System.Drawing.Size(335, 33);
             this.collision.TabIndex = 22;
-            this.collision.Text = "Collison during lane changing ";
+            this.collision.Text = "Collision during lane changing ";
             this.collision.UseVisualStyleBackColor = false;
             // 
             // btnCL
@@ -277,6 +277,7 @@
             this.btnNX.TabIndex = 26;
             this.btnNX.Text = "Next >>";
             this.btnNX.UseVisualStyleBackColor = true;
+            this.btnNX.Click += new System.EventHandler(this.btnNX_Click);
             // 
             // label1
             // 
