@@ -254,6 +254,7 @@
             this.btnCL.TabIndex = 24;
             this.btnCL.Text = "Clear";
             this.btnCL.UseVisualStyleBackColor = true;
+            this.btnCL.Click += new System.EventHandler(this.btnCL_Click);
             // 
             // btnBK
             // 

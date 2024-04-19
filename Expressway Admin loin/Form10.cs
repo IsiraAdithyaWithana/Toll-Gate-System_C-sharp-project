@@ -14,9 +14,10 @@ namespace Expressway_Admin_loin
 {
     public partial class Form10 : Form
     {
+        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway_project\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
+
         public Form10()
         {
-            SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway_project\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
             InitializeComponent();
         }
@@ -66,6 +67,41 @@ namespace Expressway_Admin_loin
                 $"VALUES ({IDDL},'{selectAll}',{lowSpeed},{overSpeed},{seatBelts},{Signals},{Drugs},{mobilePhone},{invalidLicense},{Littering},{collisionLC},{parkingLane},{specificLicense});";
             
             SqlCommand cmd = new SqlCommand(query, con1);
+
+           
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+        private void btnCL_Click(object sender, EventArgs e)
+        {
+            int IDDL = int.Parse (txtDL.Text);
+
+            string query2 = $"DELETE Violations WHERE Driver License = {IDDL};";
+
+            SqlCommand cmd2 = new SqlCommand(query2, con1);
+
+            try
+            {
+                con1.Open();
+                cmd2.ExecuteNonQuery();
+                con1.Close();
+                MessageBox.Show("Data Cleared");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+           
 
         }
     }
