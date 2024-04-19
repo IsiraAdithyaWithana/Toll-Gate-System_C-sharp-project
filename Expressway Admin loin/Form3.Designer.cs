@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtPoliceID = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblpoliceid = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.butOK = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioEntrance = new System.Windows.Forms.RadioButton();
             this.radioExit = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblgateno = new System.Windows.Forms.Label();
             this.txtGateNumber = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -63,18 +63,19 @@
             this.txtPoliceID.TabIndex = 7;
             this.txtPoliceID.TextChanged += new System.EventHandler(this.txtPoliceID_TextChanged);
             // 
-            // label5
+            // lblpoliceid
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(368, 323);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(279, 41);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Police officer\'s ID";
+            this.lblpoliceid.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblpoliceid.AutoSize = true;
+            this.lblpoliceid.BackColor = System.Drawing.Color.Transparent;
+            this.lblpoliceid.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpoliceid.ForeColor = System.Drawing.Color.White;
+            this.lblpoliceid.Location = new System.Drawing.Point(368, 323);
+            this.lblpoliceid.Name = "lblpoliceid";
+            this.lblpoliceid.Size = new System.Drawing.Size(279, 41);
+            this.lblpoliceid.TabIndex = 6;
+            this.lblpoliceid.Text = "Police officer\'s ID";
+            this.lblpoliceid.Click += new System.EventHandler(this.label5_Click);
             // 
             // label2
             // 
@@ -143,18 +144,19 @@
             this.radioExit.Text = "Exit";
             this.radioExit.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // lblgateno
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(368, 262);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(218, 41);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Gate Number";
+            this.lblgateno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblgateno.AutoSize = true;
+            this.lblgateno.BackColor = System.Drawing.Color.Transparent;
+            this.lblgateno.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblgateno.ForeColor = System.Drawing.Color.White;
+            this.lblgateno.Location = new System.Drawing.Point(368, 262);
+            this.lblgateno.Name = "lblgateno";
+            this.lblgateno.Size = new System.Drawing.Size(218, 41);
+            this.lblgateno.TabIndex = 16;
+            this.lblgateno.Text = "Gate Number";
+            this.lblgateno.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtGateNumber
             // 
@@ -174,14 +176,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.txtGateNumber);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblgateno);
             this.Controls.Add(this.radioExit);
             this.Controls.Add(this.radioEntrance);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.butOK);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPoliceID);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblpoliceid);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "Form3";
@@ -195,13 +197,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPoliceID;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblpoliceid;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button butOK;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton radioEntrance;
         private System.Windows.Forms.RadioButton radioExit;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblgateno;
         private System.Windows.Forms.TextBox txtGateNumber;
     }
 }
