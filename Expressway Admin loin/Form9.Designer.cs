@@ -32,8 +32,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkbox = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -87,20 +87,6 @@
             this.textBox1.Size = new System.Drawing.Size(420, 35);
             this.textBox1.TabIndex = 6;
             // 
-            // checkbox
-            // 
-            this.checkbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox.AutoSize = true;
-            this.checkbox.BackColor = System.Drawing.Color.Transparent;
-            this.checkbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkbox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkbox.Location = new System.Drawing.Point(510, 420);
-            this.checkbox.Name = "checkbox";
-            this.checkbox.Size = new System.Drawing.Size(115, 45);
-            this.checkbox.TabIndex = 7;
-            this.checkbox.Text = "Clear";
-            this.checkbox.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -112,6 +98,20 @@
             this.panel1.Size = new System.Drawing.Size(80, 77);
             this.panel1.TabIndex = 8;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton1.Location = new System.Drawing.Point(491, 420);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(114, 45);
+            this.radioButton1.TabIndex = 9;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Clear";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,8 +119,8 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkbox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -139,7 +139,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkbox;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
