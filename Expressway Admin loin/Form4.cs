@@ -31,5 +31,10 @@ namespace Expressway_Admin_loin
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
