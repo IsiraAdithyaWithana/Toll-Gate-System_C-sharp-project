@@ -135,6 +135,7 @@
             this.DoubleBuffered = true;
             this.Name = "Form16";
             this.Text = "Form16";
+            this.Load += new System.EventHandler(this.Form16_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
