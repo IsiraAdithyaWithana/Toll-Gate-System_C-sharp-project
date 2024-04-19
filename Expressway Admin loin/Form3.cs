@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,33 +39,49 @@ namespace Expressway_Admin_loin
                 MessageBox.Show("Please enter the Police ID.");
                 return; // Exit the event handler
             }
-
-
-
-
-
-
-
-            if (radioEntrance.Checked)
+            try
             {
-                Form4 form4 = new Form4();
-                form4.Show();
-                this.Hide();
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Construct the SQL INSERT query
+                    string query = "INSERT INTO YourTableName (GateNumber, PoliceID) VALUES (@GateNumber, @PoliceID)";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add parameters to the command
+                        command.Parameters.AddWithValue("@GateNumber", txtGateNumber.Text);
+                        command.Parameters.AddWithValue("@PoliceID", txtPoliceID.Text);
+
+                        // Execute the query
+                        command.ExecuteNonQuery();
+                    }
+                }
+                if (radioEntrance.Checked)
+                {
+                    Form4 form4 = new Form4();
+                    form4.Show();
+                    this.Hide();
+                }
+                else if (radioExit.Checked)
+                {
+
+                    Form9 form9 = new Form9();
+                    form9.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Please select the gate.");
+                }
             }
-            else if (radioExit.Checked)
+            catch (Exception ex)
             {
-
-                Form9 form9 = new Form9();
-                form9.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Please select the gate.");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+            private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
