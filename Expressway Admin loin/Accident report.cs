@@ -16,5 +16,10 @@ namespace Expressway_Admin_loin
         {
             InitializeComponent();
         }
+
+        private void Accident_report_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

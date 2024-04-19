@@ -19,7 +19,34 @@ namespace Expressway_Admin_loin
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Fine_report button2 = new Fine_report();
+            addUserControle(button2);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
         }
+
+        private void Form17_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void addUserControle(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panel2.Controls.Clear();
+            panel2.Controls.Add(userControl);
+            userControl.BringToFront();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Accident_report button1 = new Accident_report();
+            addUserControle(button1); 
+        }
     }
+
 }
