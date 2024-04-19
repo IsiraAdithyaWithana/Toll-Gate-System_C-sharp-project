@@ -48,11 +48,11 @@ namespace Expressway_Admin_loin
                 using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
-                    
+
                     UserName = txtUsername.Text;
                     Password = txtPassword.Text;
 
-                    string query = $"SELECT password, user_position FROM [User] WHERE username = '{UserName}';";
+                    string query = $"SELECT password, user_position, Id FROM [User] WHERE username = '{UserName}';";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
@@ -66,7 +66,8 @@ namespace Expressway_Admin_loin
                             {
                                 if (dbPassword == Password)
                                 {
-                                    Form3 form3 = new Form3();
+                                    int id = Convert.ToInt32(reader["Id"]);
+                                    Form3 form3 = new Form3(id);
                                     form3.Show();
                                     this.Hide();
                                 }
@@ -79,7 +80,8 @@ namespace Expressway_Admin_loin
                             {
                                 if (dbPassword == Password)
                                 {
-                                    Form16 form16 = new Form16();
+                                    int id = Convert.ToInt32(reader["Id"]);
+                                    Form16 form16 = new Form16(id);
                                     form16.Show();
                                     this.Hide();
                                 }
