@@ -36,6 +36,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioEntrance = new System.Windows.Forms.RadioButton();
             this.radioExit = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtGateNumber = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -140,6 +142,28 @@
             this.radioExit.Text = "Exit";
             this.radioExit.UseVisualStyleBackColor = false;
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(368, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(218, 41);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Gate Number";
+            // 
+            // txtGateNumber
+            // 
+            this.txtGateNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtGateNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGateNumber.Location = new System.Drawing.Point(668, 262);
+            this.txtGateNumber.Name = "txtGateNumber";
+            this.txtGateNumber.Size = new System.Drawing.Size(300, 38);
+            this.txtGateNumber.TabIndex = 17;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +171,8 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.txtGateNumber);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.radioExit);
             this.Controls.Add(this.radioEntrance);
             this.Controls.Add(this.panel1);
@@ -173,5 +199,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton radioEntrance;
         private System.Windows.Forms.RadioButton radioExit;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtGateNumber;
     }
 }

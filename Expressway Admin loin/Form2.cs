@@ -38,6 +38,9 @@ namespace Expressway_Admin_loin
 
         }
 
+        private string UserName;
+        private string Password;
+
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -45,9 +48,9 @@ namespace Expressway_Admin_loin
                 using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\source\repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
-
-                    string UserName = txtUsername.Text;
-                    string Password = txtPassword.Text;
+                    
+                    UserName = txtUsername.Text;
+                    Password = txtPassword.Text;
 
                     string query = $"SELECT password, user_position FROM [User] WHERE username = '{UserName}';";
 
