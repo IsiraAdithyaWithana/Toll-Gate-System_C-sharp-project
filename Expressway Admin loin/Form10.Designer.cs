@@ -29,39 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form10));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDL = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.littering = new System.Windows.Forms.CheckBox();
+            this.mobilephone = new System.Windows.Forms.CheckBox();
+            this.drugs = new System.Windows.Forms.CheckBox();
+            this.signal = new System.Windows.Forms.CheckBox();
+            this.seatbelts = new System.Windows.Forms.CheckBox();
+            this.overspeed = new System.Windows.Forms.CheckBox();
+            this.lowspeed = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.selectall = new System.Windows.Forms.CheckBox();
+            this.parkinglane = new System.Windows.Forms.CheckBox();
+            this.collision = new System.Windows.Forms.CheckBox();
+            this.btnCL = new System.Windows.Forms.Button();
+            this.btnBK = new System.Windows.Forms.Button();
+            this.btnNX = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sosbox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.sosbox)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtDL
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(376, 194);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 32);
-            this.textBox1.TabIndex = 4;
+            this.txtDL.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDL.BackColor = System.Drawing.Color.White;
+            this.txtDL.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDL.Location = new System.Drawing.Point(501, 239);
+            this.txtDL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDL.Multiline = true;
+            this.txtDL.Name = "txtDL";
+            this.txtDL.Size = new System.Drawing.Size(439, 38);
+            this.txtDL.TabIndex = 4;
+            this.txtDL.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -70,117 +71,116 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(213, 196);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(284, 241);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 24);
+            this.label2.Size = new System.Drawing.Size(162, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Drivers License";
             // 
-            // checkBox8
+            // littering
             // 
-            this.checkBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox8.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox8.Location = new System.Drawing.Point(751, 298);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(168, 28);
-            this.checkBox8.TabIndex = 21;
-            this.checkBox8.Text = "Littering the road";
-            this.checkBox8.UseVisualStyleBackColor = false;
+            this.littering.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.littering.AutoSize = true;
+            this.littering.BackColor = System.Drawing.Color.Transparent;
+            this.littering.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.littering.ForeColor = System.Drawing.SystemColors.Control;
+            this.littering.Location = new System.Drawing.Point(1001, 367);
+            this.littering.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.littering.Name = "littering";
+            this.littering.Size = new System.Drawing.Size(203, 33);
+            this.littering.TabIndex = 21;
+            this.littering.Text = "Littering the road";
+            this.littering.UseVisualStyleBackColor = false;
             // 
-            // checkBox7
+            // mobilephone
             // 
-            this.checkBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox7.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox7.Location = new System.Drawing.Point(376, 546);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(191, 28);
-            this.checkBox7.TabIndex = 20;
-            this.checkBox7.Text = "Using mobile phone";
-            this.checkBox7.UseVisualStyleBackColor = false;
+            this.mobilephone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mobilephone.AutoSize = true;
+            this.mobilephone.BackColor = System.Drawing.Color.Transparent;
+            this.mobilephone.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mobilephone.ForeColor = System.Drawing.SystemColors.Control;
+            this.mobilephone.Location = new System.Drawing.Point(501, 672);
+            this.mobilephone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mobilephone.Name = "mobilephone";
+            this.mobilephone.Size = new System.Drawing.Size(229, 33);
+            this.mobilephone.TabIndex = 20;
+            this.mobilephone.Text = "Using mobile phone";
+            this.mobilephone.UseVisualStyleBackColor = false;
             // 
-            // checkBox6
+            // drugs
             // 
-            this.checkBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox6.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox6.Location = new System.Drawing.Point(377, 496);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(325, 28);
-            this.checkBox6.TabIndex = 19;
-            this.checkBox6.Text = "Driving under drug/alcohol influence";
-            this.checkBox6.UseVisualStyleBackColor = false;
+            this.drugs.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.drugs.AutoSize = true;
+            this.drugs.BackColor = System.Drawing.Color.Transparent;
+            this.drugs.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drugs.ForeColor = System.Drawing.SystemColors.Control;
+            this.drugs.Location = new System.Drawing.Point(503, 610);
+            this.drugs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.drugs.Name = "drugs";
+            this.drugs.Size = new System.Drawing.Size(394, 33);
+            this.drugs.TabIndex = 19;
+            this.drugs.Text = "Driving under drug/alcohol influence";
+            this.drugs.UseVisualStyleBackColor = false;
             // 
-            // checkBox5
+            // signal
             // 
-            this.checkBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox5.Location = new System.Drawing.Point(377, 448);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(138, 28);
-            this.checkBox5.TabIndex = 18;
-            this.checkBox5.Text = "Not Signaling";
-            this.checkBox5.UseVisualStyleBackColor = false;
+            this.signal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.signal.AutoSize = true;
+            this.signal.BackColor = System.Drawing.Color.Transparent;
+            this.signal.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signal.ForeColor = System.Drawing.SystemColors.Control;
+            this.signal.Location = new System.Drawing.Point(503, 551);
+            this.signal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.signal.Name = "signal";
+            this.signal.Size = new System.Drawing.Size(166, 33);
+            this.signal.TabIndex = 18;
+            this.signal.Text = "Not Signaling";
+            this.signal.UseVisualStyleBackColor = false;
             // 
-            // checkBox4
+            // seatbelts
             // 
-            this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox4.Location = new System.Drawing.Point(377, 399);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(191, 28);
-            this.checkBox4.TabIndex = 17;
-            this.checkBox4.Text = "Not using seat belts";
-            this.checkBox4.UseVisualStyleBackColor = false;
+            this.seatbelts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.seatbelts.AutoSize = true;
+            this.seatbelts.BackColor = System.Drawing.Color.Transparent;
+            this.seatbelts.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seatbelts.ForeColor = System.Drawing.SystemColors.Control;
+            this.seatbelts.Location = new System.Drawing.Point(503, 491);
+            this.seatbelts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.seatbelts.Name = "seatbelts";
+            this.seatbelts.Size = new System.Drawing.Size(227, 33);
+            this.seatbelts.TabIndex = 17;
+            this.seatbelts.Text = "Not using seat belts";
+            this.seatbelts.UseVisualStyleBackColor = false;
             // 
-            // checkBox3
+            // overspeed
             // 
-            this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox3.Location = new System.Drawing.Point(377, 349);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(193, 28);
-            this.checkBox3.TabIndex = 16;
-            this.checkBox3.Text = "Over speed driving   ";
-            this.checkBox3.UseVisualStyleBackColor = false;
+            this.overspeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.overspeed.AutoSize = true;
+            this.overspeed.BackColor = System.Drawing.Color.Transparent;
+            this.overspeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.overspeed.ForeColor = System.Drawing.SystemColors.Control;
+            this.overspeed.Location = new System.Drawing.Point(503, 430);
+            this.overspeed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.overspeed.Name = "overspeed";
+            this.overspeed.Size = new System.Drawing.Size(234, 33);
+            this.overspeed.TabIndex = 16;
+            this.overspeed.Text = "Over speed driving   ";
+            this.overspeed.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // lowspeed
             // 
-            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox2.Location = new System.Drawing.Point(377, 298);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(285, 28);
-            this.checkBox2.TabIndex = 15;
-            this.checkBox2.Text = "Inner lane / low speed driving   ";
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.lowspeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lowspeed.AutoSize = true;
+            this.lowspeed.BackColor = System.Drawing.Color.Transparent;
+            this.lowspeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowspeed.ForeColor = System.Drawing.SystemColors.Control;
+            this.lowspeed.Location = new System.Drawing.Point(503, 367);
+            this.lowspeed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lowspeed.Name = "lowspeed";
+            this.lowspeed.Size = new System.Drawing.Size(344, 33);
+            this.lowspeed.TabIndex = 15;
+            this.lowspeed.Text = "Inner lane / low speed driving   ";
+            this.lowspeed.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -189,94 +189,95 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(213, 245);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(284, 302);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 24);
+            this.label3.Size = new System.Drawing.Size(159, 29);
             this.label3.TabIndex = 14;
             this.label3.Text = "Violation Types";
             // 
-            // checkBox1
+            // selectall
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox1.Location = new System.Drawing.Point(377, 245);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 28);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Select all";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.selectall.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.selectall.AutoSize = true;
+            this.selectall.BackColor = System.Drawing.Color.Transparent;
+            this.selectall.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectall.ForeColor = System.Drawing.SystemColors.Control;
+            this.selectall.Location = new System.Drawing.Point(503, 302);
+            this.selectall.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.selectall.Name = "selectall";
+            this.selectall.Size = new System.Drawing.Size(126, 33);
+            this.selectall.TabIndex = 13;
+            this.selectall.Text = "Select all";
+            this.selectall.UseVisualStyleBackColor = false;
+            this.selectall.CheckedChanged += new System.EventHandler(this.selectall_CheckedChanged);
             // 
-            // checkBox10
+            // parkinglane
             // 
-            this.checkBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox10.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox10.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox10.Location = new System.Drawing.Point(751, 403);
-            this.checkBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(294, 28);
-            this.checkBox10.TabIndex = 23;
-            this.checkBox10.Text = "Misuing Emergency parking lane";
-            this.checkBox10.UseVisualStyleBackColor = false;
+            this.parkinglane.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.parkinglane.AutoSize = true;
+            this.parkinglane.BackColor = System.Drawing.Color.Transparent;
+            this.parkinglane.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parkinglane.ForeColor = System.Drawing.SystemColors.Control;
+            this.parkinglane.Location = new System.Drawing.Point(1001, 496);
+            this.parkinglane.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.parkinglane.Name = "parkinglane";
+            this.parkinglane.Size = new System.Drawing.Size(354, 33);
+            this.parkinglane.TabIndex = 23;
+            this.parkinglane.Text = "Misuing Emergency parking lane";
+            this.parkinglane.UseVisualStyleBackColor = false;
             // 
-            // checkBox9
+            // collision
             // 
-            this.checkBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox9.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox9.Location = new System.Drawing.Point(751, 345);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(274, 28);
-            this.checkBox9.TabIndex = 22;
-            this.checkBox9.Text = "Collison during lane changing ";
-            this.checkBox9.UseVisualStyleBackColor = false;
+            this.collision.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.collision.AutoSize = true;
+            this.collision.BackColor = System.Drawing.Color.Transparent;
+            this.collision.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.collision.ForeColor = System.Drawing.SystemColors.Control;
+            this.collision.Location = new System.Drawing.Point(1001, 425);
+            this.collision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.collision.Name = "collision";
+            this.collision.Size = new System.Drawing.Size(335, 33);
+            this.collision.TabIndex = 22;
+            this.collision.Text = "Collision during lane changing ";
+            this.collision.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnCL
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(813, 194);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 41);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Clear";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCL.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCL.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCL.Location = new System.Drawing.Point(1084, 239);
+            this.btnCL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCL.Name = "btnCL";
+            this.btnCL.Size = new System.Drawing.Size(121, 50);
+            this.btnCL.TabIndex = 24;
+            this.btnCL.Text = "Clear";
+            this.btnCL.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnBK
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(739, 546);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 41);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "<< Back";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnBK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBK.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBK.Location = new System.Drawing.Point(985, 672);
+            this.btnBK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBK.Name = "btnBK";
+            this.btnBK.Size = new System.Drawing.Size(131, 50);
+            this.btnBK.TabIndex = 25;
+            this.btnBK.Text = "<< Back";
+            this.btnBK.UseVisualStyleBackColor = true;
+            this.btnBK.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnNX
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(862, 546);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 41);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Next >>";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnNX.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNX.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNX.Location = new System.Drawing.Point(1149, 672);
+            this.btnNX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNX.Name = "btnNX";
+            this.btnNX.Size = new System.Drawing.Size(127, 50);
+            this.btnNX.TabIndex = 26;
+            this.btnNX.Text = "Next >>";
+            this.btnNX.UseVisualStyleBackColor = true;
+            this.btnNX.Click += new System.EventHandler(this.btnNX_Click);
             // 
             // label1
             // 
@@ -285,61 +286,60 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(463, 92);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(617, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(414, 36);
+            this.label1.Size = new System.Drawing.Size(521, 46);
             this.label1.TabIndex = 27;
             this.label1.Text = "EXPRESSWAY VIOLATIONS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // sosbox
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1114, 577);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            this.sosbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sosbox.BackColor = System.Drawing.Color.Transparent;
+            this.sosbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.sosbox.Image = ((System.Drawing.Image)(resources.GetObject("sosbox.Image")));
+            this.sosbox.Location = new System.Drawing.Point(1485, 710);
+            this.sosbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sosbox.Name = "sosbox";
+            this.sosbox.Size = new System.Drawing.Size(80, 78);
+            this.sosbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sosbox.TabIndex = 28;
+            this.sosbox.TabStop = false;
             // 
             // Form10
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
+            this.Controls.Add(this.sosbox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox10);
-            this.Controls.Add(this.checkBox9);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.btnNX);
+            this.Controls.Add(this.btnBK);
+            this.Controls.Add(this.btnCL);
+            this.Controls.Add(this.parkinglane);
+            this.Controls.Add(this.collision);
+            this.Controls.Add(this.littering);
+            this.Controls.Add(this.mobilephone);
+            this.Controls.Add(this.drugs);
+            this.Controls.Add(this.signal);
+            this.Controls.Add(this.seatbelts);
+            this.Controls.Add(this.overspeed);
+            this.Controls.Add(this.lowspeed);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.selectall);
+            this.Controls.Add(this.txtDL);
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form10";
             this.RightToLeftLayout = true;
             this.Text = "Form10";
             this.Load += new System.EventHandler(this.Form10_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sosbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,23 +347,23 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDL;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox littering;
+        private System.Windows.Forms.CheckBox mobilephone;
+        private System.Windows.Forms.CheckBox drugs;
+        private System.Windows.Forms.CheckBox signal;
+        private System.Windows.Forms.CheckBox seatbelts;
+        private System.Windows.Forms.CheckBox overspeed;
+        private System.Windows.Forms.CheckBox lowspeed;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox selectall;
+        private System.Windows.Forms.CheckBox parkinglane;
+        private System.Windows.Forms.CheckBox collision;
+        private System.Windows.Forms.Button btnCL;
+        private System.Windows.Forms.Button btnBK;
+        private System.Windows.Forms.Button btnNX;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox sosbox;
     }
 }
