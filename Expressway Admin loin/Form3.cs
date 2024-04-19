@@ -24,18 +24,17 @@ namespace Expressway_Admin_loin
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                Form4 form4 = new Form4();
-                form4.Show();
-                this.Hide();
-            }
-            else
-            {
-                Form9 form9 = new Form9();
-                form9.Show();
-                this.Hide();
-            }
+           
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

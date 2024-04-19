@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form12));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -57,7 +56,7 @@
             this.label1.Location = new System.Drawing.Point(141, 196);
             this.label1.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 50);
+            this.label1.Size = new System.Drawing.Size(274, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Payment Method";
             // 
@@ -69,7 +68,7 @@
             this.checkBox1.ForeColor = System.Drawing.Color.White;
             this.checkBox1.Location = new System.Drawing.Point(561, 196);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(225, 42);
+            this.checkBox1.Size = new System.Drawing.Size(181, 34);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Cash Payment";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -82,7 +81,7 @@
             this.checkBox2.ForeColor = System.Drawing.Color.White;
             this.checkBox2.Location = new System.Drawing.Point(561, 257);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(221, 42);
+            this.checkBox2.Size = new System.Drawing.Size(178, 34);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Card Payment";
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -95,7 +94,7 @@
             this.checkBox3.ForeColor = System.Drawing.Color.White;
             this.checkBox3.Location = new System.Drawing.Point(561, 318);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(234, 42);
+            this.checkBox3.Size = new System.Drawing.Size(190, 34);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "Online Transfer";
             this.checkBox3.UseVisualStyleBackColor = false;
@@ -108,7 +107,7 @@
             this.checkBox4.ForeColor = System.Drawing.Color.White;
             this.checkBox4.Location = new System.Drawing.Point(561, 379);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(229, 42);
+            this.checkBox4.Size = new System.Drawing.Size(184, 34);
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "14 days to pay";
             this.checkBox4.UseVisualStyleBackColor = false;
@@ -135,9 +134,9 @@
             // 
             // Form12
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 50F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 39F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.panel1);

@@ -113,9 +113,29 @@ namespace Expressway_Admin_loin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Untitled_design_blue_4 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled design blue 4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vehicle__2_ {
             get {
                 object obj = ResourceManager.GetObject("vehicle (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Welcome_To_The_32 {
+            get {
+                object obj = ResourceManager.GetObject("Welcome To The 32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
