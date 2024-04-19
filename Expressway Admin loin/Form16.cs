@@ -23,5 +23,22 @@ namespace Expressway_Admin_loin
             form3.ShowDialog();
            
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form17 form17 = new Form17();
+            form17.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form19 form19 = new Form19();
+            form19.ShowDialog();
+        }
     }
 }

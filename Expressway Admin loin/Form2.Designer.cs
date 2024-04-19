@@ -113,9 +113,9 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(622, 343);
+            this.txtUsername.Location = new System.Drawing.Point(623, 343);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(300, 38);
+            this.txtUsername.Size = new System.Drawing.Size(299, 38);
             this.txtUsername.TabIndex = 6;
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
