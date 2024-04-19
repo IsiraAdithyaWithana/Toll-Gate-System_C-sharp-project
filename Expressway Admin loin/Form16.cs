@@ -12,14 +12,17 @@ namespace Expressway_Admin_loin
 {
     public partial class Form16 : Form
     {
-        public Form16()
+        private int userId;
+
+        public Form16(int id)
         {
             InitializeComponent();
+            userId = id;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            Form3 form3 = new Form3(userId);
             form3.ShowDialog();
            
         }
@@ -39,6 +42,11 @@ namespace Expressway_Admin_loin
         {
             Form19 form19 = new Form19();
             form19.ShowDialog();
+        }
+
+        private void Form16_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
