@@ -69,7 +69,7 @@ namespace Expressway_Admin_loin
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Ünsuccessful data entry. Please check your Password again");
+                                    MessageBox.Show("Unsuccessful data entry. Please check your Password again");
                                 }
                             }
                             else
