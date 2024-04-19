@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Xml.Linq;
 namespace Expressway_Admin_loin
 {
     public partial class Form10 : Form
@@ -58,9 +60,12 @@ namespace Expressway_Admin_loin
             bool Littering = bool.Parse(littering.Text);
             bool collisionLC = bool.Parse(collision.Text);
             bool parkingLane = bool.Parse(parkinglane.Text);
-            bool specificLicense = bool.Parse(specificDL.Text); 
+            bool specificLicense = bool.Parse(specificDL.Text);
 
-
+            string query = $"INSERT INTO Violations (Driver License,Select All,Low Speed/inner lane,Overspeed,Not using seat belts,Drunk driving,Using mobile phones,Invalid driver license,Littering the road,Collision during lane change,Misuse E.Parklane,Classless driver license) " +
+                $"VALUES ({IDDL},'{selectAll}',{lowSpeed},{overSpeed},{seatBelts},{Signals},{Drugs},{mobilePhone},{invalidLicense},{Littering},{collisionLC},{parkingLane},{specificLicense});";
+            
+            SqlCommand cmd = new SqlCommand(query, con1);
 
         }
     }
