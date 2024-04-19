@@ -68,6 +68,19 @@ namespace Expressway_Admin_loin
             
             SqlCommand cmd = new SqlCommand(query, con1);
 
+            try
+            {
+                con1.Open();
+                cmd.ExecuteNonQuery();
+                con1.Close();
+                MessageBox.Show("Violations selected Successfully!");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
            
 
 
