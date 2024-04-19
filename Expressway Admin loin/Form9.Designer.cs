@@ -34,8 +34,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.checkbox = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDone = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -114,30 +112,6 @@
             this.panel1.Size = new System.Drawing.Size(80, 77);
             this.panel1.TabIndex = 8;
             // 
-            // btnDone
-            // 
-            this.btnDone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDone.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDone.Location = new System.Drawing.Point(491, 341);
-            this.btnDone.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDone.Name = "btnDone";
-            this.btnDone.Size = new System.Drawing.Size(91, 41);
-            this.btnDone.TabIndex = 25;
-            this.btnDone.Text = "Done";
-            this.btnDone.UseVisualStyleBackColor = true;
-            // 
-            // btnNext
-            // 
-            this.btnNext.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNext.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(491, 537);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(213, 45);
-            this.btnNext.TabIndex = 26;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
-            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,8 +119,6 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.btnDone);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.checkbox);
             this.Controls.Add(this.textBox1);
@@ -169,7 +141,5 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkbox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnDone;
-        private System.Windows.Forms.Button btnNext;
     }
 }
