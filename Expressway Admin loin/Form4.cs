@@ -13,6 +13,7 @@ namespace Expressway_Admin_loin
     public partial class Form4 : Form
     {
         private int userId;
+        private string EorE = "entrance";
         public Form4(int id)
         {
             InitializeComponent();
@@ -52,7 +53,7 @@ namespace Expressway_Admin_loin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form20 form20 = new Form20();
+            Form20 form20 = new Form20(userId,EorE);
             form20.Show();
             this.Hide();
         }

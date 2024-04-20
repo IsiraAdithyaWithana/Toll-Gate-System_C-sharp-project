@@ -12,9 +12,13 @@ namespace Expressway_Admin_loin
 {
     public partial class Form20 : Form
     {
-        public Form20()
+        private int userId;
+        private string EorE;
+        public Form20(int id, string EntranceOrExit)
         {
             InitializeComponent();
+            userId = id;
+            EorE = EntranceOrExit;
         }
 
         private void Form20_Load(object sender, EventArgs e)
@@ -24,9 +28,19 @@ namespace Expressway_Admin_loin
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
-            this.Hide();
+            if (EorE == "entrance")
+            {
+                Form4 form4 = new Form4(userId);
+                form4.Show();
+                this.Hide();
+            }
+            else
+            {
+                Form9 form9 = new Form9(userId);
+                form9.Show();
+                this.Hide();
+            }
+            
         }
     }
 }
