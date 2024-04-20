@@ -41,14 +41,14 @@ namespace Expressway_Admin_loin
             }
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\source\repos\]\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
-                    connection.Open();
+                    con.Open();
 
                     // Construct the SQL INSERT query
                     string query = "INSERT INTO YourTableName (GateNumber, PoliceID) VALUES (@GateNumber, @PoliceID)";
 
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlCommand command = new SqlCommand(query, con))
                     {
                         // Add parameters to the command
                         command.Parameters.AddWithValue("@GateNumber", txtGateNumber.Text);
@@ -107,6 +107,11 @@ namespace Expressway_Admin_loin
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
         {
 
         }
