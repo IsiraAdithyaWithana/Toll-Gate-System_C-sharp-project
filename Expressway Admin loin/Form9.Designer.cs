@@ -111,6 +111,7 @@
             this.butDone.TabIndex = 10;
             this.butDone.Text = "Done";
             this.butDone.UseVisualStyleBackColor = true;
+            this.butDone.Click += new System.EventHandler(this.butDone_Click);
             // 
             // butNext
             // 
