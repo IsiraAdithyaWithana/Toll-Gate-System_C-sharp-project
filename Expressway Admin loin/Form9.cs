@@ -56,5 +56,10 @@ namespace Expressway_Admin_loin
             form20.Show();
             this.Hide ();
         }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
