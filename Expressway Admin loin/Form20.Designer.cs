@@ -31,15 +31,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAccidentSite = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkB = new System.Windows.Forms.CheckBox();
+            this.checkC1 = new System.Windows.Forms.CheckBox();
+            this.checkC = new System.Windows.Forms.CheckBox();
+            this.checkCE = new System.Windows.Forms.CheckBox();
+            this.checkD1 = new System.Windows.Forms.CheckBox();
+            this.checkD = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -72,12 +73,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "What is the closest kilometer post to the accident site  ";
             // 
-            // textBox1
+            // txtAccidentSite
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 229);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(302, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtAccidentSite.Location = new System.Drawing.Point(70, 229);
+            this.txtAccidentSite.Name = "txtAccidentSite";
+            this.txtAccidentSite.Size = new System.Drawing.Size(302, 20);
+            this.txtAccidentSite.TabIndex = 3;
+            this.txtAccidentSite.TextChanged += new System.EventHandler(this.txtAccident_TextChanged);
             // 
             // label3
             // 
@@ -91,83 +93,83 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Vehicle category ";
             // 
-            // checkBox1
+            // checkB
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(82, 336);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(49, 30);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = " B";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkB.AutoSize = true;
+            this.checkB.BackColor = System.Drawing.Color.Transparent;
+            this.checkB.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkB.ForeColor = System.Drawing.Color.Transparent;
+            this.checkB.Location = new System.Drawing.Point(82, 336);
+            this.checkB.Name = "checkB";
+            this.checkB.Size = new System.Drawing.Size(49, 30);
+            this.checkB.TabIndex = 5;
+            this.checkB.Text = " B";
+            this.checkB.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // checkC1
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Location = new System.Drawing.Point(82, 372);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(60, 30);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = " C1";
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.checkC1.AutoSize = true;
+            this.checkC1.BackColor = System.Drawing.Color.Transparent;
+            this.checkC1.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkC1.ForeColor = System.Drawing.Color.Transparent;
+            this.checkC1.Location = new System.Drawing.Point(82, 372);
+            this.checkC1.Name = "checkC1";
+            this.checkC1.Size = new System.Drawing.Size(60, 30);
+            this.checkC1.TabIndex = 6;
+            this.checkC1.Text = " C1";
+            this.checkC1.UseVisualStyleBackColor = false;
             // 
-            // checkBox3
+            // checkC
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Location = new System.Drawing.Point(82, 408);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(43, 30);
-            this.checkBox3.TabIndex = 7;
-            this.checkBox3.Text = "C";
-            this.checkBox3.UseVisualStyleBackColor = false;
+            this.checkC.AutoSize = true;
+            this.checkC.BackColor = System.Drawing.Color.Transparent;
+            this.checkC.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkC.ForeColor = System.Drawing.Color.Transparent;
+            this.checkC.Location = new System.Drawing.Point(82, 408);
+            this.checkC.Name = "checkC";
+            this.checkC.Size = new System.Drawing.Size(43, 30);
+            this.checkC.TabIndex = 7;
+            this.checkC.Text = "C";
+            this.checkC.UseVisualStyleBackColor = false;
             // 
-            // checkBox4
+            // checkCE
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Location = new System.Drawing.Point(82, 444);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(54, 30);
-            this.checkBox4.TabIndex = 8;
-            this.checkBox4.Text = "CE";
-            this.checkBox4.UseVisualStyleBackColor = false;
+            this.checkCE.AutoSize = true;
+            this.checkCE.BackColor = System.Drawing.Color.Transparent;
+            this.checkCE.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkCE.ForeColor = System.Drawing.Color.Transparent;
+            this.checkCE.Location = new System.Drawing.Point(82, 444);
+            this.checkCE.Name = "checkCE";
+            this.checkCE.Size = new System.Drawing.Size(54, 30);
+            this.checkCE.TabIndex = 8;
+            this.checkCE.Text = "CE";
+            this.checkCE.UseVisualStyleBackColor = false;
             // 
-            // checkBox5
+            // checkD1
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.ForeColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Location = new System.Drawing.Point(82, 480);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(57, 30);
-            this.checkBox5.TabIndex = 9;
-            this.checkBox5.Text = "D1";
-            this.checkBox5.UseVisualStyleBackColor = false;
+            this.checkD1.AutoSize = true;
+            this.checkD1.BackColor = System.Drawing.Color.Transparent;
+            this.checkD1.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkD1.ForeColor = System.Drawing.Color.Transparent;
+            this.checkD1.Location = new System.Drawing.Point(82, 480);
+            this.checkD1.Name = "checkD1";
+            this.checkD1.Size = new System.Drawing.Size(57, 30);
+            this.checkD1.TabIndex = 9;
+            this.checkD1.Text = "D1";
+            this.checkD1.UseVisualStyleBackColor = false;
             // 
-            // checkBox6
+            // checkD
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox6.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.Color.Transparent;
-            this.checkBox6.Location = new System.Drawing.Point(82, 516);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(45, 30);
-            this.checkBox6.TabIndex = 10;
-            this.checkBox6.Text = "D";
-            this.checkBox6.UseVisualStyleBackColor = false;
+            this.checkD.AutoSize = true;
+            this.checkD.BackColor = System.Drawing.Color.Transparent;
+            this.checkD.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkD.ForeColor = System.Drawing.Color.Transparent;
+            this.checkD.Location = new System.Drawing.Point(82, 516);
+            this.checkD.Name = "checkD";
+            this.checkD.Size = new System.Drawing.Size(45, 30);
+            this.checkD.TabIndex = 10;
+            this.checkD.Text = "D";
+            this.checkD.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -181,6 +183,18 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1022, 617);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 41);
+            this.button3.TabIndex = 36;
+            this.button3.Text = " Done";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form20
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,15 +202,16 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkD);
+            this.Controls.Add(this.checkD1);
+            this.Controls.Add(this.checkCE);
+            this.Controls.Add(this.checkC);
+            this.Controls.Add(this.checkC1);
+            this.Controls.Add(this.checkB);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAccidentSite);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -213,14 +228,15 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAccidentSite;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkB;
+        private System.Windows.Forms.CheckBox checkC1;
+        private System.Windows.Forms.CheckBox checkC;
+        private System.Windows.Forms.CheckBox checkCE;
+        private System.Windows.Forms.CheckBox checkD1;
+        private System.Windows.Forms.CheckBox checkD;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

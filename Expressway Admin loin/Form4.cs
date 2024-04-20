@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,7 @@ namespace Expressway_Admin_loin
     {
         private int userId;
         private string EorE = "entrance";
+        int pageNum = 4;
         public Form4(int id)
         {
             InitializeComponent();
@@ -53,7 +55,7 @@ namespace Expressway_Admin_loin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form20 form20 = new Form20(userId,EorE);
+            Form20 form20 = new Form20(userId,EorE, pageNum);
             form20.Show();
             this.Hide();
         }

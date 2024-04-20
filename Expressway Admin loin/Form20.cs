@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,11 +15,13 @@ namespace Expressway_Admin_loin
     {
         private int userId;
         private string EorE;
-        public Form20(int id, string EntranceOrExit)
+        int ReturnPage;
+        public Form20(int id, string EntranceOrExit,int returnPage)
         {
             InitializeComponent();
             userId = id;
             EorE = EntranceOrExit;
+            ReturnPage = returnPage;
         }
 
         private void Form20_Load(object sender, EventArgs e)
@@ -41,6 +44,67 @@ namespace Expressway_Admin_loin
                 this.Hide();
             }
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway Project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
+                    conn.Open();
+                    string AccidentSite = txtAccidentSite.Text;
+                    string VehicleType = "";
+
+                    foreach (CheckBox checkBox in this.Controls.OfType<CheckBox>())
+                    {
+                        if (checkBox.Checked)
+                        {
+                            VehicleType += checkBox.Text + ",";
+                        }
+                    }
+
+                    string query = "INSERT INTO accident ([user], nearest_point, vehicle_type) VALUES (@User, @Accidentsite, @Vehicletype);";
+
+                    using (SqlCommand command = new SqlCommand(query, conn))
+                    {
+                        command.Parameters.AddWithValue("@User", userId);
+                        command.Parameters.AddWithValue("@Accidentsite", AccidentSite);
+                        command.Parameters.AddWithValue("@Vehicletype", VehicleType);
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Data inserted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    string formClassName = $"Form{ReturnPage}";
+
+                    Type formType = Type.GetType("Expressway_Admin_loin." + formClassName);
+
+                    if(ReturnPage == 4)
+                    {
+                        Form4 form4 = new Form4(userId);
+                        form4.Show();
+                        this.Hide();
+                    }
+                    else if(ReturnPage == 9)
+                    {
+                        Form9 form9 = new Form9(userId);
+                        form9.Show();
+                        this.Hide();
+                    }
+
+                }
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void txtAccident_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
