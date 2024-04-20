@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtVehicleNumber = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.butDone = new System.Windows.Forms.Button();
             this.butNext = new System.Windows.Forms.Button();
@@ -80,14 +80,14 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Vehicle Number  :";
             // 
-            // textBox1
+            // txtVehicleNumber
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(491, 270);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(420, 35);
-            this.textBox1.TabIndex = 6;
+            this.txtVehicleNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtVehicleNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVehicleNumber.Location = new System.Drawing.Point(491, 270);
+            this.txtVehicleNumber.Name = "txtVehicleNumber";
+            this.txtVehicleNumber.Size = new System.Drawing.Size(420, 35);
+            this.txtVehicleNumber.TabIndex = 6;
             // 
             // panel1
             // 
@@ -149,7 +149,7 @@
             this.Controls.Add(this.butNext);
             this.Controls.Add(this.butDone);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtVehicleNumber);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -166,7 +166,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtVehicleNumber;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button butDone;
         private System.Windows.Forms.Button butNext;

@@ -63,14 +63,14 @@ namespace Expressway_Admin_loin
                 }
                 if (radioEntrance.Checked)
                 {
-                    Form4 form4 = new Form4();
+                    Form4 form4 = new Form4(userId);
                     form4.Show();
                     this.Hide();
                 }
                 else if (radioExit.Checked)
                 {
 
-                    Form9 form9 = new Form9();
+                    Form9 form9 = new Form9(userId);
                     form9.Show();
                     this.Hide();
                 }

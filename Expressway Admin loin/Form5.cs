@@ -12,9 +12,11 @@ namespace Expressway_Admin_loin
 {
     public partial class Form5 : Form
     {
-        public Form5()
+        private int userId;
+        public Form5(int id)
         {
             InitializeComponent();
+            userId = id;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -47,7 +49,7 @@ namespace Expressway_Admin_loin
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            Form4 form4 = new Form4(userId);
             form4.Show();
             this.Hide();
 

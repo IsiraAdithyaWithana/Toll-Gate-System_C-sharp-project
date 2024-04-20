@@ -13,39 +13,35 @@ namespace Expressway_Admin_loin
 {
     public partial class Form9 : Form
     {
-        readonly string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ASUS\source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True";
-        public Form9()
+        private int userId;
+        public Form9(int id)
         {
             InitializeComponent();
+            userId = id;
         }
 
         private void butDone_Click(object sender, EventArgs e)
         {
+            try
             {
-                try
+                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ASUS\source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
-                    using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ASUS\source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                    connection.Open();
+                    string vehicleNumber = txtVehicleNumber.Text;
+
+                    string query = $"SELECT status FROM Vehicle WHERE vehicle_number='{vehicleNumber}';";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        connection.Open();
+                        string result = command.ExecuteScalar()?.ToString();
 
-                        string query = "SELECT YourColumnName FROM YourTable WHERE YourCondition";
-
-                        // Create a command to execute the query
-                        using (SqlCommand command = new SqlCommand(query, connection))
-                        {
-                            // Execute the command and get the result
-                            string result = command.ExecuteScalar()?.ToString();
-
-                            // Update the label with the retrieved data
-                            lblStatus.Text = result;
-                        }
+                        lblStatus.Text = result;
                     }
                 }
-                catch (Exception ex)
-                {
-                    // Handle any exceptions that might occur
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
     }
