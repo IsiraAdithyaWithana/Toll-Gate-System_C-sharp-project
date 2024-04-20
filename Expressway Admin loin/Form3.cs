@@ -32,29 +32,32 @@ namespace Expressway_Admin_loin
             if (string.IsNullOrEmpty(txtGateNumber.Text))
             {
                 MessageBox.Show("Please enter the gate number.");
-                return; // Exit the event handler
+                return;
             }
             if (string.IsNullOrEmpty(txtPoliceID.Text))
             {
                 MessageBox.Show("Please enter the Police ID.");
-                return; // Exit the event handler
+                return;
             }
             try
             {
                 using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\source\repos\]\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
+                    string gateNumber = txtGateNumber.Text;
+                    string policeOfficer = txtPoliceID.Text;
+                    DateTime dateAndTime = DateTime.Now;
+                    int user = userId;
 
-                    // Construct the SQL INSERT query
-                    string query = "INSERT INTO YourTableName (GateNumber, PoliceID) VALUES (@GateNumber, @PoliceID)";
+                    string query = "INSERT INTO gate_control (police_officer, [user], [time], gate_number) VALUES (@PoliceOfficer, @User, @DateAndTime, @GateNumber)";
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
-                        // Add parameters to the command
-                        command.Parameters.AddWithValue("@GateNumber", txtGateNumber.Text);
-                        command.Parameters.AddWithValue("@PoliceID", txtPoliceID.Text);
+                        command.Parameters.AddWithValue("@PoliceOfficer", policeOfficer);
+                        command.Parameters.AddWithValue("@User", user);
+                        command.Parameters.AddWithValue("@DateAndTime", dateAndTime);
+                        command.Parameters.AddWithValue("@GateNumber", gateNumber);
 
-                        // Execute the query
                         command.ExecuteNonQuery();
                     }
                 }
@@ -81,7 +84,7 @@ namespace Expressway_Admin_loin
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-            private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
