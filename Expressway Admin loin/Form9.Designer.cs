@@ -124,6 +124,7 @@
             this.butNext.TabIndex = 11;
             this.butNext.Text = "Next";
             this.butNext.UseVisualStyleBackColor = true;
+            this.butNext.Click += new System.EventHandler(this.butNext_Click);
             // 
             // lblStatus
             // 
@@ -134,9 +135,9 @@
             this.lblStatus.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblStatus.Location = new System.Drawing.Point(484, 420);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(96, 41);
+            this.lblStatus.Size = new System.Drawing.Size(250, 41);
             this.lblStatus.TabIndex = 12;
-            this.lblStatus.Text = "Clear";
+            this.lblStatus.Text = ".............................";
             // 
             // Form9
             // 

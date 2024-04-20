@@ -24,7 +24,7 @@ namespace Expressway_Admin_loin
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ASUS\source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\source\repos\]\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     connection.Open();
                     string vehicleNumber = txtVehicleNumber.Text;
@@ -43,6 +43,11 @@ namespace Expressway_Admin_loin
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
+        }
+
+        private void butNext_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
