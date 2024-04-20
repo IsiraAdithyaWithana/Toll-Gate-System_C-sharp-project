@@ -36,6 +36,7 @@
             this.butDone = new System.Windows.Forms.Button();
             this.butNext = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -139,6 +140,17 @@
             this.lblStatus.TabIndex = 12;
             this.lblStatus.Text = ".............................";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(33, 615);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(282, 43);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Report an accident";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +158,7 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.butNext);
             this.Controls.Add(this.butDone);
@@ -172,5 +185,6 @@
         private System.Windows.Forms.Button butDone;
         private System.Windows.Forms.Button butNext;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Button button1;
     }
 }
