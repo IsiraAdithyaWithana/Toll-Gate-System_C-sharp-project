@@ -72,29 +72,36 @@ namespace Expressway_Admin_loin
                 bool parkingLane = parkinglane.Checked;
                 bool specificLicense = specificDL.Checked;
 
-                string query = $"INSERT INTO Violation (Id,Select All,Low Speed/inner lane,Overspeed,Not using seat belts,Drunk driving,Using mobile phones,Invalid driver license,Littering the road,Collision during lane change,Misuse E.Parklane,Classless driver license) " +
+                foreach (Control control in this.Controls)
+                {
+                    if (control is CheckBox && ((CheckBox)control).Checked)
+                    {
+
+                        string query = $"INSERT INTO Violation (Id,Select All,Low Speed/inner lane,Overspeed,Not using seat belts,Drunk driving,Using mobile phones,Invalid driver license,Littering the road,Collision during lane change,Misuse E.Parklane,Classless driver license) " +
                     $"VALUES ({IDDL},'{selectAll}',{lowSpeed},{overSpeed},{seatBelts},{Signals},{Drugs},{mobilePhone},{invalidLicense},{Littering},{collisionLC},{parkingLane},{specificLicense});";
 
 
-                using (SqlCommand cmd = new SqlCommand(query, con1))
-                {
-                    cmd.Parameters.AddWithValue("IDDL",txtDL);
-                    cmd.Parameters.AddWithValue("selectAll", selectall.Checked);
-                    cmd.Parameters.AddWithValue("overSpeed",overspeed.Checked);
-                    cmd.Parameters.AddWithValue("lowspeed", lowspeed.Checked);
-                    cmd.Parameters.AddWithValue("seatBelts", seatbelts.Checked);
-                    cmd.Parameters.AddWithValue("Signals", signal.Checked);
-                    cmd.Parameters.AddWithValue("Drugs", drugs.Checked);
-                    cmd.Parameters.AddWithValue("mobilePhone", mobilephone.Checked);
-                    cmd.Parameters.AddWithValue("invalidlicense", invalidDL.Checked);
-                    cmd.Parameters.AddWithValue("Littering", littering.Checked);
-                    cmd.Parameters.AddWithValue("collisionLC", collision.Checked);
-                    cmd.Parameters.AddWithValue("parkingLane", parkinglane.Checked);
-                    cmd.Parameters.AddWithValue("specificLicese", specificDL.Checked);
+                        using (SqlCommand cmd = new SqlCommand(query, con1))
+                        {
+                            cmd.Parameters.AddWithValue("IDDL", txtDL);
+                            cmd.Parameters.AddWithValue("selectAll", selectall.Checked);
+                            cmd.Parameters.AddWithValue("overSpeed", overspeed.Checked);
+                            cmd.Parameters.AddWithValue("lowspeed", lowspeed.Checked);
+                            cmd.Parameters.AddWithValue("seatBelts", seatbelts.Checked);
+                            cmd.Parameters.AddWithValue("Signals", signal.Checked);
+                            cmd.Parameters.AddWithValue("Drugs", drugs.Checked);
+                            cmd.Parameters.AddWithValue("mobilePhone", mobilephone.Checked);
+                            cmd.Parameters.AddWithValue("invalidlicense", invalidDL.Checked);
+                            cmd.Parameters.AddWithValue("Littering", littering.Checked);
+                            cmd.Parameters.AddWithValue("collisionLC", collision.Checked);
+                            cmd.Parameters.AddWithValue("parkingLane", parkinglane.Checked);
+                            cmd.Parameters.AddWithValue("specificLicese", specificDL.Checked);
 
 
 
-                    cmd.ExecuteNonQuery();
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
                 }
             
 
