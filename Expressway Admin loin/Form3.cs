@@ -16,7 +16,7 @@ namespace Expressway_Admin_loin
     {
         private int userId;
 
-        public Form3(int id)
+        public Form3(int id, string eorE)
         {
             InitializeComponent();
             userId = id;
