@@ -27,16 +27,16 @@ namespace Expressway_Admin_loin
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (cxbSelectAll.Checked)
+            if (checkSelectAll.Checked)
             {
                 MessageBox.Show("Are you sure?");
 
-                cxbLights.Checked = true;
+                checkLights.Checked = true;
                 cxbbrakes.Checked = true;
-                cxbTires.Checked = true;
-                cxbWindandMirrors.Checked = true;
-                cxbDashboardIndi.Checked = true;
-                cxbSeatBelts.Checked = true;
+                checkTires.Checked = true;
+                checkWindAndMirrors.Checked = true;
+                checkDashIndicators.Checked = true;
+                checkSeatBelts.Checked = true;
 
             }
             Form8 form8 = new Form8();

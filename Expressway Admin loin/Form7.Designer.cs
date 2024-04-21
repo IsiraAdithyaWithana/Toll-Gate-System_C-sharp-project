@@ -28,102 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cxbSeatBelts = new System.Windows.Forms.CheckBox();
-            this.cxbDashboardIndi = new System.Windows.Forms.CheckBox();
-            this.cxbWindandMirrors = new System.Windows.Forms.CheckBox();
-            this.cxbTires = new System.Windows.Forms.CheckBox();
-            this.cxbbrakes = new System.Windows.Forms.CheckBox();
-            this.cxbLights = new System.Windows.Forms.CheckBox();
+            this.checkSeatBelts = new System.Windows.Forms.CheckBox();
+            this.checkDashIndicators = new System.Windows.Forms.CheckBox();
+            this.checkWindAndMirrors = new System.Windows.Forms.CheckBox();
+            this.checkTires = new System.Windows.Forms.CheckBox();
+            this.checkBrakes = new System.Windows.Forms.CheckBox();
+            this.checkLights = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.cxbSelectAll = new System.Windows.Forms.CheckBox();
+            this.checkSelectAll = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // cxbSeatBelts
+            // checkSeatBelts
             // 
-            this.cxbSeatBelts.AutoSize = true;
-            this.cxbSeatBelts.BackColor = System.Drawing.Color.Transparent;
-            this.cxbSeatBelts.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cxbSeatBelts.ForeColor = System.Drawing.Color.White;
-            this.cxbSeatBelts.Location = new System.Drawing.Point(578, 344);
-            this.cxbSeatBelts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cxbSeatBelts.Name = "cxbSeatBelts";
-            this.cxbSeatBelts.Size = new System.Drawing.Size(139, 34);
-            this.cxbSeatBelts.TabIndex = 20;
-            this.cxbSeatBelts.Text = "Seat Belts";
-            this.cxbSeatBelts.UseVisualStyleBackColor = false;
+            this.checkSeatBelts.AutoSize = true;
+            this.checkSeatBelts.BackColor = System.Drawing.Color.Transparent;
+            this.checkSeatBelts.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSeatBelts.ForeColor = System.Drawing.Color.White;
+            this.checkSeatBelts.Location = new System.Drawing.Point(578, 344);
+            this.checkSeatBelts.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSeatBelts.Name = "checkSeatBelts";
+            this.checkSeatBelts.Size = new System.Drawing.Size(139, 34);
+            this.checkSeatBelts.TabIndex = 20;
+            this.checkSeatBelts.Text = "Seat Belts";
+            this.checkSeatBelts.UseVisualStyleBackColor = false;
             // 
-            // cxbDashboardIndi
+            // checkDashIndicators
             // 
-            this.cxbDashboardIndi.AutoSize = true;
-            this.cxbDashboardIndi.BackColor = System.Drawing.Color.Transparent;
-            this.cxbDashboardIndi.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cxbDashboardIndi.ForeColor = System.Drawing.Color.White;
-            this.cxbDashboardIndi.Location = new System.Drawing.Point(578, 306);
-            this.cxbDashboardIndi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cxbDashboardIndi.Name = "cxbDashboardIndi";
-            this.cxbDashboardIndi.Size = new System.Drawing.Size(253, 34);
-            this.cxbDashboardIndi.TabIndex = 19;
-            this.cxbDashboardIndi.Text = "Dashboard indicators";
-            this.cxbDashboardIndi.UseVisualStyleBackColor = false;
+            this.checkDashIndicators.AutoSize = true;
+            this.checkDashIndicators.BackColor = System.Drawing.Color.Transparent;
+            this.checkDashIndicators.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkDashIndicators.ForeColor = System.Drawing.Color.White;
+            this.checkDashIndicators.Location = new System.Drawing.Point(578, 306);
+            this.checkDashIndicators.Margin = new System.Windows.Forms.Padding(2);
+            this.checkDashIndicators.Name = "checkDashIndicators";
+            this.checkDashIndicators.Size = new System.Drawing.Size(253, 34);
+            this.checkDashIndicators.TabIndex = 19;
+            this.checkDashIndicators.Text = "Dashboard indicators";
+            this.checkDashIndicators.UseVisualStyleBackColor = false;
             // 
-            // cxbWindandMirrors
+            // checkWindAndMirrors
             // 
-            this.cxbWindandMirrors.AutoSize = true;
-            this.cxbWindandMirrors.BackColor = System.Drawing.Color.Transparent;
-            this.cxbWindandMirrors.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cxbWindandMirrors.ForeColor = System.Drawing.Color.White;
-            this.cxbWindandMirrors.Location = new System.Drawing.Point(578, 269);
-            this.cxbWindandMirrors.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cxbWindandMirrors.Name = "cxbWindandMirrors";
-            this.cxbWindandMirrors.Size = new System.Drawing.Size(271, 34);
-            this.cxbWindandMirrors.TabIndex = 18;
-            this.cxbWindandMirrors.Text = "Windshield and Mirrors";
-            this.cxbWindandMirrors.UseVisualStyleBackColor = false;
+            this.checkWindAndMirrors.AutoSize = true;
+            this.checkWindAndMirrors.BackColor = System.Drawing.Color.Transparent;
+            this.checkWindAndMirrors.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkWindAndMirrors.ForeColor = System.Drawing.Color.White;
+            this.checkWindAndMirrors.Location = new System.Drawing.Point(578, 269);
+            this.checkWindAndMirrors.Margin = new System.Windows.Forms.Padding(2);
+            this.checkWindAndMirrors.Name = "checkWindAndMirrors";
+            this.checkWindAndMirrors.Size = new System.Drawing.Size(271, 34);
+            this.checkWindAndMirrors.TabIndex = 18;
+            this.checkWindAndMirrors.Text = "Windshield and Mirrors";
+            this.checkWindAndMirrors.UseVisualStyleBackColor = false;
             // 
-            // cxbTires
+            // checkTires
             // 
-            this.cxbTires.AutoSize = true;
-            this.cxbTires.BackColor = System.Drawing.Color.Transparent;
-            this.cxbTires.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cxbTires.ForeColor = System.Drawing.Color.White;
-            this.cxbTires.Location = new System.Drawing.Point(578, 228);
-            this.cxbTires.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cxbTires.Name = "cxbTires";
-            this.cxbTires.Size = new System.Drawing.Size(82, 34);
-            this.cxbTires.TabIndex = 17;
-            this.cxbTires.Text = "Tires";
-            this.cxbTires.UseVisualStyleBackColor = false;
+            this.checkTires.AutoSize = true;
+            this.checkTires.BackColor = System.Drawing.Color.Transparent;
+            this.checkTires.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkTires.ForeColor = System.Drawing.Color.White;
+            this.checkTires.Location = new System.Drawing.Point(578, 228);
+            this.checkTires.Margin = new System.Windows.Forms.Padding(2);
+            this.checkTires.Name = "checkTires";
+            this.checkTires.Size = new System.Drawing.Size(82, 34);
+            this.checkTires.TabIndex = 17;
+            this.checkTires.Text = "Tires";
+            this.checkTires.UseVisualStyleBackColor = false;
             // 
-            // cxbbrakes
+            // checkBrakes
             // 
-            this.cxbbrakes.AutoSize = true;
-            this.cxbbrakes.BackColor = System.Drawing.Color.Transparent;
-            this.cxbbrakes.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cxbbrakes.ForeColor = System.Drawing.Color.White;
-            this.cxbbrakes.Location = new System.Drawing.Point(578, 191);
-            this.cxbbrakes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cxbbrakes.Name = "cxbbrakes";
-            this.cxbbrakes.Size = new System.Drawing.Size(105, 34);
-            this.cxbbrakes.TabIndex = 16;
-            this.cxbbrakes.Text = "Brakes";
-            this.cxbbrakes.UseVisualStyleBackColor = false;
+            this.checkBrakes.AutoSize = true;
+            this.checkBrakes.BackColor = System.Drawing.Color.Transparent;
+            this.checkBrakes.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBrakes.ForeColor = System.Drawing.Color.White;
+            this.checkBrakes.Location = new System.Drawing.Point(578, 191);
+            this.checkBrakes.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBrakes.Name = "checkBrakes";
+            this.checkBrakes.Size = new System.Drawing.Size(105, 34);
+            this.checkBrakes.TabIndex = 16;
+            this.checkBrakes.Text = "Brakes";
+            this.checkBrakes.UseVisualStyleBackColor = false;
             // 
-            // cxbLights
+            // checkLights
             // 
-            this.cxbLights.AutoSize = true;
-            this.cxbLights.BackColor = System.Drawing.Color.Transparent;
-            this.cxbLights.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cxbLights.ForeColor = System.Drawing.Color.White;
-            this.cxbLights.Location = new System.Drawing.Point(578, 153);
-            this.cxbLights.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cxbLights.Name = "cxbLights";
-            this.cxbLights.Size = new System.Drawing.Size(94, 34);
-            this.cxbLights.TabIndex = 15;
-            this.cxbLights.Text = "Lights";
-            this.cxbLights.UseVisualStyleBackColor = false;
+            this.checkLights.AutoSize = true;
+            this.checkLights.BackColor = System.Drawing.Color.Transparent;
+            this.checkLights.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkLights.ForeColor = System.Drawing.Color.White;
+            this.checkLights.Location = new System.Drawing.Point(578, 153);
+            this.checkLights.Margin = new System.Windows.Forms.Padding(2);
+            this.checkLights.Name = "checkLights";
+            this.checkLights.Size = new System.Drawing.Size(94, 34);
+            this.checkLights.TabIndex = 15;
+            this.checkLights.Text = "Lights";
+            this.checkLights.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -145,7 +145,7 @@
             this.panel1.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.fotor_2024040612533__1_;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(1197, 615);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(60, 63);
             this.panel1.TabIndex = 21;
@@ -154,7 +154,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(726, 479);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 41);
             this.button1.TabIndex = 22;
@@ -162,26 +162,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cxbSelectAll
+            // checkSelectAll
             // 
-            this.cxbSelectAll.AutoSize = true;
-            this.cxbSelectAll.BackColor = System.Drawing.Color.Transparent;
-            this.cxbSelectAll.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cxbSelectAll.ForeColor = System.Drawing.Color.White;
-            this.cxbSelectAll.Location = new System.Drawing.Point(490, 411);
-            this.cxbSelectAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cxbSelectAll.Name = "cxbSelectAll";
-            this.cxbSelectAll.Size = new System.Drawing.Size(129, 34);
-            this.cxbSelectAll.TabIndex = 23;
-            this.cxbSelectAll.Text = "Select All";
-            this.cxbSelectAll.UseVisualStyleBackColor = false;
-            this.cxbSelectAll.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkSelectAll.AutoSize = true;
+            this.checkSelectAll.BackColor = System.Drawing.Color.Transparent;
+            this.checkSelectAll.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSelectAll.ForeColor = System.Drawing.Color.White;
+            this.checkSelectAll.Location = new System.Drawing.Point(490, 411);
+            this.checkSelectAll.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSelectAll.Name = "checkSelectAll";
+            this.checkSelectAll.Size = new System.Drawing.Size(129, 34);
+            this.checkSelectAll.TabIndex = 23;
+            this.checkSelectAll.Text = "Select All";
+            this.checkSelectAll.UseVisualStyleBackColor = false;
+            this.checkSelectAll.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(561, 479);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 41);
             this.button2.TabIndex = 24;
@@ -197,17 +197,17 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.cxbSelectAll);
+            this.Controls.Add(this.checkSelectAll);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.cxbSeatBelts);
-            this.Controls.Add(this.cxbDashboardIndi);
-            this.Controls.Add(this.cxbWindandMirrors);
-            this.Controls.Add(this.cxbTires);
-            this.Controls.Add(this.cxbbrakes);
-            this.Controls.Add(this.cxbLights);
+            this.Controls.Add(this.checkSeatBelts);
+            this.Controls.Add(this.checkDashIndicators);
+            this.Controls.Add(this.checkWindAndMirrors);
+            this.Controls.Add(this.checkTires);
+            this.Controls.Add(this.checkBrakes);
+            this.Controls.Add(this.checkLights);
             this.Controls.Add(this.label4);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form7";
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.Form7_Load);
@@ -218,16 +218,16 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox cxbSeatBelts;
-        private System.Windows.Forms.CheckBox cxbDashboardIndi;
-        private System.Windows.Forms.CheckBox cxbWindandMirrors;
-        private System.Windows.Forms.CheckBox cxbTires;
-        private System.Windows.Forms.CheckBox cxbbrakes;
-        private System.Windows.Forms.CheckBox cxbLights;
+        private System.Windows.Forms.CheckBox checkSeatBelts;
+        private System.Windows.Forms.CheckBox checkDashIndicators;
+        private System.Windows.Forms.CheckBox checkWindAndMirrors;
+        private System.Windows.Forms.CheckBox checkTires;
+        private System.Windows.Forms.CheckBox checkLights;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox cxbSelectAll;
+        private System.Windows.Forms.CheckBox checkSelectAll;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBrakes;
     }
 }
