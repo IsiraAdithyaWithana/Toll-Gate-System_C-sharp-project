@@ -65,7 +65,9 @@ namespace Expressway_Admin_loin
 
         private void button2_Click(object sender, EventArgs e)
         {
-         
+            Form3 form3 = new Form3(userId);
+            form3.Show();
+            this.Hide();
           
         }
 
