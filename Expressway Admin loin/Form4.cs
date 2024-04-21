@@ -47,7 +47,8 @@ namespace Expressway_Admin_loin
             {
                 if (radioC1.Checked)
                 {
-                    Form5 form5 = new Form5(userId, EorE);
+                    VehicleType = "C1";
+                    Form5 form5 = new Form5(userId, EorE, VehicleType);
                     form5.Show();
                     this.Hide();
                 }
