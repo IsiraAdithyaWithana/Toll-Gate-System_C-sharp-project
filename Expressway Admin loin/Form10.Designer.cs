@@ -58,11 +58,11 @@
             this.txtDL.BackColor = System.Drawing.Color.White;
             this.txtDL.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDL.Location = new System.Drawing.Point(501, 239);
-            this.txtDL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDL.Location = new System.Drawing.Point(376, 194);
+            this.txtDL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDL.Multiline = true;
             this.txtDL.Name = "txtDL";
-            this.txtDL.Size = new System.Drawing.Size(439, 38);
+            this.txtDL.Size = new System.Drawing.Size(330, 32);
             this.txtDL.TabIndex = 4;
             this.txtDL.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -73,9 +73,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(284, 241);
+            this.label2.Location = new System.Drawing.Point(213, 196);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 29);
+            this.label2.Size = new System.Drawing.Size(133, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Drivers License";
             // 
@@ -86,10 +87,10 @@
             this.littering.BackColor = System.Drawing.Color.Transparent;
             this.littering.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.littering.ForeColor = System.Drawing.SystemColors.Control;
-            this.littering.Location = new System.Drawing.Point(1001, 430);
-            this.littering.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.littering.Location = new System.Drawing.Point(751, 349);
+            this.littering.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.littering.Name = "littering";
-            this.littering.Size = new System.Drawing.Size(203, 33);
+            this.littering.Size = new System.Drawing.Size(168, 28);
             this.littering.TabIndex = 21;
             this.littering.Text = "Littering the road";
             this.littering.UseVisualStyleBackColor = false;
@@ -101,10 +102,10 @@
             this.mobilephone.BackColor = System.Drawing.Color.Transparent;
             this.mobilephone.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mobilephone.ForeColor = System.Drawing.SystemColors.Control;
-            this.mobilephone.Location = new System.Drawing.Point(501, 672);
-            this.mobilephone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mobilephone.Location = new System.Drawing.Point(376, 546);
+            this.mobilephone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mobilephone.Name = "mobilephone";
-            this.mobilephone.Size = new System.Drawing.Size(229, 33);
+            this.mobilephone.Size = new System.Drawing.Size(191, 28);
             this.mobilephone.TabIndex = 20;
             this.mobilephone.Text = "Using mobile phone";
             this.mobilephone.UseVisualStyleBackColor = false;
@@ -116,10 +117,10 @@
             this.drugs.BackColor = System.Drawing.Color.Transparent;
             this.drugs.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drugs.ForeColor = System.Drawing.SystemColors.Control;
-            this.drugs.Location = new System.Drawing.Point(503, 610);
-            this.drugs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.drugs.Location = new System.Drawing.Point(377, 496);
+            this.drugs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.drugs.Name = "drugs";
-            this.drugs.Size = new System.Drawing.Size(394, 33);
+            this.drugs.Size = new System.Drawing.Size(325, 28);
             this.drugs.TabIndex = 19;
             this.drugs.Text = "Driving under drug/alcohol influence";
             this.drugs.UseVisualStyleBackColor = false;
@@ -131,10 +132,10 @@
             this.signal.BackColor = System.Drawing.Color.Transparent;
             this.signal.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signal.ForeColor = System.Drawing.SystemColors.Control;
-            this.signal.Location = new System.Drawing.Point(503, 551);
-            this.signal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.signal.Location = new System.Drawing.Point(377, 448);
+            this.signal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.signal.Name = "signal";
-            this.signal.Size = new System.Drawing.Size(166, 33);
+            this.signal.Size = new System.Drawing.Size(138, 28);
             this.signal.TabIndex = 18;
             this.signal.Text = "Not Signaling";
             this.signal.UseVisualStyleBackColor = false;
@@ -146,10 +147,10 @@
             this.seatbelts.BackColor = System.Drawing.Color.Transparent;
             this.seatbelts.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seatbelts.ForeColor = System.Drawing.SystemColors.Control;
-            this.seatbelts.Location = new System.Drawing.Point(503, 491);
-            this.seatbelts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.seatbelts.Location = new System.Drawing.Point(377, 399);
+            this.seatbelts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.seatbelts.Name = "seatbelts";
-            this.seatbelts.Size = new System.Drawing.Size(227, 33);
+            this.seatbelts.Size = new System.Drawing.Size(191, 28);
             this.seatbelts.TabIndex = 17;
             this.seatbelts.Text = "Not using seat belts";
             this.seatbelts.UseVisualStyleBackColor = false;
@@ -161,10 +162,10 @@
             this.overspeed.BackColor = System.Drawing.Color.Transparent;
             this.overspeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.overspeed.ForeColor = System.Drawing.SystemColors.Control;
-            this.overspeed.Location = new System.Drawing.Point(503, 430);
-            this.overspeed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.overspeed.Location = new System.Drawing.Point(377, 349);
+            this.overspeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.overspeed.Name = "overspeed";
-            this.overspeed.Size = new System.Drawing.Size(234, 33);
+            this.overspeed.Size = new System.Drawing.Size(193, 28);
             this.overspeed.TabIndex = 16;
             this.overspeed.Text = "Over speed driving   ";
             this.overspeed.UseVisualStyleBackColor = false;
@@ -176,10 +177,10 @@
             this.lowspeed.BackColor = System.Drawing.Color.Transparent;
             this.lowspeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowspeed.ForeColor = System.Drawing.SystemColors.Control;
-            this.lowspeed.Location = new System.Drawing.Point(503, 367);
-            this.lowspeed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lowspeed.Location = new System.Drawing.Point(377, 298);
+            this.lowspeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lowspeed.Name = "lowspeed";
-            this.lowspeed.Size = new System.Drawing.Size(344, 33);
+            this.lowspeed.Size = new System.Drawing.Size(285, 28);
             this.lowspeed.TabIndex = 15;
             this.lowspeed.Text = "Inner lane / low speed driving   ";
             this.lowspeed.UseVisualStyleBackColor = false;
@@ -191,9 +192,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(284, 302);
+            this.label3.Location = new System.Drawing.Point(213, 245);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 29);
+            this.label3.Size = new System.Drawing.Size(132, 24);
             this.label3.TabIndex = 14;
             this.label3.Text = "Violation Types";
             // 
@@ -204,10 +206,10 @@
             this.selectall.BackColor = System.Drawing.Color.Transparent;
             this.selectall.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectall.ForeColor = System.Drawing.SystemColors.Control;
-            this.selectall.Location = new System.Drawing.Point(503, 302);
-            this.selectall.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.selectall.Location = new System.Drawing.Point(377, 245);
+            this.selectall.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.selectall.Name = "selectall";
-            this.selectall.Size = new System.Drawing.Size(126, 33);
+            this.selectall.Size = new System.Drawing.Size(105, 28);
             this.selectall.TabIndex = 13;
             this.selectall.Text = "Select all";
             this.selectall.UseVisualStyleBackColor = false;
@@ -220,10 +222,10 @@
             this.parkinglane.BackColor = System.Drawing.Color.Transparent;
             this.parkinglane.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parkinglane.ForeColor = System.Drawing.SystemColors.Control;
-            this.parkinglane.Location = new System.Drawing.Point(1001, 551);
-            this.parkinglane.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.parkinglane.Location = new System.Drawing.Point(751, 448);
+            this.parkinglane.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.parkinglane.Name = "parkinglane";
-            this.parkinglane.Size = new System.Drawing.Size(354, 33);
+            this.parkinglane.Size = new System.Drawing.Size(294, 28);
             this.parkinglane.TabIndex = 23;
             this.parkinglane.Text = "Misuing Emergency parking lane";
             this.parkinglane.UseVisualStyleBackColor = false;
@@ -235,10 +237,10 @@
             this.collision.BackColor = System.Drawing.Color.Transparent;
             this.collision.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.collision.ForeColor = System.Drawing.SystemColors.Control;
-            this.collision.Location = new System.Drawing.Point(1001, 491);
-            this.collision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.collision.Location = new System.Drawing.Point(751, 399);
+            this.collision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.collision.Name = "collision";
-            this.collision.Size = new System.Drawing.Size(335, 33);
+            this.collision.Size = new System.Drawing.Size(279, 28);
             this.collision.TabIndex = 22;
             this.collision.Text = "Collision during lane changing ";
             this.collision.UseVisualStyleBackColor = false;
@@ -247,10 +249,10 @@
             // 
             this.btnCL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCL.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCL.Location = new System.Drawing.Point(1084, 239);
-            this.btnCL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCL.Location = new System.Drawing.Point(813, 194);
+            this.btnCL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCL.Name = "btnCL";
-            this.btnCL.Size = new System.Drawing.Size(121, 50);
+            this.btnCL.Size = new System.Drawing.Size(91, 41);
             this.btnCL.TabIndex = 24;
             this.btnCL.Text = "Clear";
             this.btnCL.UseVisualStyleBackColor = true;
@@ -260,10 +262,10 @@
             // 
             this.btnBK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBK.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBK.Location = new System.Drawing.Point(1061, 738);
-            this.btnBK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBK.Location = new System.Drawing.Point(796, 600);
+            this.btnBK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBK.Name = "btnBK";
-            this.btnBK.Size = new System.Drawing.Size(131, 50);
+            this.btnBK.Size = new System.Drawing.Size(98, 41);
             this.btnBK.TabIndex = 25;
             this.btnBK.Text = "<< Back";
             this.btnBK.UseVisualStyleBackColor = true;
@@ -273,10 +275,10 @@
             // 
             this.btnNX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNX.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNX.Location = new System.Drawing.Point(1269, 738);
-            this.btnNX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNX.Location = new System.Drawing.Point(952, 600);
+            this.btnNX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNX.Name = "btnNX";
-            this.btnNX.Size = new System.Drawing.Size(127, 50);
+            this.btnNX.Size = new System.Drawing.Size(95, 41);
             this.btnNX.TabIndex = 26;
             this.btnNX.Text = "Next >>";
             this.btnNX.UseVisualStyleBackColor = true;
@@ -289,9 +291,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(617, 113);
+            this.label1.Location = new System.Drawing.Point(463, 92);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(521, 46);
+            this.label1.Size = new System.Drawing.Size(414, 36);
             this.label1.TabIndex = 27;
             this.label1.Text = "EXPRESSWAY VIOLATIONS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -302,10 +305,10 @@
             this.sosbox.BackColor = System.Drawing.Color.Transparent;
             this.sosbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sosbox.Image = ((System.Drawing.Image)(resources.GetObject("sosbox.Image")));
-            this.sosbox.Location = new System.Drawing.Point(1485, 710);
-            this.sosbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sosbox.Location = new System.Drawing.Point(1114, 577);
+            this.sosbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sosbox.Name = "sosbox";
-            this.sosbox.Size = new System.Drawing.Size(80, 78);
+            this.sosbox.Size = new System.Drawing.Size(60, 63);
             this.sosbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sosbox.TabIndex = 28;
             this.sosbox.TabStop = false;
@@ -317,10 +320,10 @@
             this.invalidDL.BackColor = System.Drawing.Color.Transparent;
             this.invalidDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invalidDL.ForeColor = System.Drawing.SystemColors.Control;
-            this.invalidDL.Location = new System.Drawing.Point(1001, 367);
-            this.invalidDL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.invalidDL.Location = new System.Drawing.Point(751, 298);
+            this.invalidDL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.invalidDL.Name = "invalidDL";
-            this.invalidDL.Size = new System.Drawing.Size(244, 33);
+            this.invalidDL.Size = new System.Drawing.Size(201, 28);
             this.invalidDL.TabIndex = 29;
             this.invalidDL.Text = "Invalid Driver License";
             this.invalidDL.UseVisualStyleBackColor = false;
@@ -332,21 +335,21 @@
             this.specificDL.BackColor = System.Drawing.Color.Transparent;
             this.specificDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.specificDL.ForeColor = System.Drawing.SystemColors.Control;
-            this.specificDL.Location = new System.Drawing.Point(1001, 610);
-            this.specificDL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.specificDL.Location = new System.Drawing.Point(751, 496);
+            this.specificDL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.specificDL.Name = "specificDL";
-            this.specificDL.Size = new System.Drawing.Size(503, 33);
+            this.specificDL.Size = new System.Drawing.Size(421, 28);
             this.specificDL.TabIndex = 30;
             this.specificDL.Text = "Not having the license  specific class of vehicles";
             this.specificDL.UseVisualStyleBackColor = false;
             // 
             // Form10
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1685, 838);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.specificDL);
             this.Controls.Add(this.invalidDL);
             this.Controls.Add(this.sosbox);
@@ -369,7 +372,7 @@
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form10";
             this.RightToLeftLayout = true;
             this.Text = "Form10";
