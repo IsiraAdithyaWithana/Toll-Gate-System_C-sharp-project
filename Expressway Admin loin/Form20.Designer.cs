@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAccidentSite = new System.Windows.Forms.TextBox();
@@ -42,16 +41,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(41, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(282, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Report an accident";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -67,7 +56,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(50, 158);
+            this.label2.Location = new System.Drawing.Point(50, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(659, 34);
             this.label2.TabIndex = 2;
@@ -75,7 +64,7 @@
             // 
             // txtAccidentSite
             // 
-            this.txtAccidentSite.Location = new System.Drawing.Point(70, 229);
+            this.txtAccidentSite.Location = new System.Drawing.Point(59, 174);
             this.txtAccidentSite.Name = "txtAccidentSite";
             this.txtAccidentSite.Size = new System.Drawing.Size(302, 20);
             this.txtAccidentSite.TabIndex = 3;
@@ -87,7 +76,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(50, 289);
+            this.label3.Location = new System.Drawing.Point(53, 260);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(214, 34);
             this.label3.TabIndex = 4;
@@ -214,7 +203,6 @@
             this.Controls.Add(this.txtAccidentSite);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Name = "Form20";
             this.Text = "Form20";
             this.Load += new System.EventHandler(this.Form20_Load);
@@ -224,8 +212,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAccidentSite;
