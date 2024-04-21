@@ -35,7 +35,7 @@ namespace Expressway_Admin_loin
                 MessageBox.Show("Please enter the Vehical number.");
                 return;
             }
-            if (radioButton1.Checked)
+            if (radioB.Checked)
             {
                 Form7 form7 = new Form7(userId, EorE, pageNum);
                 form7.Show();
