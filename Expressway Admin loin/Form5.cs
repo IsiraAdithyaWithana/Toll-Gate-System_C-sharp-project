@@ -13,10 +13,14 @@ namespace Expressway_Admin_loin
     public partial class Form5 : Form
     {
         private int userId;
-        public Form5(int id)
+        private string EorE;
+        string VehicleType;
+        public Form5(int id, string EntranceOrExit, string vehicleType)
         {
             InitializeComponent();
             userId = id;
+            EorE = EntranceOrExit;
+            VehicleType = vehicleType;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -57,14 +61,14 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
-            form6.Show();
-            this.Hide();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            Form6 form6 = new Form6();
+            form6.Show();
+            this.Hide();
         }
 
         private void Form5_Load(object sender, EventArgs e)

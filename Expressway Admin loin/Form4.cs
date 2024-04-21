@@ -11,11 +11,13 @@ using System.Windows.Forms;
 
 namespace Expressway_Admin_loin
 {
+
     public partial class Form4 : Form
     {
         private int userId;
         private string EorE = "entrance";
         int pageNum = 4;
+        string VehicleType;
         public Form4(int id)
         {
             InitializeComponent();
@@ -29,8 +31,28 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5(userId);
-            form5.Show();
+            if (string.IsNullOrEmpty(txtVehicalNum.Text))
+            {
+                MessageBox.Show("Please enter the Vehical number.");
+                return;
+            }
+            if (radioB.Checked)
+            {
+                VehicleType = "B";
+                Form7 form7 = new Form7(userId, EorE, VehicleType);
+                form7.Show();
+                this.Hide();
+            }
+            else
+            {
+                if (radioC1.Checked)
+                {
+                    VehicleType = "C1";
+                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    form5.Show();
+                    this.Hide();
+                }
+            }
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -50,6 +72,9 @@ namespace Expressway_Admin_loin
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Form3 form3 = new Form3(userId);
+            form3.Show();
+            this.Hide();
           
         }
 

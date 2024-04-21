@@ -12,9 +12,49 @@ namespace Expressway_Admin_loin
 {
     public partial class Form7 : Form
     {
-        public Form7()
+        private int userId;
+        private string EorE;
+        string VehicleType;
+        public Form7(int id, string EntranceOrExit, string vehicleType)
         {
             InitializeComponent();
+            userId = id;
+            EorE = EntranceOrExit;
+            VehicleType = vehicleType;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cxbSelectAll.Checked)
+            {
+                MessageBox.Show("Are you sure?");
+
+                cxbLights.Checked = true;
+                cxbbrakes.Checked = true;
+                cxbTires.Checked = true;
+                cxbWindandMirrors.Checked = true;
+                cxbDashboardIndi.Checked = true;
+                cxbSeatBelts.Checked = true;
+
+            }
+            Form8 form8 = new Form8();
+            this.Hide();
+            form8.ShowDialog();
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
