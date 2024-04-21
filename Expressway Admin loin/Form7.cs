@@ -32,16 +32,12 @@ namespace Expressway_Admin_loin
                 MessageBox.Show("Are you sure?");
 
                 checkLights.Checked = true;
-                cxbbrakes.Checked = true;
+                checkBrakes.Checked = true;
                 checkTires.Checked = true;
                 checkWindAndMirrors.Checked = true;
                 checkDashIndicators.Checked = true;
                 checkSeatBelts.Checked = true;
-
             }
-            Form8 form8 = new Form8();
-            this.Hide();
-            form8.ShowDialog();
         }
 
         private void Form7_Load(object sender, EventArgs e)
