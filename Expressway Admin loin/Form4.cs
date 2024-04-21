@@ -18,6 +18,7 @@ namespace Expressway_Admin_loin
         private string EorE = "entrance";
         int pageNum = 4;
         string VehicleType;
+        string VehicleNumber;
         public Form4(int id)
         {
             InitializeComponent();
@@ -31,7 +32,8 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtVehicalNum.Text))
+            VehicleNumber = txtVehicleNumber.Text;
+            if (string.IsNullOrEmpty(txtVehicleNumber.Text))
             {
                 MessageBox.Show("Please enter the Vehical number.");
                 return;
@@ -39,7 +41,7 @@ namespace Expressway_Admin_loin
             if (radioB.Checked)
             {
                 VehicleType = "B";
-                Form7 form7 = new Form7(userId, EorE, VehicleType);
+                Form7 form7 = new Form7(userId, EorE, VehicleType, VehicleNumber);
                 form7.Show();
                 this.Hide();
             }
@@ -48,35 +50,35 @@ namespace Expressway_Admin_loin
                 if (radioC1.Checked)
                 {
                     VehicleType = "C1";
-                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
                     this.Hide();
                 }
                 else if (radioC.Checked)
                 {
                     VehicleType = "C";
-                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
                     this.Hide();
                 }
                 else if (radioCE.Checked)
                 {
                     VehicleType = "CE";
-                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
                     this.Hide();
                 }
                 else if (radioD1.Checked)
                 {
                     VehicleType = "D1";
-                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
                     this.Hide();
                 }
                 else
                 {
                     VehicleType = "D";
-                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
                     this.Hide();
                 }
