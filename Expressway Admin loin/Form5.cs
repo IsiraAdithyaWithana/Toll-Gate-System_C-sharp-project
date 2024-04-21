@@ -13,10 +13,12 @@ namespace Expressway_Admin_loin
     public partial class Form5 : Form
     {
         private int userId;
-        public Form5(int id)
+        private string EorE;
+        public Form5(int id, string EntranceOrExit)
         {
             InitializeComponent();
             userId = id;
+            EorE = EntranceOrExit;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

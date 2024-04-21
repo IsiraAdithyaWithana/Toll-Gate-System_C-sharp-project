@@ -37,15 +37,16 @@ namespace Expressway_Admin_loin
             }
             if (radioB.Checked)
             {
-                Form7 form7 = new Form7(userId, EorE, pageNum);
+                Form7 form7 = new Form7(userId, EorE);
                 form7.Show();
                 return;
             }
-          
-
-            Form5 form5 = new Form5(userId);
-            form5.Show();
-            this.Hide();
+            else
+            {
+                Form5 form5 = new Form5(userId, EorE);
+                form5.Show();
+                this.Hide();
+            }
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)

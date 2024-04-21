@@ -14,13 +14,11 @@ namespace Expressway_Admin_loin
     {
         private int userId;
         private string EorE;
-        int ReturnPage;
-        public Form7(int id, string EntranceOrExit, int returnPage)
+        public Form7(int id, string EntranceOrExit)
         {
             InitializeComponent();
             userId = id;
             EorE = EntranceOrExit;
-            ReturnPage = returnPage;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -48,6 +46,11 @@ namespace Expressway_Admin_loin
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
