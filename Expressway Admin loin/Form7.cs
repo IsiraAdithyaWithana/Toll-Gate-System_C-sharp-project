@@ -12,9 +12,15 @@ namespace Expressway_Admin_loin
 {
     public partial class Form7 : Form
     {
-        public Form7()
+        private int userId;
+        private string EorE;
+        int ReturnPage;
+        public Form7(int id, string EntranceOrExit, int returnPage)
         {
             InitializeComponent();
+            userId = id;
+            EorE = EntranceOrExit;
+            ReturnPage = returnPage;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -34,6 +40,16 @@ namespace Expressway_Admin_loin
             Form8 form8 = new Form8();
             this.Hide();
             form8.ShowDialog();
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

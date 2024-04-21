@@ -30,7 +30,6 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(txtVehicalNum.Text);
             if (string.IsNullOrEmpty(txtVehicalNum.Text))
             {
                 MessageBox.Show("Please enter the Vehical number.");
@@ -38,7 +37,7 @@ namespace Expressway_Admin_loin
             }
             if (radioButton1.Checked)
             {
-                Form7 form7 = new Form7();
+                Form7 form7 = new Form7(userId, EorE, pageNum);
                 form7.Show();
                 return;
             }
