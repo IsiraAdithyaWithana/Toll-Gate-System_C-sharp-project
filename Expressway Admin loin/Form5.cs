@@ -57,14 +57,14 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
-            form6.Show();
-            this.Hide();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            Form6 form6 = new Form6();
+            form6.Show();
+            this.Hide();
         }
 
         private void Form5_Load(object sender, EventArgs e)

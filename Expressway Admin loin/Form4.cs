@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace Expressway_Admin_loin
 {
+
     public partial class Form4 : Form
     {
         private int userId;
@@ -31,6 +32,7 @@ namespace Expressway_Admin_loin
         {
             Form5 form5 = new Form5(userId);
             form5.Show();
+            this.Hide();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
