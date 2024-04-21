@@ -10,11 +10,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Xml.Linq;
+using System.Linq.Expressions;
 namespace Expressway_Admin_loin
 {
     public partial class Form10 : Form
     {
-        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway_project\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
+        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway Project\Toll-Gate-System_C-sharp-project\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
         public Form10()
         {
@@ -39,7 +40,7 @@ namespace Expressway_Admin_loin
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void selectall_CheckedChanged(object sender, EventArgs e)
@@ -49,26 +50,66 @@ namespace Expressway_Admin_loin
 
         private void btnNX_Click(object sender, EventArgs e)
         {
-            int IDDL = int.Parse(txtDL.Text);
-            bool selectAll = bool.Parse(selectall.Text);
-            bool overSpeed = bool.Parse(overspeed.Text);
-            bool lowSpeed = bool.Parse(lowspeed.Text);
-            bool seatBelts = bool.Parse(seatbelts.Text);
-            bool Signals = bool.Parse(signal.Text);
-            bool Drugs = bool.Parse(drugs.Text);
-            bool mobilePhone = bool.Parse(mobilephone.Text);
-            bool invalidLicense = bool.Parse(invalidDL.Text);
-            bool Littering = bool.Parse(littering.Text);
-            bool collisionLC = bool.Parse(collision.Text);
-            bool parkingLane = bool.Parse(parkinglane.Text);
-            bool specificLicense = bool.Parse(specificDL.Text);
-
-            string query = $"INSERT INTO Violations (Driver License,Select All,Low Speed/inner lane,Overspeed,Not using seat belts,Drunk driving,Using mobile phones,Invalid driver license,Littering the road,Collision during lane change,Misuse E.Parklane,Classless driver license) " +
-                $"VALUES ({IDDL},'{selectAll}',{lowSpeed},{overSpeed},{seatBelts},{Signals},{Drugs},{mobilePhone},{invalidLicense},{Littering},{collisionLC},{parkingLane},{specificLicense});";
-            
-            SqlCommand cmd = new SqlCommand(query, con1);
 
             try
+            {
+
+
+
+                con1.Open();
+
+                int IDDL = int.Parse(txtDL.Text);
+                bool selectAll = selectall.Checked;
+                bool overSpeed = overspeed.Checked;
+                bool lowSpeed = lowspeed.Checked;
+                bool seatBelts = seatbelts.Checked;
+                bool Signals = signal.Checked;
+                bool Drugs = drugs.Checked;
+                bool mobilePhone = mobilephone.Checked;
+                bool invalidLicense = invalidDL.Checked;
+                bool Littering = littering.Checked;
+                bool collisionLC = collision.Checked;
+                bool parkingLane = parkinglane.Checked;
+                bool specificLicense = specificDL.Checked;
+
+                string query = $"INSERT INTO Violation (Id,Select All,Low Speed/inner lane,Overspeed,Not using seat belts,Drunk driving,Using mobile phones,Invalid driver license,Littering the road,Collision during lane change,Misuse E.Parklane,Classless driver license) " +
+                    $"VALUES ({IDDL},'{selectAll}',{lowSpeed},{overSpeed},{seatBelts},{Signals},{Drugs},{mobilePhone},{invalidLicense},{Littering},{collisionLC},{parkingLane},{specificLicense});";
+
+
+                using (SqlCommand cmd = new SqlCommand(query, con1))
+                {
+                    cmd.Parameters.AddWithValue("IDDL",txtDL);
+                    cmd.Parameters.AddWithValue("selectAll", selectall.Checked);
+                    cmd.Parameters.AddWithValue("overSpeed",overspeed.Checked);
+                    cmd.Parameters.AddWithValue("lowspeed", lowspeed.Checked);
+                    cmd.Parameters.AddWithValue("seatBelts", seatbelts.Checked);
+                    cmd.Parameters.AddWithValue("Signals", signal.Checked);
+                    cmd.Parameters.AddWithValue("Drugs", drugs.Checked);
+                    cmd.Parameters.AddWithValue("mobilePhone", mobilephone.Checked);
+                    cmd.Parameters.AddWithValue("invalidlicense", invalidDL.Checked);
+                    cmd.Parameters.AddWithValue("Littering", littering.Checked);
+                    cmd.Parameters.AddWithValue("collisionLC", collision.Checked);
+                    cmd.Parameters.AddWithValue("parkingLane", parkinglane.Checked);
+                    cmd.Parameters.AddWithValue("specificLicese", specificDL.Checked);
+
+
+
+                    cmd.ExecuteNonQuery();
+                }
+            
+
+            MessageBox.Show("Data saved Successfully!"); 
+            
+            }
+
+        
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+            }
+
+
+            /*try
             {
                 con1.Open();
                 cmd.ExecuteNonQuery();
@@ -80,16 +121,9 @@ namespace Expressway_Admin_loin
             {
                 MessageBox.Show(ex.Message);
             }
-
+            */
            
-
-
-
-
-
-
-
-
+           
 
 
 
@@ -97,7 +131,7 @@ namespace Expressway_Admin_loin
 
         private void btnCL_Click(object sender, EventArgs e)
         {
-            int IDDL = int.Parse (txtDL.Text);
+           /* int IDDL = int.Parse (txtDL.Text);
 
             string query2 = $"DELETE Violations WHERE Driver License = {IDDL};";
 
@@ -114,7 +148,7 @@ namespace Expressway_Admin_loin
             {
                 MessageBox.Show(ex.Message.ToString());
             }
-           
+           */
 
         }
     }
