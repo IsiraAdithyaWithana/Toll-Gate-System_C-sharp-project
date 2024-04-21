@@ -15,31 +15,29 @@ namespace Expressway_Admin_loin
         private int userId;
         private string EorE;
         string VehicleType;
-        public Form7(int id, string EntranceOrExit, string vehicleType)
+        string VehicleNumber;
+        public Form7(int id, string EntranceOrExit, string vehicleType, string vehicleNumber)
         {
             InitializeComponent();
             userId = id;
             EorE = EntranceOrExit;
             VehicleType = vehicleType;
+            VehicleNumber = vehicleNumber;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (cxbSelectAll.Checked)
+            if (checkSelectAll.Checked)
             {
                 MessageBox.Show("Are you sure?");
 
-                cxbLights.Checked = true;
-                cxbbrakes.Checked = true;
-                cxbTires.Checked = true;
-                cxbWindandMirrors.Checked = true;
-                cxbDashboardIndi.Checked = true;
-                cxbSeatBelts.Checked = true;
-
+                checkLights.Checked = true;
+                checkBrakes.Checked = true;
+                checkTires.Checked = true;
+                checkWindAndMirrors.Checked = true;
+                checkDashIndicators.Checked = true;
+                checkSeatBelts.Checked = true;
             }
-            Form8 form8 = new Form8();
-            this.Hide();
-            form8.ShowDialog();
         }
 
         private void Form7_Load(object sender, EventArgs e)

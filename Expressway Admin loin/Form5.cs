@@ -15,12 +15,14 @@ namespace Expressway_Admin_loin
         private int userId;
         private string EorE;
         string VehicleType;
-        public Form5(int id, string EntranceOrExit, string vehicleType)
+        string VehicleNumber;
+        public Form5(int id, string EntranceOrExit, string vehicleType, string vehicleNumber)
         {
             InitializeComponent();
             userId = id;
             EorE = EntranceOrExit;
             VehicleType = vehicleType;
+            VehicleNumber = vehicleNumber;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
