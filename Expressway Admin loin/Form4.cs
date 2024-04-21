@@ -52,6 +52,34 @@ namespace Expressway_Admin_loin
                     form5.Show();
                     this.Hide();
                 }
+                else if (radioC.Checked)
+                {
+                    VehicleType = "C";
+                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    form5.Show();
+                    this.Hide();
+                }
+                else if (radioCE.Checked)
+                {
+                    VehicleType = "CE";
+                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    form5.Show();
+                    this.Hide();
+                }
+                else if (radioD1.Checked)
+                {
+                    VehicleType = "D1";
+                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    form5.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    VehicleType = "D";
+                    Form5 form5 = new Form5(userId, EorE, VehicleType);
+                    form5.Show();
+                    this.Hide();
+                }
             }
         }
 
