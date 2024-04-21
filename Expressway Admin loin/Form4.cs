@@ -17,6 +17,7 @@ namespace Expressway_Admin_loin
         private int userId;
         private string EorE = "entrance";
         int pageNum = 4;
+        string VehicleType;
         public Form4(int id)
         {
             InitializeComponent();
@@ -37,15 +38,19 @@ namespace Expressway_Admin_loin
             }
             if (radioB.Checked)
             {
-                Form7 form7 = new Form7(userId, EorE);
+                VehicleType = "B";
+                Form7 form7 = new Form7(userId, EorE, VehicleType);
                 form7.Show();
-                return;
+                this.Hide();
             }
             else
             {
-                Form5 form5 = new Form5(userId, EorE);
-                form5.Show();
-                this.Hide();
+                if (radioC1.Checked)
+                {
+                    Form5 form5 = new Form5(userId, EorE);
+                    form5.Show();
+                    this.Hide();
+                }
             }
         }
 

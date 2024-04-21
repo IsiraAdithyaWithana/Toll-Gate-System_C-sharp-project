@@ -14,11 +14,13 @@ namespace Expressway_Admin_loin
     {
         private int userId;
         private string EorE;
-        public Form7(int id, string EntranceOrExit)
+        string VehicleType;
+        public Form7(int id, string EntranceOrExit, string vehicleType)
         {
             InitializeComponent();
             userId = id;
             EorE = EntranceOrExit;
+            VehicleType = vehicleType;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
