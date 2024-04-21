@@ -30,6 +30,20 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show(txtVehicalNum.Text);
+            if (string.IsNullOrEmpty(txtVehicalNum.Text))
+            {
+                MessageBox.Show("Please enter the Vehical number.");
+                return;
+            }
+            if (VehicalTypeB.Checked)
+            {
+                Form7 form7 = new Form7();
+                form7.Show();
+                return;
+            }
+          
+
             Form5 form5 = new Form5(userId);
             form5.Show();
             this.Hide();

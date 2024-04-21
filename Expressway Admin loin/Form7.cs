@@ -16,5 +16,24 @@ namespace Expressway_Admin_loin
         {
             InitializeComponent();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cxbSelectAll.Checked)
+            {
+                MessageBox.Show("Are you sure?");
+
+                cxbLights.Checked = true;
+                cxbbrakes.Checked = true;
+                cxbTires.Checked = true;
+                cxbWindandMirrors.Checked = true;
+                cxbDashboardIndi.Checked = true;
+                cxbSeatBelts.Checked = true;
+
+            }
+            Form8 form8 = new Form8();
+            this.Hide();
+            form8.ShowDialog();
+        }
     }
 }
