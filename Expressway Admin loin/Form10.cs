@@ -76,12 +76,11 @@ namespace Expressway_Admin_loin
                 {
                     if (control is CheckBox && ((CheckBox)control).Checked)
                     {
+                        string Violation = control.Text;
 
-                        string query = $"INSERT INTO Violation (Id,Select All,Low Speed/inner lane,Overspeed,Not using seat belts,Drunk driving,Using mobile phones,Invalid driver license,Littering the road,Collision during lane change,Misuse E.Parklane,Classless driver license) " +
-                    $"VALUES ({IDDL},'{selectAll}',{lowSpeed},{overSpeed},{seatBelts},{Signals},{Drugs},{mobilePhone},{invalidLicense},{Littering},{collisionLC},{parkingLane},{specificLicense});";
+                        string query1 = $"SELECT Id FROM Violation WHERE Violation = violation";
 
-
-                        using (SqlCommand cmd = new SqlCommand(query, con1))
+                        using (SqlCommand cmd = new SqlCommand(query1, con1))
                         {
                             cmd.Parameters.AddWithValue("IDDL", txtDL);
                             cmd.Parameters.AddWithValue("selectAll", selectall.Checked);
@@ -97,20 +96,57 @@ namespace Expressway_Admin_loin
                             cmd.Parameters.AddWithValue("parkingLane", parkinglane.Checked);
                             cmd.Parameters.AddWithValue("specificLicese", specificDL.Checked);
 
+                            object result = cmd.ExecuteScalar();
+
+                            if (result != null)
+                            {
+                                int Id = (int)result;    //check here again if something went wrong
+
+                                string query2 = $"INSERT INTO ex_violation (driver_license,violations) " +
+                                $"VALUES ({IDDL},{Id});";
+
+                                /* string query2 = $"INSERT INTO Violation (Id,Select All,Low Speed/inner lane,Overspeed,Not using seat belts,Drunk driving,Using mobile phones,Invalid driver license,Littering the road,Collision during lane change,Misuse E.Parklane,Classless driver license) " +
+                             $"VALUES ({IDDL},'{selectAll}',{lowSpeed},{overSpeed},{seatBelts},{Signals},{Drugs},{mobilePhone},{invalidLicense},{Littering},{collisionLC},{parkingLane},{specificLicense});";
+                                */
+
+                                using (SqlCommand cmd2 = new SqlCommand(query2, con1))
+                                {
+                                    cmd2.Parameters.AddWithValue("IDDL",txtDL); //check here if something went wrong
+                                    cmd2.Parameters.AddWithValue("Id", Id);
 
 
-                            cmd.ExecuteNonQuery();
+
+
+                                    /* cmd.Parameters.AddWithValue("IDDL", txtDL);
+                                     cmd.Parameters.AddWithValue("selectAll", selectall.Checked);
+                                     cmd.Parameters.AddWithValue("overSpeed", overspeed.Checked);
+                                     cmd.Parameters.AddWithValue("lowspeed", lowspeed.Checked);
+                                     cmd.Parameters.AddWithValue("seatBelts", seatbelts.Checked);
+                                     cmd.Parameters.AddWithValue("Signals", signal.Checked);
+                                     cmd.Parameters.AddWithValue("Drugs", drugs.Checked);
+                                     cmd.Parameters.AddWithValue("mobilePhone", mobilephone.Checked);
+                                     cmd.Parameters.AddWithValue("invalidlicense", invalidDL.Checked);
+                                     cmd.Parameters.AddWithValue("Littering", littering.Checked);
+                                     cmd.Parameters.AddWithValue("collisionLC", collision.Checked);
+                                     cmd.Parameters.AddWithValue("parkingLane", parkinglane.Checked);
+                                     cmd.Parameters.AddWithValue("specificLicese", specificDL.Checked);
+
+                                     */
+
+                                    cmd2.ExecuteNonQuery();
+                                }
+                            }
                         }
                     }
-                }
-            
 
-            MessageBox.Show("Data saved Successfully!"); 
-            
+
+                    MessageBox.Show("Data saved Successfully!");
+
+                }
             }
 
-        
-            catch(Exception ex)
+
+            catch (Exception ex)
             {
                 MessageBox.Show("Error" + ex.Message);
             }
