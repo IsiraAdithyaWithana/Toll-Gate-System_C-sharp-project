@@ -22,6 +22,10 @@ namespace Expressway_Admin_loin
             userId = id;
         }
 
+        public Form3()
+        {
+        }
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 

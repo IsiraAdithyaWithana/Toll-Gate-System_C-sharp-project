@@ -22,7 +22,7 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3(userId);
+            Form3 form3 = new Form3();
             form3.ShowDialog();
            
         }
