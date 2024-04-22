@@ -58,7 +58,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label1.Location = new System.Drawing.Point(221, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(830, 55);
+            this.label1.Size = new System.Drawing.Size(1038, 68);
             this.label1.TabIndex = 8;
             this.label1.Text = "Welcome To The  Southern Expressway";
             // 
@@ -89,6 +89,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
