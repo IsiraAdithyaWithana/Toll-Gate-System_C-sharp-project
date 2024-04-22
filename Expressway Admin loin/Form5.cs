@@ -30,6 +30,7 @@ namespace Expressway_Admin_loin
         {
             if(checkSelectAll.Checked) 
             {
+                MessageBox.Show("Are you sure?");
                 checkHeadLight.Checked = true;
                 checkSignalLight.Checked = true;
                 checkBrakeLight.Checked = true;

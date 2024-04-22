@@ -16,6 +16,7 @@ namespace Expressway_Admin_loin
         private string EorE;
         string VehicleType;
         string VehicleNumber;
+        string VehicleCondition;
         public Form7(int id, string EntranceOrExit, string vehicleType, string vehicleNumber)
         {
             InitializeComponent();
@@ -38,6 +39,15 @@ namespace Expressway_Admin_loin
                 checkDashIndicators.Checked = true;
                 checkSeatBelts.Checked = true;
             }
+            else
+            {
+                checkLights.Checked = false;
+                checkBrakes.Checked = false;
+                checkTires.Checked = false;
+                checkWindAndMirrors.Checked = false;
+                checkDashIndicators.Checked = false;
+                checkSeatBelts.Checked = false;
+            }
         }
 
         private void Form7_Load(object sender, EventArgs e)
@@ -52,7 +62,31 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
+            if (checkLights.Checked)
+            {
+                VehicleCondition += "8 ";
+            }
+            if (checkBrakes.Checked)
+            {
+                VehicleCondition += "9 ";
+            }
+            if (checkTires.Checked)
+            {
+                VehicleCondition += "10 ";
+            }
+            if (checkWindAndMirrors.Checked)
+            {
+                VehicleCondition += "11 ";
+            }
+            if (checkDashIndicators.Checked)
+            {
+                VehicleCondition += "12 ";
+            }
+            if (checkSeatBelts.Checked)
+            {
+                VehicleCondition += "13 ";
+            }
+            Form6 form6 = new Form6(userId, EorE, VehicleType, VehicleNumber, VehicleCondition);
             form6.Show();
         }
     }
