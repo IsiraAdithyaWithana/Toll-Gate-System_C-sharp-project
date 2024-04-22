@@ -63,9 +63,9 @@ namespace Expressway_Admin_loin
             }
             else if (chonlinetransfer.Checked)
             {
-                Form13 form13 = new Form13();
+                Form22 form22 = new Form22();
                 this.Hide();
-                form13.Show();
+                form22.Show();
             }
             else
             {
@@ -75,5 +75,11 @@ namespace Expressway_Admin_loin
             }
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form11 form11 = new Form11();
+            form11.Show();
+            this.Hide();
         }
+    }
     }

@@ -16,5 +16,13 @@ namespace Expressway_Admin_loin
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            Form12 form12 = new Form12(12);
+            form12.Show();
+            this.Hide();
+        }
     }
 }
