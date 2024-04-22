@@ -15,7 +15,7 @@ namespace Expressway_Admin_loin
 {
     public partial class Form10 : Form
     {
-        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway Project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
+        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
         public Form10()
         {

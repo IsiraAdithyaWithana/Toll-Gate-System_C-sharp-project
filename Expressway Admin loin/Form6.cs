@@ -64,7 +64,7 @@ namespace Expressway_Admin_loin
             
             try
             {
-                using(SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                using(SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
                     string query = "INSERT INTO Vehicle (vehicle_number, vehicle_type, conditions, status, [user]) VALUES (@VehicleNumber, @VehicleType, @VehicleCondition, @Status, @userId);";

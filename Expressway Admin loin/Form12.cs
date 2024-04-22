@@ -81,5 +81,10 @@ namespace Expressway_Admin_loin
             form11.Show();
             this.Hide();
         }
+
+        private void Form12_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }

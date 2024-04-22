@@ -57,7 +57,7 @@
             this.label1.Location = new System.Drawing.Point(141, 196);
             this.label1.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 50);
+            this.label1.Size = new System.Drawing.Size(274, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Payment Method";
             // 
@@ -80,7 +80,7 @@
             this.ch14days.ForeColor = System.Drawing.Color.White;
             this.ch14days.Location = new System.Drawing.Point(563, 385);
             this.ch14days.Name = "ch14days";
-            this.ch14days.Size = new System.Drawing.Size(228, 42);
+            this.ch14days.Size = new System.Drawing.Size(183, 34);
             this.ch14days.TabIndex = 19;
             this.ch14days.TabStop = true;
             this.ch14days.Text = "14 days to pay";
@@ -94,7 +94,7 @@
             this.chonlinetransfer.ForeColor = System.Drawing.Color.White;
             this.chonlinetransfer.Location = new System.Drawing.Point(563, 325);
             this.chonlinetransfer.Name = "chonlinetransfer";
-            this.chonlinetransfer.Size = new System.Drawing.Size(233, 42);
+            this.chonlinetransfer.Size = new System.Drawing.Size(189, 34);
             this.chonlinetransfer.TabIndex = 18;
             this.chonlinetransfer.TabStop = true;
             this.chonlinetransfer.Text = "Online Transfer";
@@ -108,7 +108,7 @@
             this.chcardpayment.ForeColor = System.Drawing.Color.White;
             this.chcardpayment.Location = new System.Drawing.Point(563, 265);
             this.chcardpayment.Name = "chcardpayment";
-            this.chcardpayment.Size = new System.Drawing.Size(220, 42);
+            this.chcardpayment.Size = new System.Drawing.Size(177, 34);
             this.chcardpayment.TabIndex = 17;
             this.chcardpayment.TabStop = true;
             this.chcardpayment.Text = "Card Payment";
@@ -122,7 +122,7 @@
             this.chcashpayment.ForeColor = System.Drawing.Color.White;
             this.chcashpayment.Location = new System.Drawing.Point(563, 204);
             this.chcashpayment.Name = "chcashpayment";
-            this.chcashpayment.Size = new System.Drawing.Size(224, 42);
+            this.chcashpayment.Size = new System.Drawing.Size(180, 34);
             this.chcashpayment.TabIndex = 16;
             this.chcashpayment.TabStop = true;
             this.chcashpayment.Text = "Cash Payment";
@@ -153,7 +153,7 @@
             // 
             // Form12
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 50F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 39F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -172,6 +172,7 @@
             this.Name = "Form12";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form12";
+            this.Load += new System.EventHandler(this.Form12_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

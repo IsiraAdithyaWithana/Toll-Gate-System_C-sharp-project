@@ -16,5 +16,10 @@ namespace Expressway_Admin_loin
         {
             InitializeComponent();
         }
+
+        private void Form15_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
