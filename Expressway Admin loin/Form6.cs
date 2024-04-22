@@ -19,7 +19,8 @@ namespace Expressway_Admin_loin
         string VehicleNumber;
         string VehicleCondition;
         string Status;
-        public Form6(int id, string EntranceOrExit, string vehicleType, string vehicleNumber, string vehicleCondition)
+        int PageNumber;
+        public Form6(int id, string EntranceOrExit, string vehicleType, string vehicleNumber, string vehicleCondition, int pageNumber)
         {
             InitializeComponent();
             userId = id;
@@ -27,6 +28,7 @@ namespace Expressway_Admin_loin
             VehicleType = vehicleType;
             VehicleNumber = vehicleNumber;
             VehicleCondition = vehicleCondition;
+            PageNumber = pageNumber;
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -39,10 +41,12 @@ namespace Expressway_Admin_loin
             if (radioClear.Checked)
             {
                 Status = "Clear";
+                MessageBox.Show("Ticket is printed");
             }
             else if (radioCheckFromExit.Checked)
             {
                 Status = "Check from the exit";
+                MessageBox.Show("Ticket is printed");
             }
             else
             {
@@ -63,7 +67,7 @@ namespace Expressway_Admin_loin
                 using(SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
-                    string query = "INSERT INTO Vehicle (vehicle_number, vehicle_type, conditions, status) VALUES (@VehicleNumber, @VehicleType, @VehicleCondition, @Status);";
+                    string query = "INSERT INTO Vehicle (vehicle_number, vehicle_type, conditions, status, user) VALUES (@VehicleNumber, @VehicleType, @VehicleCondition, @Status, @userId);";
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
@@ -71,6 +75,7 @@ namespace Expressway_Admin_loin
                         command.Parameters.AddWithValue("@VehicleType", VehicleType);
                         command.Parameters.AddWithValue("@VehicleCondition", VehicleCondition);
                         command.Parameters.AddWithValue("@Status", Status);
+                        command.Parameters.AddWithValue("@userId", userId);
 
                         command.ExecuteNonQuery();
 
@@ -100,7 +105,18 @@ namespace Expressway_Admin_loin
 
         private void btnBK_Click(object sender, EventArgs e)
         {
-            
+            if (PageNumber == 7)
+            {
+                Form7 form7 = new Form7(userId,EorE,VehicleType,VehicleNumber);
+                form7.Show();
+                this.Hide();
+            }
+            else
+            {
+                Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
+                form5.Show();
+                this.Hide();
+            }
         }
 
         

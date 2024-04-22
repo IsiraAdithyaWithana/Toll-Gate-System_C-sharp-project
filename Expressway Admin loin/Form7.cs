@@ -17,6 +17,7 @@ namespace Expressway_Admin_loin
         string VehicleType;
         string VehicleNumber;
         string VehicleCondition;
+        int PageNumber = 7;
         public Form7(int id, string EntranceOrExit, string vehicleType, string vehicleNumber)
         {
             InitializeComponent();
@@ -88,7 +89,7 @@ namespace Expressway_Admin_loin
             {
                 VehicleCondition += "13 ";
             }
-            Form6 form6 = new Form6(userId, EorE, VehicleType, VehicleNumber, VehicleCondition);
+            Form6 form6 = new Form6(userId, EorE, VehicleType, VehicleNumber, VehicleCondition, PageNumber);
             form6.Show();
         }
     }
