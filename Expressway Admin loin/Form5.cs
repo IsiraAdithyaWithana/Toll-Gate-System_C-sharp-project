@@ -16,6 +16,7 @@ namespace Expressway_Admin_loin
         private string EorE;
         string VehicleType;
         string VehicleNumber;
+        string VehicleCondition;
         public Form5(int id, string EntranceOrExit, string vehicleType, string vehicleNumber)
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace Expressway_Admin_loin
                 checkDimLight.Checked = true;
                 checkLongVehicleBoard.Checked = true;
                 checkWipers.Checked = true;
-                checkConditions.Checked = true;
+                checkTireConditions.Checked = true;
 
             }
             else
@@ -48,8 +49,39 @@ namespace Expressway_Admin_loin
                 checkDimLight.Checked= false;
                 checkLongVehicleBoard.Checked= false;
                 checkWipers.Checked= false;
-                checkConditions.Checked= false;
-
+                checkTireConditions.Checked= false;
+            }
+            if (checkHeadLight.Checked)
+            {
+                VehicleCondition += "0 ";
+            }
+            if (checkSignalLight.Checked)
+            {
+                VehicleCondition += "1";
+            }
+            if (checkBrakeLight.Checked)
+            {
+                VehicleCondition += "2";
+            }
+            if (checkParkingLight.Checked)
+            {
+                VehicleCondition += "3";
+            }
+            if (checkDimLight.Checked)
+            {
+                VehicleCondition += "4";
+            }
+            if (checkLongVehicleBoard.Checked)
+            {
+                VehicleCondition+= "5";
+            }
+            if (checkWipers.Checked)
+            {
+                VehicleCondition += "6";
+            }
+            if (checkTireConditions.Checked)
+            {
+                VehicleCondition += "7";
             }
         }
 

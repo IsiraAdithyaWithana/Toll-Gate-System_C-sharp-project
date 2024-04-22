@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkConditions = new System.Windows.Forms.CheckBox();
+            this.checkTireConditions = new System.Windows.Forms.CheckBox();
             this.checkWipers = new System.Windows.Forms.CheckBox();
             this.checkLongVehicleBoard = new System.Windows.Forms.CheckBox();
             this.checkDimLight = new System.Windows.Forms.CheckBox();
@@ -72,20 +72,20 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // checkConditions
+            // checkTireConditions
             // 
-            this.checkConditions.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkConditions.AutoSize = true;
-            this.checkConditions.BackColor = System.Drawing.Color.Transparent;
-            this.checkConditions.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkConditions.ForeColor = System.Drawing.Color.White;
-            this.checkConditions.Location = new System.Drawing.Point(244, 443);
-            this.checkConditions.Margin = new System.Windows.Forms.Padding(2);
-            this.checkConditions.Name = "checkConditions";
-            this.checkConditions.Size = new System.Drawing.Size(195, 34);
-            this.checkConditions.TabIndex = 20;
-            this.checkConditions.Text = "Tires conditions";
-            this.checkConditions.UseVisualStyleBackColor = false;
+            this.checkTireConditions.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkTireConditions.AutoSize = true;
+            this.checkTireConditions.BackColor = System.Drawing.Color.Transparent;
+            this.checkTireConditions.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkTireConditions.ForeColor = System.Drawing.Color.White;
+            this.checkTireConditions.Location = new System.Drawing.Point(244, 443);
+            this.checkTireConditions.Margin = new System.Windows.Forms.Padding(2);
+            this.checkTireConditions.Name = "checkTireConditions";
+            this.checkTireConditions.Size = new System.Drawing.Size(195, 34);
+            this.checkTireConditions.TabIndex = 20;
+            this.checkTireConditions.Text = "Tires conditions";
+            this.checkTireConditions.UseVisualStyleBackColor = false;
             // 
             // checkWipers
             // 
@@ -159,7 +159,7 @@
             this.checkBrakeLight.Name = "checkBrakeLight";
             this.checkBrakeLight.Size = new System.Drawing.Size(151, 34);
             this.checkBrakeLight.TabIndex = 15;
-            this.checkBrakeLight.Text = "Break Light";
+            this.checkBrakeLight.Text = "Brake Light";
             this.checkBrakeLight.UseVisualStyleBackColor = false;
             // 
             // checkHeadLight
@@ -243,7 +243,7 @@
             this.Controls.Add(this.checkSignalLight);
             this.Controls.Add(this.checkSelectAll);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkConditions);
+            this.Controls.Add(this.checkTireConditions);
             this.Controls.Add(this.checkWipers);
             this.Controls.Add(this.checkLongVehicleBoard);
             this.Controls.Add(this.checkDimLight);
@@ -267,7 +267,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkConditions;
+        private System.Windows.Forms.CheckBox checkTireConditions;
         private System.Windows.Forms.CheckBox checkWipers;
         private System.Windows.Forms.CheckBox checkLongVehicleBoard;
         private System.Windows.Forms.CheckBox checkDimLight;
