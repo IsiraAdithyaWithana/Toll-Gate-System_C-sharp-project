@@ -61,7 +61,11 @@ namespace Expressway_Admin_loin
 
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+
+            }
         }
     }
 }
