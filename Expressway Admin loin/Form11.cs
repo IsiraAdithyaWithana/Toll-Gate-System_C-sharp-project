@@ -46,10 +46,10 @@ namespace Expressway_Admin_loin
             }
              
             
-            finally
+            catch
             {
                
-                    Form12 form12 = new Form12();
+                    Form12 form12 = new Form12(12);
                     form12.Show();
                     this.Hide();
                  

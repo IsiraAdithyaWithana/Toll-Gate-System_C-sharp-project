@@ -30,11 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.ch14days = new System.Windows.Forms.RadioButton();
+            this.chonlinetransfer = new System.Windows.Forms.RadioButton();
+            this.chcardpayment = new System.Windows.Forms.RadioButton();
+            this.chcashpayment = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -60,77 +60,83 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Payment Method";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(561, 196);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(225, 42);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Cash Payment";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(561, 257);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(221, 42);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Card Payment";
-            this.checkBox2.UseVisualStyleBackColor = false;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(561, 318);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(234, 42);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Online Transfer";
-            this.checkBox3.UseVisualStyleBackColor = false;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(561, 379);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(229, 42);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "14 days to pay";
-            this.checkBox4.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(879, 548);
+            this.button1.Location = new System.Drawing.Point(835, 548);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 43);
             this.button1.TabIndex = 5;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ch14days
+            // 
+            this.ch14days.AutoSize = true;
+            this.ch14days.BackColor = System.Drawing.Color.Transparent;
+            this.ch14days.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ch14days.ForeColor = System.Drawing.Color.White;
+            this.ch14days.Location = new System.Drawing.Point(563, 385);
+            this.ch14days.Name = "ch14days";
+            this.ch14days.Size = new System.Drawing.Size(228, 42);
+            this.ch14days.TabIndex = 19;
+            this.ch14days.TabStop = true;
+            this.ch14days.Text = "14 days to pay";
+            this.ch14days.UseVisualStyleBackColor = false;
+            // 
+            // chonlinetransfer
+            // 
+            this.chonlinetransfer.AutoSize = true;
+            this.chonlinetransfer.BackColor = System.Drawing.Color.Transparent;
+            this.chonlinetransfer.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chonlinetransfer.ForeColor = System.Drawing.Color.White;
+            this.chonlinetransfer.Location = new System.Drawing.Point(563, 325);
+            this.chonlinetransfer.Name = "chonlinetransfer";
+            this.chonlinetransfer.Size = new System.Drawing.Size(233, 42);
+            this.chonlinetransfer.TabIndex = 18;
+            this.chonlinetransfer.TabStop = true;
+            this.chonlinetransfer.Text = "Online Transfer";
+            this.chonlinetransfer.UseVisualStyleBackColor = false;
+            // 
+            // chcardpayment
+            // 
+            this.chcardpayment.AutoSize = true;
+            this.chcardpayment.BackColor = System.Drawing.Color.Transparent;
+            this.chcardpayment.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chcardpayment.ForeColor = System.Drawing.Color.White;
+            this.chcardpayment.Location = new System.Drawing.Point(563, 265);
+            this.chcardpayment.Name = "chcardpayment";
+            this.chcardpayment.Size = new System.Drawing.Size(220, 42);
+            this.chcardpayment.TabIndex = 17;
+            this.chcardpayment.TabStop = true;
+            this.chcardpayment.Text = "Card Payment";
+            this.chcardpayment.UseVisualStyleBackColor = false;
+            // 
+            // chcashpayment
+            // 
+            this.chcashpayment.AutoSize = true;
+            this.chcashpayment.BackColor = System.Drawing.Color.Transparent;
+            this.chcashpayment.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chcashpayment.ForeColor = System.Drawing.Color.White;
+            this.chcashpayment.Location = new System.Drawing.Point(563, 204);
+            this.chcashpayment.Name = "chcashpayment";
+            this.chcashpayment.Size = new System.Drawing.Size(224, 42);
+            this.chcashpayment.TabIndex = 16;
+            this.chcashpayment.TabStop = true;
+            this.chcashpayment.Text = "Cash Payment";
+            this.chcashpayment.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(478, 546);
+            this.button2.Location = new System.Drawing.Point(611, 548);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(325, 45);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Print the penalty sheet";
+            this.button2.Size = new System.Drawing.Size(141, 43);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Next";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form12
             // 
@@ -139,13 +145,13 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.ch14days);
+            this.Controls.Add(this.chonlinetransfer);
+            this.Controls.Add(this.chcardpayment);
+            this.Controls.Add(this.chcashpayment);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Franklin Gothic Medium", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(12);
@@ -161,11 +167,11 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton ch14days;
+        private System.Windows.Forms.RadioButton chonlinetransfer;
+        private System.Windows.Forms.RadioButton chcardpayment;
+        private System.Windows.Forms.RadioButton chcashpayment;
         private System.Windows.Forms.Button button2;
     }
 }
