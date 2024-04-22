@@ -45,7 +45,13 @@ namespace Expressway_Admin_loin
 
         private void selectall_CheckedChanged(object sender, EventArgs e)
         {
-
+            foreach (Control control in this.Controls)
+            {
+                if (control is CheckBox && control.Name != "selectall")
+                {
+                    ((CheckBox)control).Checked = selectall.Checked;
+                }
+            }
         }
 
         private void btnNX_Click(object sender, EventArgs e)
@@ -111,7 +117,7 @@ namespace Expressway_Admin_loin
 
                                 using (SqlCommand cmd2 = new SqlCommand(query2, con1))
                                 {
-                                    cmd2.Parameters.AddWithValue("IDDL",txtDL); //check here if something went wrong
+                                    cmd2.Parameters.AddWithValue("IDDL", txtDL); //check here if something went wrong
                                     cmd2.Parameters.AddWithValue("Id", Id);
 
 
@@ -165,8 +171,8 @@ namespace Expressway_Admin_loin
                 MessageBox.Show(ex.Message);
             }
             */
-           
-           
+
+
 
 
 
@@ -174,25 +180,38 @@ namespace Expressway_Admin_loin
 
         private void btnCL_Click(object sender, EventArgs e)
         {
-           /* int IDDL = int.Parse (txtDL.Text);
+            txtDL.Clear();
 
-            string query2 = $"DELETE Violations WHERE Driver License = {IDDL};";
-
-            SqlCommand cmd2 = new SqlCommand(query2, con1);
-
-            try
+            foreach (Control control in this.Controls)
             {
-                con1.Open();
-                cmd2.ExecuteNonQuery();
-                con1.Close();
-                MessageBox.Show("Data Cleared");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
-            }
-           */
+                if (control is CheckBox)
+                {
+                    ((CheckBox)control).Checked = false;
+                }
 
+
+                /* int IDDL = int.Parse (txtDL.Text);
+
+                 string query2 = $"DELETE Violations WHERE Driver License = {IDDL};";
+
+                 SqlCommand cmd2 = new SqlCommand(query2, con1);
+
+                 try
+                 {
+                     con1.Open();
+                     cmd2.ExecuteNonQuery();
+                     con1.Close();
+                     MessageBox.Show("Data Cleared");
+                 }
+                 catch(Exception ex)
+                 {
+                     MessageBox.Show(ex.Message.ToString());
+                 }
+                */
+
+            }
+
+            MessageBox.Show("Data cleared successfully");
         }
     }
 }
