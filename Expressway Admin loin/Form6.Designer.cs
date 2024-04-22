@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioClear = new System.Windows.Forms.RadioButton();
+            this.radioCheckFromExit = new System.Windows.Forms.RadioButton();
             this.btnBK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +77,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Print the ticket";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -91,37 +92,37 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // radioButton1
+            // radioClear
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Franklin Gothic Medium", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(558, 256);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(101, 42);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Clear";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioClear.AutoSize = true;
+            this.radioClear.BackColor = System.Drawing.Color.Transparent;
+            this.radioClear.Font = new System.Drawing.Font("Franklin Gothic Medium", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioClear.ForeColor = System.Drawing.Color.White;
+            this.radioClear.Location = new System.Drawing.Point(558, 256);
+            this.radioClear.Margin = new System.Windows.Forms.Padding(2);
+            this.radioClear.Name = "radioClear";
+            this.radioClear.Size = new System.Drawing.Size(101, 42);
+            this.radioClear.TabIndex = 8;
+            this.radioClear.TabStop = true;
+            this.radioClear.Text = "Clear";
+            this.radioClear.UseVisualStyleBackColor = false;
+            this.radioClear.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // radioCheckFromExit
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Font = new System.Drawing.Font("Franklin Gothic Medium", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(558, 327);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(287, 42);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Check from the exit";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioCheckFromExit.AutoSize = true;
+            this.radioCheckFromExit.BackColor = System.Drawing.Color.Transparent;
+            this.radioCheckFromExit.Font = new System.Drawing.Font("Franklin Gothic Medium", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioCheckFromExit.ForeColor = System.Drawing.Color.White;
+            this.radioCheckFromExit.Location = new System.Drawing.Point(558, 327);
+            this.radioCheckFromExit.Margin = new System.Windows.Forms.Padding(2);
+            this.radioCheckFromExit.Name = "radioCheckFromExit";
+            this.radioCheckFromExit.Size = new System.Drawing.Size(287, 42);
+            this.radioCheckFromExit.TabIndex = 9;
+            this.radioCheckFromExit.TabStop = true;
+            this.radioCheckFromExit.Text = "Check from the exit";
+            this.radioCheckFromExit.UseVisualStyleBackColor = false;
+            this.radioCheckFromExit.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // btnBK
             // 
@@ -144,8 +145,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnBK);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioCheckFromExit);
+            this.Controls.Add(this.radioClear);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -168,8 +169,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioClear;
+        private System.Windows.Forms.RadioButton radioCheckFromExit;
         private System.Windows.Forms.Button btnBK;
     }
 }
