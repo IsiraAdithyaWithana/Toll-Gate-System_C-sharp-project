@@ -58,7 +58,7 @@ namespace Expressway_Admin_loin
         {
             if (String.IsNullOrEmpty(Status))
             {
-                MessageBox.Show("Please print the bill before continue");
+                MessageBox.Show("Please print the ticket before continue");
                 return;
             }
             
@@ -67,7 +67,7 @@ namespace Expressway_Admin_loin
                 using(SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
-                    string query = "INSERT INTO Vehicle (vehicle_number, vehicle_type, conditions, status, user) VALUES (@VehicleNumber, @VehicleType, @VehicleCondition, @Status, @userId);";
+                    string query = "INSERT INTO Vehicle (vehicle_number, vehicle_type, conditions, status, [user]) VALUES (@VehicleNumber, @VehicleType, @VehicleCondition, @Status, @userId);";
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
