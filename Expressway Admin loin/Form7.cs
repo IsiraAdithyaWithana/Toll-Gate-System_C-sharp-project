@@ -52,7 +52,8 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form6 form6 = new Form6();
+            form6.Show();
         }
     }
 }

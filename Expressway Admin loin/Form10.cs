@@ -45,7 +45,13 @@ namespace Expressway_Admin_loin
 
         private void selectall_CheckedChanged(object sender, EventArgs e)
         {
-
+            foreach (Control control in this.Controls)
+            {
+                if (control is CheckBox && control.Name != "selectall")
+                {
+                    ((CheckBox)control).Checked = selectall.Checked;
+                }
+            }
         }
 
         private void btnNX_Click(object sender, EventArgs e)
@@ -204,6 +210,8 @@ namespace Expressway_Admin_loin
                 */
 
             }
+
+            MessageBox.Show("Data cleared successfully");
         }
     }
 }

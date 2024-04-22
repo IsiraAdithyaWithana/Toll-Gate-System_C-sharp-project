@@ -49,7 +49,7 @@
             this.label1.Location = new System.Drawing.Point(571, 87);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 55);
+            this.label1.Size = new System.Drawing.Size(135, 68);
             this.label1.TabIndex = 1;
             this.label1.Text = "Exit";
             // 
@@ -63,7 +63,7 @@
             this.label3.Location = new System.Drawing.Point(190, 420);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(284, 40);
+            this.label3.Size = new System.Drawing.Size(353, 51);
             this.label3.TabIndex = 5;
             this.label3.Text = "Vehicle Stauts     :";
             // 
@@ -77,7 +77,7 @@
             this.label2.Location = new System.Drawing.Point(190, 265);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(284, 40);
+            this.label2.Size = new System.Drawing.Size(358, 51);
             this.label2.TabIndex = 4;
             this.label2.Text = "Vehicle Number  :";
             // 
@@ -87,7 +87,7 @@
             this.txtVehicleNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVehicleNumber.Location = new System.Drawing.Point(491, 270);
             this.txtVehicleNumber.Name = "txtVehicleNumber";
-            this.txtVehicleNumber.Size = new System.Drawing.Size(420, 35);
+            this.txtVehicleNumber.Size = new System.Drawing.Size(420, 42);
             this.txtVehicleNumber.TabIndex = 6;
             // 
             // panel1
@@ -136,7 +136,7 @@
             this.lblStatus.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblStatus.Location = new System.Drawing.Point(484, 420);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(250, 41);
+            this.lblStatus.Size = new System.Drawing.Size(341, 51);
             this.lblStatus.TabIndex = 12;
             this.lblStatus.Text = ".............................";
             // 
@@ -169,6 +169,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "Form9";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form9";
             this.Load += new System.EventHandler(this.Form9_Load);
             this.ResumeLayout(false);

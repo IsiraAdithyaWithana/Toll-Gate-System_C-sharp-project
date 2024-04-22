@@ -55,7 +55,7 @@
             this.label1.Location = new System.Drawing.Point(442, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 41);
+            this.label1.Size = new System.Drawing.Size(416, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Select the Conditions";
             // 
@@ -82,7 +82,7 @@
             this.checkBox9.Location = new System.Drawing.Point(244, 443);
             this.checkBox9.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(195, 34);
+            this.checkBox9.Size = new System.Drawing.Size(241, 42);
             this.checkBox9.TabIndex = 20;
             this.checkBox9.Text = "Tires conditions";
             this.checkBox9.UseVisualStyleBackColor = false;
@@ -97,7 +97,7 @@
             this.checkBox8.Location = new System.Drawing.Point(244, 399);
             this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(201, 34);
+            this.checkBox8.Size = new System.Drawing.Size(249, 42);
             this.checkBox8.TabIndex = 19;
             this.checkBox8.Text = "The wipers work";
             this.checkBox8.UseVisualStyleBackColor = false;
@@ -112,7 +112,7 @@
             this.checkBox7.Location = new System.Drawing.Point(244, 353);
             this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(583, 34);
+            this.checkBox7.Size = new System.Drawing.Size(724, 42);
             this.checkBox7.TabIndex = 18;
             this.checkBox7.Text = "The \"Long Vehicle\" board is at the back of the vehicle";
             this.checkBox7.UseVisualStyleBackColor = false;
@@ -127,7 +127,7 @@
             this.checkBox6.Location = new System.Drawing.Point(244, 309);
             this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(131, 34);
+            this.checkBox6.Size = new System.Drawing.Size(164, 42);
             this.checkBox6.TabIndex = 17;
             this.checkBox6.Text = "Dim Light";
             this.checkBox6.UseVisualStyleBackColor = false;
@@ -142,7 +142,7 @@
             this.checkBox5.Location = new System.Drawing.Point(244, 264);
             this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(168, 34);
+            this.checkBox5.Size = new System.Drawing.Size(210, 42);
             this.checkBox5.TabIndex = 16;
             this.checkBox5.Text = "Parking Light";
             this.checkBox5.UseVisualStyleBackColor = false;
@@ -157,7 +157,7 @@
             this.checkBox4.Location = new System.Drawing.Point(244, 219);
             this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(151, 34);
+            this.checkBox4.Size = new System.Drawing.Size(187, 42);
             this.checkBox4.TabIndex = 15;
             this.checkBox4.Text = "Break Light";
             this.checkBox4.UseVisualStyleBackColor = false;
@@ -172,7 +172,7 @@
             this.checkBox2.Location = new System.Drawing.Point(244, 131);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(143, 34);
+            this.checkBox2.Size = new System.Drawing.Size(178, 42);
             this.checkBox2.TabIndex = 13;
             this.checkBox2.Text = "Head Light";
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -199,7 +199,7 @@
             this.checkBox1.Location = new System.Drawing.Point(935, 131);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(129, 34);
+            this.checkBox1.Size = new System.Drawing.Size(159, 42);
             this.checkBox1.TabIndex = 22;
             this.checkBox1.Text = "Select All";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -215,7 +215,7 @@
             this.checkBox3.Location = new System.Drawing.Point(244, 175);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(153, 34);
+            this.checkBox3.Size = new System.Drawing.Size(190, 42);
             this.checkBox3.TabIndex = 23;
             this.checkBox3.Text = "Signal Light";
             this.checkBox3.UseVisualStyleBackColor = false;
@@ -255,6 +255,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "zz";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);

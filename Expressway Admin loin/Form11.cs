@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,10 +18,42 @@ namespace Expressway_Admin_loin
         {
             InitializeComponent();
         }
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ASUS\source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
         private void Form11_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Open the connection
+                connection.Open();
+
+                // Loop through all checkboxes on the form
+                foreach (CheckBox checkbox in this.Controls.OfType<CheckBox>())
+                {
+                    // If checkbox is checked, insert its value into database
+                    if (checkbox.Checked)
+                    {
+                        SqlCommand cmd = new SqlCommand("INSERT INTO YourTable (ColumnName) VALUES (@Value)", connection);
+                        cmd.Parameters.AddWithValue("@Value", checkbox.Text);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+             
+            
+            finally
+            {
+               
+                    Form12 form12 = new Form12();
+                    form12.Show();
+                    this.Hide();
+                 
+            }
         }
     }
 }
