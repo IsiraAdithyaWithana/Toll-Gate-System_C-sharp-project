@@ -97,7 +97,7 @@ namespace Expressway_Admin_loin
             }
             if (checkWipers.Checked)
             {
-                VehicleCondition += "6";
+                VehicleCondition += "6 ";
             }
             if (checkTireConditions.Checked)
             {
