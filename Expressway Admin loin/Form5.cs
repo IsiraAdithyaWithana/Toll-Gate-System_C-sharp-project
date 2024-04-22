@@ -51,38 +51,6 @@ namespace Expressway_Admin_loin
                 checkWipers.Checked= false;
                 checkTireConditions.Checked= false;
             }
-            if (checkHeadLight.Checked)
-            {
-                VehicleCondition += "0 ";
-            }
-            if (checkSignalLight.Checked)
-            {
-                VehicleCondition += "1";
-            }
-            if (checkBrakeLight.Checked)
-            {
-                VehicleCondition += "2";
-            }
-            if (checkParkingLight.Checked)
-            {
-                VehicleCondition += "3";
-            }
-            if (checkDimLight.Checked)
-            {
-                VehicleCondition += "4";
-            }
-            if (checkLongVehicleBoard.Checked)
-            {
-                VehicleCondition+= "5";
-            }
-            if (checkWipers.Checked)
-            {
-                VehicleCondition += "6";
-            }
-            if (checkTireConditions.Checked)
-            {
-                VehicleCondition += "7";
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -100,7 +68,40 @@ namespace Expressway_Admin_loin
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
+
+            if (checkHeadLight.Checked)
+            {
+                VehicleCondition += "0 ";
+            }
+            if (checkSignalLight.Checked)
+            {
+                VehicleCondition += "1 ";
+            }
+            if (checkBrakeLight.Checked)
+            {
+                VehicleCondition += "2 ";
+            }
+            if (checkParkingLight.Checked)
+            {
+                VehicleCondition += "3 ";
+            }
+            if (checkDimLight.Checked)
+            {
+                VehicleCondition += "4 ";
+            }
+            if (checkLongVehicleBoard.Checked)
+            {
+                VehicleCondition += "5 ";
+            }
+            if (checkWipers.Checked)
+            {
+                VehicleCondition += "6";
+            }
+            if (checkTireConditions.Checked)
+            {
+                VehicleCondition += "7 ";
+            }
+            Form6 form6 = new Form6(userId,EorE,VehicleType,VehicleNumber,VehicleCondition);
             form6.Show();
             this.Hide();
         }

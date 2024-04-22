@@ -12,9 +12,19 @@ namespace Expressway_Admin_loin
 {
     public partial class Form6 : Form
     {
-        public Form6()
+        private int userId;
+        private string EorE;
+        string VehicleType;
+        string VehicleNumber;
+        string VehicleCondition;
+        public Form6(int id, string EntranceOrExit, string vehicleType, string vehicleNumber, string vehicleCondition)
         {
             InitializeComponent();
+            userId = id;
+            EorE = EntranceOrExit;
+            VehicleType = vehicleType;
+            VehicleNumber = vehicleNumber;
+            VehicleCondition = vehicleCondition;
         }
 
         private void Form6_Load(object sender, EventArgs e)
