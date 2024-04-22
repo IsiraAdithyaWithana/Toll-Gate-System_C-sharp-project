@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,9 @@ namespace Expressway_Admin_loin
         string VehicleType;
         string VehicleNumber;
         string VehicleCondition;
-        public Form6(int id, string EntranceOrExit, string vehicleType, string vehicleNumber, string vehicleCondition)
+        string Status;
+        int PageNumber;
+        public Form6(int id, string EntranceOrExit, string vehicleType, string vehicleNumber, string vehicleCondition, int pageNumber)
         {
             InitializeComponent();
             userId = id;
@@ -25,6 +28,7 @@ namespace Expressway_Admin_loin
             VehicleType = vehicleType;
             VehicleNumber = vehicleNumber;
             VehicleCondition = vehicleCondition;
+            PageNumber = pageNumber;
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -32,24 +36,60 @@ namespace Expressway_Admin_loin
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-            if (radioButton1.Checked)
+            if (radioClear.Checked)
             {
-                Form9 form9 = new Form9(9); 
-                form9.Show(); 
-                this.Hide();
+                Status = "Clear";
+                MessageBox.Show("Ticket is printed");
             }
-            else if (radioButton2.Checked)
+            else if (radioCheckFromExit.Checked)
             {
-                Form9 form9 = new Form9(9);
-                form9.Show();
-                this.Hide();
+                Status = "Check from the exit";
+                MessageBox.Show("Ticket is printed");
             }
             else
             {
                 MessageBox.Show("Please select Clear or check from the exit");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(Status))
+            {
+                MessageBox.Show("Please print the ticket before continue");
+                return;
+            }
+            
+            try
+            {
+                using(SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
+                    con.Open();
+                    string query = "INSERT INTO Vehicle (vehicle_number, vehicle_type, conditions, status, [user]) VALUES (@VehicleNumber, @VehicleType, @VehicleCondition, @Status, @userId);";
+
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        command.Parameters.AddWithValue("@VehicleNumber", VehicleNumber);
+                        command.Parameters.AddWithValue("@VehicleType", VehicleType);
+                        command.Parameters.AddWithValue("@VehicleCondition", VehicleCondition);
+                        command.Parameters.AddWithValue("@Status", Status);
+                        command.Parameters.AddWithValue("@userId", userId);
+
+                        command.ExecuteNonQuery();
+
+                        MessageBox.Show("Completed");
+
+                        Form4 form4 = new Form4(userId);
+                        form4.Show();
+                        this.Hide();
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -65,9 +105,20 @@ namespace Expressway_Admin_loin
 
         private void btnBK_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4(4);
-            form4.Show();
-            this.Hide();
+            if (PageNumber == 7)
+            {
+                Form7 form7 = new Form7(userId,EorE,VehicleType,VehicleNumber);
+                form7.Show();
+                this.Hide();
+            }
+            else
+            {
+                Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
+                form5.Show();
+                this.Hide();
+            }
         }
+
+        
     }
 }

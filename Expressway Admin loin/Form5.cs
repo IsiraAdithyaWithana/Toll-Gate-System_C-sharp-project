@@ -17,6 +17,7 @@ namespace Expressway_Admin_loin
         string VehicleType;
         string VehicleNumber;
         string VehicleCondition;
+        int PageNumber = 5;
         public Form5(int id, string EntranceOrExit, string vehicleType, string vehicleNumber)
         {
             InitializeComponent();
@@ -96,13 +97,13 @@ namespace Expressway_Admin_loin
             }
             if (checkWipers.Checked)
             {
-                VehicleCondition += "6";
+                VehicleCondition += "6 ";
             }
             if (checkTireConditions.Checked)
             {
                 VehicleCondition += "7 ";
             }
-            Form6 form6 = new Form6(userId,EorE,VehicleType,VehicleNumber,VehicleCondition);
+            Form6 form6 = new Form6(userId,EorE,VehicleType,VehicleNumber,VehicleCondition, PageNumber);
             form6.Show();
             this.Hide();
         }
