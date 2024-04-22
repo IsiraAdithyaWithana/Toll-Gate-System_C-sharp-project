@@ -122,6 +122,7 @@
             this.btnNX.TabIndex = 46;
             this.btnNX.Text = "Next >>";
             this.btnNX.UseVisualStyleBackColor = true;
+            this.btnNX.Click += new System.EventHandler(this.btnNX_Click);
             // 
             // btnBK
             // 
