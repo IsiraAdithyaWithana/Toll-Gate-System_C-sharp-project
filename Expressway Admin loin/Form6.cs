@@ -34,9 +34,9 @@ namespace Expressway_Admin_loin
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             if (radioButton1.Checked)
             {
-
                 Form9 form9 = new Form9(9); 
                 form9.Show(); 
                 this.Hide();
