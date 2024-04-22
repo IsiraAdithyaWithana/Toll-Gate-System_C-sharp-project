@@ -27,28 +27,28 @@ namespace Expressway_Admin_loin
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked) 
+            if(checkSelectAll.Checked) 
             {
-                checkBox2.Checked = true;
-                checkBox3.Checked = true;
-                checkBox4.Checked = true;
-                checkBox5.Checked = true;
-                checkBox6.Checked = true;
-                checkBox7.Checked = true;
-                checkBox8.Checked = true;
-                checkBox9.Checked = true;
+                checkHeadLight.Checked = true;
+                checkSignalLight.Checked = true;
+                checkBrakeLight.Checked = true;
+                checkParkingLight.Checked = true;
+                checkDimLight.Checked = true;
+                checkLongVehicleBoard.Checked = true;
+                checkWipers.Checked = true;
+                checkConditions.Checked = true;
 
             }
             else
             {
-                checkBox2.Checked= false;
-                checkBox3.Checked= false;
-                checkBox4.Checked= false;
-                checkBox5.Checked= false;
-                checkBox6.Checked= false;
-                checkBox7.Checked= false;
-                checkBox8.Checked= false;
-                checkBox9.Checked= false;
+                checkHeadLight.Checked= false;
+                checkSignalLight.Checked= false;
+                checkBrakeLight.Checked= false;
+                checkParkingLight.Checked= false;
+                checkDimLight.Checked= false;
+                checkLongVehicleBoard.Checked= false;
+                checkWipers.Checked= false;
+                checkConditions.Checked= false;
 
             }
         }

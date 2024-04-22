@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkConditions = new System.Windows.Forms.CheckBox();
+            this.checkWipers = new System.Windows.Forms.CheckBox();
+            this.checkLongVehicleBoard = new System.Windows.Forms.CheckBox();
+            this.checkDimLight = new System.Windows.Forms.CheckBox();
+            this.checkParkingLight = new System.Windows.Forms.CheckBox();
+            this.checkBrakeLight = new System.Windows.Forms.CheckBox();
+            this.checkHeadLight = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkSelectAll = new System.Windows.Forms.CheckBox();
+            this.checkSignalLight = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -55,7 +55,7 @@
             this.label1.Location = new System.Drawing.Point(442, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(416, 50);
+            this.label1.Size = new System.Drawing.Size(336, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Select the Conditions";
             // 
@@ -72,110 +72,110 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // checkBox9
+            // checkConditions
             // 
-            this.checkBox9.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox9.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.ForeColor = System.Drawing.Color.White;
-            this.checkBox9.Location = new System.Drawing.Point(244, 443);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(241, 42);
-            this.checkBox9.TabIndex = 20;
-            this.checkBox9.Text = "Tires conditions";
-            this.checkBox9.UseVisualStyleBackColor = false;
+            this.checkConditions.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkConditions.AutoSize = true;
+            this.checkConditions.BackColor = System.Drawing.Color.Transparent;
+            this.checkConditions.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkConditions.ForeColor = System.Drawing.Color.White;
+            this.checkConditions.Location = new System.Drawing.Point(244, 443);
+            this.checkConditions.Margin = new System.Windows.Forms.Padding(2);
+            this.checkConditions.Name = "checkConditions";
+            this.checkConditions.Size = new System.Drawing.Size(195, 34);
+            this.checkConditions.TabIndex = 20;
+            this.checkConditions.Text = "Tires conditions";
+            this.checkConditions.UseVisualStyleBackColor = false;
             // 
-            // checkBox8
+            // checkWipers
             // 
-            this.checkBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox8.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.ForeColor = System.Drawing.Color.White;
-            this.checkBox8.Location = new System.Drawing.Point(244, 399);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(249, 42);
-            this.checkBox8.TabIndex = 19;
-            this.checkBox8.Text = "The wipers work";
-            this.checkBox8.UseVisualStyleBackColor = false;
+            this.checkWipers.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkWipers.AutoSize = true;
+            this.checkWipers.BackColor = System.Drawing.Color.Transparent;
+            this.checkWipers.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkWipers.ForeColor = System.Drawing.Color.White;
+            this.checkWipers.Location = new System.Drawing.Point(244, 399);
+            this.checkWipers.Margin = new System.Windows.Forms.Padding(2);
+            this.checkWipers.Name = "checkWipers";
+            this.checkWipers.Size = new System.Drawing.Size(201, 34);
+            this.checkWipers.TabIndex = 19;
+            this.checkWipers.Text = "The wipers work";
+            this.checkWipers.UseVisualStyleBackColor = false;
             // 
-            // checkBox7
+            // checkLongVehicleBoard
             // 
-            this.checkBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox7.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.ForeColor = System.Drawing.Color.White;
-            this.checkBox7.Location = new System.Drawing.Point(244, 353);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(724, 42);
-            this.checkBox7.TabIndex = 18;
-            this.checkBox7.Text = "The \"Long Vehicle\" board is at the back of the vehicle";
-            this.checkBox7.UseVisualStyleBackColor = false;
+            this.checkLongVehicleBoard.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkLongVehicleBoard.AutoSize = true;
+            this.checkLongVehicleBoard.BackColor = System.Drawing.Color.Transparent;
+            this.checkLongVehicleBoard.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkLongVehicleBoard.ForeColor = System.Drawing.Color.White;
+            this.checkLongVehicleBoard.Location = new System.Drawing.Point(244, 353);
+            this.checkLongVehicleBoard.Margin = new System.Windows.Forms.Padding(2);
+            this.checkLongVehicleBoard.Name = "checkLongVehicleBoard";
+            this.checkLongVehicleBoard.Size = new System.Drawing.Size(583, 34);
+            this.checkLongVehicleBoard.TabIndex = 18;
+            this.checkLongVehicleBoard.Text = "The \"Long Vehicle\" board is at the back of the vehicle";
+            this.checkLongVehicleBoard.UseVisualStyleBackColor = false;
             // 
-            // checkBox6
+            // checkDimLight
             // 
-            this.checkBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox6.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.Color.White;
-            this.checkBox6.Location = new System.Drawing.Point(244, 309);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(164, 42);
-            this.checkBox6.TabIndex = 17;
-            this.checkBox6.Text = "Dim Light";
-            this.checkBox6.UseVisualStyleBackColor = false;
+            this.checkDimLight.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkDimLight.AutoSize = true;
+            this.checkDimLight.BackColor = System.Drawing.Color.Transparent;
+            this.checkDimLight.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkDimLight.ForeColor = System.Drawing.Color.White;
+            this.checkDimLight.Location = new System.Drawing.Point(244, 309);
+            this.checkDimLight.Margin = new System.Windows.Forms.Padding(2);
+            this.checkDimLight.Name = "checkDimLight";
+            this.checkDimLight.Size = new System.Drawing.Size(131, 34);
+            this.checkDimLight.TabIndex = 17;
+            this.checkDimLight.Text = "Dim Light";
+            this.checkDimLight.UseVisualStyleBackColor = false;
             // 
-            // checkBox5
+            // checkParkingLight
             // 
-            this.checkBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.ForeColor = System.Drawing.Color.White;
-            this.checkBox5.Location = new System.Drawing.Point(244, 264);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(210, 42);
-            this.checkBox5.TabIndex = 16;
-            this.checkBox5.Text = "Parking Light";
-            this.checkBox5.UseVisualStyleBackColor = false;
+            this.checkParkingLight.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkParkingLight.AutoSize = true;
+            this.checkParkingLight.BackColor = System.Drawing.Color.Transparent;
+            this.checkParkingLight.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkParkingLight.ForeColor = System.Drawing.Color.White;
+            this.checkParkingLight.Location = new System.Drawing.Point(244, 264);
+            this.checkParkingLight.Margin = new System.Windows.Forms.Padding(2);
+            this.checkParkingLight.Name = "checkParkingLight";
+            this.checkParkingLight.Size = new System.Drawing.Size(168, 34);
+            this.checkParkingLight.TabIndex = 16;
+            this.checkParkingLight.Text = "Parking Light";
+            this.checkParkingLight.UseVisualStyleBackColor = false;
             // 
-            // checkBox4
+            // checkBrakeLight
             // 
-            this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(244, 219);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(187, 42);
-            this.checkBox4.TabIndex = 15;
-            this.checkBox4.Text = "Break Light";
-            this.checkBox4.UseVisualStyleBackColor = false;
+            this.checkBrakeLight.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkBrakeLight.AutoSize = true;
+            this.checkBrakeLight.BackColor = System.Drawing.Color.Transparent;
+            this.checkBrakeLight.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBrakeLight.ForeColor = System.Drawing.Color.White;
+            this.checkBrakeLight.Location = new System.Drawing.Point(244, 219);
+            this.checkBrakeLight.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBrakeLight.Name = "checkBrakeLight";
+            this.checkBrakeLight.Size = new System.Drawing.Size(151, 34);
+            this.checkBrakeLight.TabIndex = 15;
+            this.checkBrakeLight.Text = "Break Light";
+            this.checkBrakeLight.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // checkHeadLight
             // 
-            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(244, 131);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(178, 42);
-            this.checkBox2.TabIndex = 13;
-            this.checkBox2.Text = "Head Light";
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.checkHeadLight.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkHeadLight.AutoSize = true;
+            this.checkHeadLight.BackColor = System.Drawing.Color.Transparent;
+            this.checkHeadLight.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkHeadLight.ForeColor = System.Drawing.Color.White;
+            this.checkHeadLight.Location = new System.Drawing.Point(244, 131);
+            this.checkHeadLight.Margin = new System.Windows.Forms.Padding(2);
+            this.checkHeadLight.Name = "checkHeadLight";
+            this.checkHeadLight.Size = new System.Drawing.Size(143, 34);
+            this.checkHeadLight.TabIndex = 13;
+            this.checkHeadLight.Text = "Head Light";
+            this.checkHeadLight.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -189,36 +189,36 @@
             this.panel1.Size = new System.Drawing.Size(60, 63);
             this.panel1.TabIndex = 21;
             // 
-            // checkBox1
+            // checkSelectAll
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(935, 131);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(159, 42);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.Text = "Select All";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkSelectAll.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkSelectAll.AutoSize = true;
+            this.checkSelectAll.BackColor = System.Drawing.Color.Transparent;
+            this.checkSelectAll.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSelectAll.ForeColor = System.Drawing.Color.White;
+            this.checkSelectAll.Location = new System.Drawing.Point(935, 131);
+            this.checkSelectAll.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSelectAll.Name = "checkSelectAll";
+            this.checkSelectAll.Size = new System.Drawing.Size(129, 34);
+            this.checkSelectAll.TabIndex = 22;
+            this.checkSelectAll.Text = "Select All";
+            this.checkSelectAll.UseVisualStyleBackColor = false;
+            this.checkSelectAll.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // checkBox3
+            // checkSignalLight
             // 
-            this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(244, 175);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(190, 42);
-            this.checkBox3.TabIndex = 23;
-            this.checkBox3.Text = "Signal Light";
-            this.checkBox3.UseVisualStyleBackColor = false;
+            this.checkSignalLight.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkSignalLight.AutoSize = true;
+            this.checkSignalLight.BackColor = System.Drawing.Color.Transparent;
+            this.checkSignalLight.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSignalLight.ForeColor = System.Drawing.Color.White;
+            this.checkSignalLight.Location = new System.Drawing.Point(244, 175);
+            this.checkSignalLight.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSignalLight.Name = "checkSignalLight";
+            this.checkSignalLight.Size = new System.Drawing.Size(153, 34);
+            this.checkSignalLight.TabIndex = 23;
+            this.checkSignalLight.Text = "Signal Light";
+            this.checkSignalLight.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -240,16 +240,16 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkSignalLight);
+            this.Controls.Add(this.checkSelectAll);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkBox9);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkConditions);
+            this.Controls.Add(this.checkWipers);
+            this.Controls.Add(this.checkLongVehicleBoard);
+            this.Controls.Add(this.checkDimLight);
+            this.Controls.Add(this.checkParkingLight);
+            this.Controls.Add(this.checkBrakeLight);
+            this.Controls.Add(this.checkHeadLight);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
@@ -267,16 +267,16 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkConditions;
+        private System.Windows.Forms.CheckBox checkWipers;
+        private System.Windows.Forms.CheckBox checkLongVehicleBoard;
+        private System.Windows.Forms.CheckBox checkDimLight;
+        private System.Windows.Forms.CheckBox checkParkingLight;
+        private System.Windows.Forms.CheckBox checkBrakeLight;
+        private System.Windows.Forms.CheckBox checkHeadLight;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkSelectAll;
+        private System.Windows.Forms.CheckBox checkSignalLight;
         private System.Windows.Forms.Button button2;
     }
 }
