@@ -28,186 +28,186 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.specificDL = new System.Windows.Forms.CheckBox();
-            this.invalidDL = new System.Windows.Forms.CheckBox();
-            this.parkinglane = new System.Windows.Forms.CheckBox();
-            this.collision = new System.Windows.Forms.CheckBox();
-            this.littering = new System.Windows.Forms.CheckBox();
-            this.mobilephone = new System.Windows.Forms.CheckBox();
-            this.drugs = new System.Windows.Forms.CheckBox();
-            this.signal = new System.Windows.Forms.CheckBox();
-            this.seatbelts = new System.Windows.Forms.CheckBox();
-            this.overspeed = new System.Windows.Forms.CheckBox();
-            this.lowspeed = new System.Windows.Forms.CheckBox();
+            this.checkLicenseForSpecific = new System.Windows.Forms.CheckBox();
+            this.checkDriverLicense = new System.Windows.Forms.CheckBox();
+            this.checkEmergencyParkingLane = new System.Windows.Forms.CheckBox();
+            this.checkCollision = new System.Windows.Forms.CheckBox();
+            this.checkLittering = new System.Windows.Forms.CheckBox();
+            this.checkUsingMobile = new System.Windows.Forms.CheckBox();
+            this.checkDrunk = new System.Windows.Forms.CheckBox();
+            this.checkNoSignaling = new System.Windows.Forms.CheckBox();
+            this.checkSeatBelts = new System.Windows.Forms.CheckBox();
+            this.checkOverSpeed = new System.Windows.Forms.CheckBox();
+            this.checkLowSpeed = new System.Windows.Forms.CheckBox();
             this.checkSelectAll = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.butNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // specificDL
+            // checkLicenseForSpecific
             // 
-            this.specificDL.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.specificDL.AutoSize = true;
-            this.specificDL.BackColor = System.Drawing.Color.Transparent;
-            this.specificDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.specificDL.ForeColor = System.Drawing.SystemColors.Control;
-            this.specificDL.Location = new System.Drawing.Point(474, 325);
-            this.specificDL.Margin = new System.Windows.Forms.Padding(2);
-            this.specificDL.Name = "specificDL";
-            this.specificDL.Size = new System.Drawing.Size(421, 28);
-            this.specificDL.TabIndex = 62;
-            this.specificDL.Text = "Not having the license  specific class of vehicles";
-            this.specificDL.UseVisualStyleBackColor = false;
+            this.checkLicenseForSpecific.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkLicenseForSpecific.AutoSize = true;
+            this.checkLicenseForSpecific.BackColor = System.Drawing.Color.Transparent;
+            this.checkLicenseForSpecific.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkLicenseForSpecific.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkLicenseForSpecific.Location = new System.Drawing.Point(474, 325);
+            this.checkLicenseForSpecific.Margin = new System.Windows.Forms.Padding(2);
+            this.checkLicenseForSpecific.Name = "checkLicenseForSpecific";
+            this.checkLicenseForSpecific.Size = new System.Drawing.Size(421, 28);
+            this.checkLicenseForSpecific.TabIndex = 62;
+            this.checkLicenseForSpecific.Text = "Not having the license  specific class of vehicles";
+            this.checkLicenseForSpecific.UseVisualStyleBackColor = false;
             // 
-            // invalidDL
+            // checkDriverLicense
             // 
-            this.invalidDL.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.invalidDL.AutoSize = true;
-            this.invalidDL.BackColor = System.Drawing.Color.Transparent;
-            this.invalidDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invalidDL.ForeColor = System.Drawing.SystemColors.Control;
-            this.invalidDL.Location = new System.Drawing.Point(474, 127);
-            this.invalidDL.Margin = new System.Windows.Forms.Padding(2);
-            this.invalidDL.Name = "invalidDL";
-            this.invalidDL.Size = new System.Drawing.Size(201, 28);
-            this.invalidDL.TabIndex = 61;
-            this.invalidDL.Text = "Invalid Driver License";
-            this.invalidDL.UseVisualStyleBackColor = false;
+            this.checkDriverLicense.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkDriverLicense.AutoSize = true;
+            this.checkDriverLicense.BackColor = System.Drawing.Color.Transparent;
+            this.checkDriverLicense.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkDriverLicense.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkDriverLicense.Location = new System.Drawing.Point(474, 127);
+            this.checkDriverLicense.Margin = new System.Windows.Forms.Padding(2);
+            this.checkDriverLicense.Name = "checkDriverLicense";
+            this.checkDriverLicense.Size = new System.Drawing.Size(201, 28);
+            this.checkDriverLicense.TabIndex = 61;
+            this.checkDriverLicense.Text = "Invalid Driver License";
+            this.checkDriverLicense.UseVisualStyleBackColor = false;
             // 
-            // parkinglane
+            // checkEmergencyParkingLane
             // 
-            this.parkinglane.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.parkinglane.AutoSize = true;
-            this.parkinglane.BackColor = System.Drawing.Color.Transparent;
-            this.parkinglane.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parkinglane.ForeColor = System.Drawing.SystemColors.Control;
-            this.parkinglane.Location = new System.Drawing.Point(474, 277);
-            this.parkinglane.Margin = new System.Windows.Forms.Padding(2);
-            this.parkinglane.Name = "parkinglane";
-            this.parkinglane.Size = new System.Drawing.Size(294, 28);
-            this.parkinglane.TabIndex = 60;
-            this.parkinglane.Text = "Misuing Emergency parking lane";
-            this.parkinglane.UseVisualStyleBackColor = false;
+            this.checkEmergencyParkingLane.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkEmergencyParkingLane.AutoSize = true;
+            this.checkEmergencyParkingLane.BackColor = System.Drawing.Color.Transparent;
+            this.checkEmergencyParkingLane.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkEmergencyParkingLane.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkEmergencyParkingLane.Location = new System.Drawing.Point(474, 277);
+            this.checkEmergencyParkingLane.Margin = new System.Windows.Forms.Padding(2);
+            this.checkEmergencyParkingLane.Name = "checkEmergencyParkingLane";
+            this.checkEmergencyParkingLane.Size = new System.Drawing.Size(294, 28);
+            this.checkEmergencyParkingLane.TabIndex = 60;
+            this.checkEmergencyParkingLane.Text = "Misuing Emergency parking lane";
+            this.checkEmergencyParkingLane.UseVisualStyleBackColor = false;
             // 
-            // collision
+            // checkCollision
             // 
-            this.collision.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.collision.AutoSize = true;
-            this.collision.BackColor = System.Drawing.Color.Transparent;
-            this.collision.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.collision.ForeColor = System.Drawing.SystemColors.Control;
-            this.collision.Location = new System.Drawing.Point(474, 228);
-            this.collision.Margin = new System.Windows.Forms.Padding(2);
-            this.collision.Name = "collision";
-            this.collision.Size = new System.Drawing.Size(279, 28);
-            this.collision.TabIndex = 59;
-            this.collision.Text = "Collision during lane changing ";
-            this.collision.UseVisualStyleBackColor = false;
+            this.checkCollision.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkCollision.AutoSize = true;
+            this.checkCollision.BackColor = System.Drawing.Color.Transparent;
+            this.checkCollision.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkCollision.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkCollision.Location = new System.Drawing.Point(474, 228);
+            this.checkCollision.Margin = new System.Windows.Forms.Padding(2);
+            this.checkCollision.Name = "checkCollision";
+            this.checkCollision.Size = new System.Drawing.Size(279, 28);
+            this.checkCollision.TabIndex = 59;
+            this.checkCollision.Text = "Collision during lane changing ";
+            this.checkCollision.UseVisualStyleBackColor = false;
             // 
-            // littering
+            // checkLittering
             // 
-            this.littering.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.littering.AutoSize = true;
-            this.littering.BackColor = System.Drawing.Color.Transparent;
-            this.littering.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.littering.ForeColor = System.Drawing.SystemColors.Control;
-            this.littering.Location = new System.Drawing.Point(474, 178);
-            this.littering.Margin = new System.Windows.Forms.Padding(2);
-            this.littering.Name = "littering";
-            this.littering.Size = new System.Drawing.Size(168, 28);
-            this.littering.TabIndex = 58;
-            this.littering.Text = "Littering the road";
-            this.littering.UseVisualStyleBackColor = false;
+            this.checkLittering.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkLittering.AutoSize = true;
+            this.checkLittering.BackColor = System.Drawing.Color.Transparent;
+            this.checkLittering.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkLittering.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkLittering.Location = new System.Drawing.Point(474, 178);
+            this.checkLittering.Margin = new System.Windows.Forms.Padding(2);
+            this.checkLittering.Name = "checkLittering";
+            this.checkLittering.Size = new System.Drawing.Size(168, 28);
+            this.checkLittering.TabIndex = 58;
+            this.checkLittering.Text = "Littering the road";
+            this.checkLittering.UseVisualStyleBackColor = false;
             // 
-            // mobilephone
+            // checkUsingMobile
             // 
-            this.mobilephone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mobilephone.AutoSize = true;
-            this.mobilephone.BackColor = System.Drawing.Color.Transparent;
-            this.mobilephone.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mobilephone.ForeColor = System.Drawing.SystemColors.Control;
-            this.mobilephone.Location = new System.Drawing.Point(99, 375);
-            this.mobilephone.Margin = new System.Windows.Forms.Padding(2);
-            this.mobilephone.Name = "mobilephone";
-            this.mobilephone.Size = new System.Drawing.Size(191, 28);
-            this.mobilephone.TabIndex = 57;
-            this.mobilephone.Text = "Using mobile phone";
-            this.mobilephone.UseVisualStyleBackColor = false;
+            this.checkUsingMobile.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkUsingMobile.AutoSize = true;
+            this.checkUsingMobile.BackColor = System.Drawing.Color.Transparent;
+            this.checkUsingMobile.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkUsingMobile.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkUsingMobile.Location = new System.Drawing.Point(99, 375);
+            this.checkUsingMobile.Margin = new System.Windows.Forms.Padding(2);
+            this.checkUsingMobile.Name = "checkUsingMobile";
+            this.checkUsingMobile.Size = new System.Drawing.Size(191, 28);
+            this.checkUsingMobile.TabIndex = 57;
+            this.checkUsingMobile.Text = "Using mobile phone";
+            this.checkUsingMobile.UseVisualStyleBackColor = false;
             // 
-            // drugs
+            // checkDrunk
             // 
-            this.drugs.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.drugs.AutoSize = true;
-            this.drugs.BackColor = System.Drawing.Color.Transparent;
-            this.drugs.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drugs.ForeColor = System.Drawing.SystemColors.Control;
-            this.drugs.Location = new System.Drawing.Point(100, 325);
-            this.drugs.Margin = new System.Windows.Forms.Padding(2);
-            this.drugs.Name = "drugs";
-            this.drugs.Size = new System.Drawing.Size(325, 28);
-            this.drugs.TabIndex = 56;
-            this.drugs.Text = "Driving under drug/alcohol influence";
-            this.drugs.UseVisualStyleBackColor = false;
+            this.checkDrunk.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkDrunk.AutoSize = true;
+            this.checkDrunk.BackColor = System.Drawing.Color.Transparent;
+            this.checkDrunk.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkDrunk.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkDrunk.Location = new System.Drawing.Point(100, 325);
+            this.checkDrunk.Margin = new System.Windows.Forms.Padding(2);
+            this.checkDrunk.Name = "checkDrunk";
+            this.checkDrunk.Size = new System.Drawing.Size(325, 28);
+            this.checkDrunk.TabIndex = 56;
+            this.checkDrunk.Text = "Driving under drug/alcohol influence";
+            this.checkDrunk.UseVisualStyleBackColor = false;
             // 
-            // signal
+            // checkNoSignaling
             // 
-            this.signal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.signal.AutoSize = true;
-            this.signal.BackColor = System.Drawing.Color.Transparent;
-            this.signal.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signal.ForeColor = System.Drawing.SystemColors.Control;
-            this.signal.Location = new System.Drawing.Point(100, 277);
-            this.signal.Margin = new System.Windows.Forms.Padding(2);
-            this.signal.Name = "signal";
-            this.signal.Size = new System.Drawing.Size(138, 28);
-            this.signal.TabIndex = 55;
-            this.signal.Text = "Not Signaling";
-            this.signal.UseVisualStyleBackColor = false;
+            this.checkNoSignaling.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkNoSignaling.AutoSize = true;
+            this.checkNoSignaling.BackColor = System.Drawing.Color.Transparent;
+            this.checkNoSignaling.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkNoSignaling.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkNoSignaling.Location = new System.Drawing.Point(100, 277);
+            this.checkNoSignaling.Margin = new System.Windows.Forms.Padding(2);
+            this.checkNoSignaling.Name = "checkNoSignaling";
+            this.checkNoSignaling.Size = new System.Drawing.Size(138, 28);
+            this.checkNoSignaling.TabIndex = 55;
+            this.checkNoSignaling.Text = "Not Signaling";
+            this.checkNoSignaling.UseVisualStyleBackColor = false;
             // 
-            // seatbelts
+            // checkSeatBelts
             // 
-            this.seatbelts.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.seatbelts.AutoSize = true;
-            this.seatbelts.BackColor = System.Drawing.Color.Transparent;
-            this.seatbelts.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seatbelts.ForeColor = System.Drawing.SystemColors.Control;
-            this.seatbelts.Location = new System.Drawing.Point(100, 228);
-            this.seatbelts.Margin = new System.Windows.Forms.Padding(2);
-            this.seatbelts.Name = "seatbelts";
-            this.seatbelts.Size = new System.Drawing.Size(191, 28);
-            this.seatbelts.TabIndex = 54;
-            this.seatbelts.Text = "Not using seat belts";
-            this.seatbelts.UseVisualStyleBackColor = false;
+            this.checkSeatBelts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkSeatBelts.AutoSize = true;
+            this.checkSeatBelts.BackColor = System.Drawing.Color.Transparent;
+            this.checkSeatBelts.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSeatBelts.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkSeatBelts.Location = new System.Drawing.Point(100, 228);
+            this.checkSeatBelts.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSeatBelts.Name = "checkSeatBelts";
+            this.checkSeatBelts.Size = new System.Drawing.Size(191, 28);
+            this.checkSeatBelts.TabIndex = 54;
+            this.checkSeatBelts.Text = "Not using seat belts";
+            this.checkSeatBelts.UseVisualStyleBackColor = false;
             // 
-            // overspeed
+            // checkOverSpeed
             // 
-            this.overspeed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.overspeed.AutoSize = true;
-            this.overspeed.BackColor = System.Drawing.Color.Transparent;
-            this.overspeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.overspeed.ForeColor = System.Drawing.SystemColors.Control;
-            this.overspeed.Location = new System.Drawing.Point(100, 178);
-            this.overspeed.Margin = new System.Windows.Forms.Padding(2);
-            this.overspeed.Name = "overspeed";
-            this.overspeed.Size = new System.Drawing.Size(193, 28);
-            this.overspeed.TabIndex = 53;
-            this.overspeed.Text = "Over speed driving   ";
-            this.overspeed.UseVisualStyleBackColor = false;
+            this.checkOverSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkOverSpeed.AutoSize = true;
+            this.checkOverSpeed.BackColor = System.Drawing.Color.Transparent;
+            this.checkOverSpeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkOverSpeed.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkOverSpeed.Location = new System.Drawing.Point(100, 178);
+            this.checkOverSpeed.Margin = new System.Windows.Forms.Padding(2);
+            this.checkOverSpeed.Name = "checkOverSpeed";
+            this.checkOverSpeed.Size = new System.Drawing.Size(193, 28);
+            this.checkOverSpeed.TabIndex = 53;
+            this.checkOverSpeed.Text = "Over speed driving   ";
+            this.checkOverSpeed.UseVisualStyleBackColor = false;
             // 
-            // lowspeed
+            // checkLowSpeed
             // 
-            this.lowspeed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lowspeed.AutoSize = true;
-            this.lowspeed.BackColor = System.Drawing.Color.Transparent;
-            this.lowspeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lowspeed.ForeColor = System.Drawing.SystemColors.Control;
-            this.lowspeed.Location = new System.Drawing.Point(100, 127);
-            this.lowspeed.Margin = new System.Windows.Forms.Padding(2);
-            this.lowspeed.Name = "lowspeed";
-            this.lowspeed.Size = new System.Drawing.Size(285, 28);
-            this.lowspeed.TabIndex = 52;
-            this.lowspeed.Text = "Inner lane / low speed driving   ";
-            this.lowspeed.UseVisualStyleBackColor = false;
+            this.checkLowSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkLowSpeed.AutoSize = true;
+            this.checkLowSpeed.BackColor = System.Drawing.Color.Transparent;
+            this.checkLowSpeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkLowSpeed.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkLowSpeed.Location = new System.Drawing.Point(100, 127);
+            this.checkLowSpeed.Margin = new System.Windows.Forms.Padding(2);
+            this.checkLowSpeed.Name = "checkLowSpeed";
+            this.checkLowSpeed.Size = new System.Drawing.Size(285, 28);
+            this.checkLowSpeed.TabIndex = 52;
+            this.checkLowSpeed.Text = "Inner lane / low speed driving   ";
+            this.checkLowSpeed.UseVisualStyleBackColor = false;
             // 
             // checkSelectAll
             // 
@@ -262,17 +262,17 @@
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.butNext);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.specificDL);
-            this.Controls.Add(this.invalidDL);
-            this.Controls.Add(this.parkinglane);
-            this.Controls.Add(this.collision);
-            this.Controls.Add(this.littering);
-            this.Controls.Add(this.mobilephone);
-            this.Controls.Add(this.drugs);
-            this.Controls.Add(this.signal);
-            this.Controls.Add(this.seatbelts);
-            this.Controls.Add(this.overspeed);
-            this.Controls.Add(this.lowspeed);
+            this.Controls.Add(this.checkLicenseForSpecific);
+            this.Controls.Add(this.checkDriverLicense);
+            this.Controls.Add(this.checkEmergencyParkingLane);
+            this.Controls.Add(this.checkCollision);
+            this.Controls.Add(this.checkLittering);
+            this.Controls.Add(this.checkUsingMobile);
+            this.Controls.Add(this.checkDrunk);
+            this.Controls.Add(this.checkNoSignaling);
+            this.Controls.Add(this.checkSeatBelts);
+            this.Controls.Add(this.checkOverSpeed);
+            this.Controls.Add(this.checkLowSpeed);
             this.Controls.Add(this.checkSelectAll);
             this.Name = "Form8";
             this.Text = "Form8";
@@ -283,17 +283,17 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox specificDL;
-        private System.Windows.Forms.CheckBox invalidDL;
-        private System.Windows.Forms.CheckBox parkinglane;
-        private System.Windows.Forms.CheckBox collision;
-        private System.Windows.Forms.CheckBox littering;
-        private System.Windows.Forms.CheckBox mobilephone;
-        private System.Windows.Forms.CheckBox drugs;
-        private System.Windows.Forms.CheckBox signal;
-        private System.Windows.Forms.CheckBox seatbelts;
-        private System.Windows.Forms.CheckBox overspeed;
-        private System.Windows.Forms.CheckBox lowspeed;
+        private System.Windows.Forms.CheckBox checkLicenseForSpecific;
+        private System.Windows.Forms.CheckBox checkDriverLicense;
+        private System.Windows.Forms.CheckBox checkEmergencyParkingLane;
+        private System.Windows.Forms.CheckBox checkCollision;
+        private System.Windows.Forms.CheckBox checkLittering;
+        private System.Windows.Forms.CheckBox checkUsingMobile;
+        private System.Windows.Forms.CheckBox checkDrunk;
+        private System.Windows.Forms.CheckBox checkNoSignaling;
+        private System.Windows.Forms.CheckBox checkSeatBelts;
+        private System.Windows.Forms.CheckBox checkOverSpeed;
+        private System.Windows.Forms.CheckBox checkLowSpeed;
         private System.Windows.Forms.CheckBox checkSelectAll;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button butNext;
