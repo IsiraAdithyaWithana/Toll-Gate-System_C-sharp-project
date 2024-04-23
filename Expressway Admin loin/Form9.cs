@@ -16,6 +16,7 @@ namespace Expressway_Admin_loin
         private int userId;
         private string EorE = "exit";
         int pageNum = 9;
+        string VehicleNumber = "";
         public Form9(int id)
         {
             InitializeComponent();
@@ -29,9 +30,9 @@ namespace Expressway_Admin_loin
                 using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     connection.Open();
-                    string vehicleNumber = txtVehicleNumber.Text;
+                    VehicleNumber = txtVehicleNumber.Text;
 
-                    string query = $"SELECT status FROM Vehicle WHERE vehicle_number='{vehicleNumber}';";
+                    string query = $"SELECT status FROM Vehicle WHERE vehicle_number='{VehicleNumber}';";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -51,10 +52,29 @@ namespace Expressway_Admin_loin
         {
             try
             {
-                using(SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
+                    string query = "SELECT violation FROM ex_violation WHERE vehicle_number = @VehicleNumber";
 
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        command.Parameters.AddWithValue("@VehicleNumber", VehicleNumber);
+
+                        SqlDataReader reader = command.ExecuteReader();
+                        string ExecutedReader = reader["violation"].ToString();
+                        if (String.IsNullOrEmpty(ExecutedReader))
+                        {
+                            lblStatus.Text = ".............................";
+                            txtVehicleNumber.Text = "";
+                        }
+                        else
+                        {
+                            Form15 form15 = new Form15();
+                            form15.Show();
+                            this.Hide();
+                        }
+                    }
                 }
             }
             catch(Exception ex)
