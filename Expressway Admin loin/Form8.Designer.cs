@@ -41,6 +41,7 @@
             this.lowspeed = new System.Windows.Forms.CheckBox();
             this.selectall = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.butNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // specificDL
@@ -238,6 +239,18 @@
             this.checkBox1.Text = "No violation ";
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
+            // butNext
+            // 
+            this.butNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.butNext.Font = new System.Drawing.Font("Franklin Gothic Medium", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butNext.Location = new System.Drawing.Point(945, 538);
+            this.butNext.Margin = new System.Windows.Forms.Padding(2);
+            this.butNext.Name = "butNext";
+            this.butNext.Size = new System.Drawing.Size(119, 41);
+            this.butNext.TabIndex = 64;
+            this.butNext.Text = "Next";
+            this.butNext.UseVisualStyleBackColor = true;
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,6 +258,7 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.butNext);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.specificDL);
             this.Controls.Add(this.invalidDL);
@@ -280,5 +294,6 @@
         private System.Windows.Forms.CheckBox lowspeed;
         private System.Windows.Forms.CheckBox selectall;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button butNext;
     }
 }
