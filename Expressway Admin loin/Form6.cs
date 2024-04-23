@@ -81,7 +81,7 @@ namespace Expressway_Admin_loin
 
                         MessageBox.Show("Completed");
 
-                        Form4 form8 = new Form8(userId);
+                        Form8 form8 = new Form8(userId,EorE,VehicleType,VehicleNumber,VehicleCondition);
                         form8.Show();
                         this.Hide();
                     }
