@@ -36,5 +36,14 @@ namespace Expressway_Admin_loin
                 
             }
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkNoViolation.Checked)
+            {
+                checkLowSpeed.Checked = false;
+                check
+            }
+        }
     }
 }
