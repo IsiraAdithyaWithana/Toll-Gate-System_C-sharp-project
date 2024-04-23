@@ -250,6 +250,7 @@
             this.butNext.TabIndex = 64;
             this.butNext.Text = "Next";
             this.butNext.UseVisualStyleBackColor = true;
+            this.butNext.Click += new System.EventHandler(this.butNext_Click);
             // 
             // Form8
             // 
