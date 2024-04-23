@@ -23,5 +23,18 @@ namespace Expressway_Admin_loin
             form4.Show();
             this.Hide();
         }
+
+        private void selectall_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkSelectAll.Checked)
+            {
+                MessageBox.Show("Are you sure?");
+
+            }
+            else
+            {
+                
+            }
+        }
     }
 }

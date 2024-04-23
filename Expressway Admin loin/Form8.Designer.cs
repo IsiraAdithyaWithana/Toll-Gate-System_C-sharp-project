@@ -39,7 +39,7 @@
             this.seatbelts = new System.Windows.Forms.CheckBox();
             this.overspeed = new System.Windows.Forms.CheckBox();
             this.lowspeed = new System.Windows.Forms.CheckBox();
-            this.selectall = new System.Windows.Forms.CheckBox();
+            this.checkSelectAll = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.butNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -209,20 +209,21 @@
             this.lowspeed.Text = "Inner lane / low speed driving   ";
             this.lowspeed.UseVisualStyleBackColor = false;
             // 
-            // selectall
+            // checkSelectAll
             // 
-            this.selectall.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.selectall.AutoSize = true;
-            this.selectall.BackColor = System.Drawing.Color.Transparent;
-            this.selectall.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectall.ForeColor = System.Drawing.SystemColors.Control;
-            this.selectall.Location = new System.Drawing.Point(100, 74);
-            this.selectall.Margin = new System.Windows.Forms.Padding(2);
-            this.selectall.Name = "selectall";
-            this.selectall.Size = new System.Drawing.Size(105, 28);
-            this.selectall.TabIndex = 51;
-            this.selectall.Text = "Select all";
-            this.selectall.UseVisualStyleBackColor = false;
+            this.checkSelectAll.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkSelectAll.AutoSize = true;
+            this.checkSelectAll.BackColor = System.Drawing.Color.Transparent;
+            this.checkSelectAll.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSelectAll.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkSelectAll.Location = new System.Drawing.Point(100, 74);
+            this.checkSelectAll.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSelectAll.Name = "checkSelectAll";
+            this.checkSelectAll.Size = new System.Drawing.Size(105, 28);
+            this.checkSelectAll.TabIndex = 51;
+            this.checkSelectAll.Text = "Select all";
+            this.checkSelectAll.UseVisualStyleBackColor = false;
+            this.checkSelectAll.CheckedChanged += new System.EventHandler(this.selectall_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -272,7 +273,7 @@
             this.Controls.Add(this.seatbelts);
             this.Controls.Add(this.overspeed);
             this.Controls.Add(this.lowspeed);
-            this.Controls.Add(this.selectall);
+            this.Controls.Add(this.checkSelectAll);
             this.Name = "Form8";
             this.Text = "Form8";
             this.ResumeLayout(false);
@@ -293,7 +294,7 @@
         private System.Windows.Forms.CheckBox seatbelts;
         private System.Windows.Forms.CheckBox overspeed;
         private System.Windows.Forms.CheckBox lowspeed;
-        private System.Windows.Forms.CheckBox selectall;
+        private System.Windows.Forms.CheckBox checkSelectAll;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button butNext;
     }
