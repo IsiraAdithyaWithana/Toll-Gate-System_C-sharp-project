@@ -118,19 +118,30 @@ namespace Expressway_Admin_loin
             }
             try
             {
-                using(SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
+                    string query = "INSERT INTO ex_violation (vehicle_number,violations) VALUES (@VehicleNumber,@Violations);";
+
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        command.Parameters.AddWithValue("@VehicleNumber", VehicleNumber);
+                        command.Parameters.AddWithValue("@Violations", Violations);
+
+                        command.ExecuteNonQuery();
+
+                        MessageBox.Show("Completed");
+
+                        Form4 form4 = new Form4(userId);
+                        form4.Show();
+                        this.Hide();
+                    }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: "+ ex.Message);
             }
-
-            Form4 form4 = new Form4(userId);
-            form4.Show();
-            this.Hide();
         }
     }
 }
