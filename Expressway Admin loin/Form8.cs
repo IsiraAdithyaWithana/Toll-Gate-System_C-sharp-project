@@ -54,20 +54,7 @@ namespace Expressway_Admin_loin
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkNoViolation.Checked)
-            {
-                checkLowSpeed.Checked = false;
-                checkOverSpeed.Checked = false;
-                checkSeatBelts.Checked = false;
-                checkNoSignaling.Checked = false;
-                checkDrunk.Checked = false;
-                checkUsingMobile.Checked = false;
-                checkDriverLicense.Checked = false;
-                checkLittering.Checked = false;
-                checkCollision.Checked = false;
-                checkEmergencyParkingLane.Checked = false;
-                checkLicenseForSpecific.Checked = false;
-            }
+            
         }
 
         private void butNext_Click(object sender, EventArgs e)

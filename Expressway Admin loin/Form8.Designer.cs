@@ -40,7 +40,6 @@
             this.checkOverSpeed = new System.Windows.Forms.CheckBox();
             this.checkLowSpeed = new System.Windows.Forms.CheckBox();
             this.checkSelectAll = new System.Windows.Forms.CheckBox();
-            this.checkNoViolation = new System.Windows.Forms.CheckBox();
             this.butNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -225,22 +224,6 @@
             this.checkSelectAll.UseVisualStyleBackColor = false;
             this.checkSelectAll.CheckedChanged += new System.EventHandler(this.selectall_CheckedChanged);
             // 
-            // checkNoViolation
-            // 
-            this.checkNoViolation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkNoViolation.AutoSize = true;
-            this.checkNoViolation.BackColor = System.Drawing.Color.Transparent;
-            this.checkNoViolation.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkNoViolation.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkNoViolation.Location = new System.Drawing.Point(100, 526);
-            this.checkNoViolation.Margin = new System.Windows.Forms.Padding(2);
-            this.checkNoViolation.Name = "checkNoViolation";
-            this.checkNoViolation.Size = new System.Drawing.Size(130, 28);
-            this.checkNoViolation.TabIndex = 63;
-            this.checkNoViolation.Text = "No violation ";
-            this.checkNoViolation.UseVisualStyleBackColor = false;
-            this.checkNoViolation.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
             // butNext
             // 
             this.butNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -262,7 +245,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.butNext);
-            this.Controls.Add(this.checkNoViolation);
             this.Controls.Add(this.checkLicenseForSpecific);
             this.Controls.Add(this.checkDriverLicense);
             this.Controls.Add(this.checkEmergencyParkingLane);
@@ -296,7 +278,6 @@
         private System.Windows.Forms.CheckBox checkOverSpeed;
         private System.Windows.Forms.CheckBox checkLowSpeed;
         private System.Windows.Forms.CheckBox checkSelectAll;
-        private System.Windows.Forms.CheckBox checkNoViolation;
         private System.Windows.Forms.Button butNext;
     }
 }
