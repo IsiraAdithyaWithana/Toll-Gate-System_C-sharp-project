@@ -19,7 +19,7 @@ namespace Expressway_Admin_loin
         string VehicleNumber;
         string VehicleCondition;
         string Status;
-        string Violations;
+        string Violations = "";
         public Form8(int id, string EntranceOrExit, string vehicleType, string vehicleNumber, string vehicleCondition)
         {
             InitializeComponent();
