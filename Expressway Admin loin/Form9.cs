@@ -55,21 +55,22 @@ namespace Expressway_Admin_loin
                 using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     con.Open();
-                    string query = "SELECT violation FROM ex_violation WHERE vehicle_number = @VehicleNumber";
+                    string query = "SELECT violations FROM ex_violation WHERE vehicle_number = @VehicleNumber";
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
                         command.Parameters.AddWithValue("@VehicleNumber", VehicleNumber);
 
                         SqlDataReader reader = command.ExecuteReader();
-                        string ExecutedReader = reader["violation"].ToString();
-                        if (String.IsNullOrEmpty(ExecutedReader))
+                        if (reader.Read()) // Check if there are rows returned by the query
                         {
+                            MessageBox.Show("There is no violation. The Bill is printed");
                             lblStatus.Text = ".............................";
                             txtVehicleNumber.Text = "";
                         }
                         else
                         {
+                            string ExecutedReader = reader["violations"].ToString();
                             Form15 form15 = new Form15();
                             form15.Show();
                             this.Hide();
