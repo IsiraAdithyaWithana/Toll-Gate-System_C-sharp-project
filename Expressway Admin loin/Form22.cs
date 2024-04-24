@@ -24,5 +24,10 @@ namespace Expressway_Admin_loin
             form12.Show();
             this.Hide();
         }
+
+        private void Form22_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

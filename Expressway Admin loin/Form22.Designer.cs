@@ -45,7 +45,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(682, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 51);
+            this.label1.Size = new System.Drawing.Size(248, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Online Transfer";
             // 
@@ -57,7 +57,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(406, 249);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(391, 51);
+            this.label5.Size = new System.Drawing.Size(309, 41);
             this.label5.TabIndex = 6;
             this.label5.Text = "Reference  Number";
             // 
@@ -66,7 +66,7 @@
             this.textBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(854, 258);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(375, 42);
+            this.textBox2.Size = new System.Drawing.Size(375, 35);
             this.textBox2.TabIndex = 9;
             // 
             // VehicalTypeB
@@ -119,6 +119,7 @@
             this.Name = "Form22";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form22";
+            this.Load += new System.EventHandler(this.Form22_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
