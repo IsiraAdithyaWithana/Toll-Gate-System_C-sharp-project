@@ -46,7 +46,6 @@
             this.overspeed = new System.Windows.Forms.CheckBox();
             this.lowspeed = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.selectall = new System.Windows.Forms.CheckBox();
             this.txtDrivingLicense = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sosbox)).BeginInit();
@@ -290,28 +289,12 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(152, 219);
+            this.label3.Location = new System.Drawing.Point(152, 272);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 24);
             this.label3.TabIndex = 34;
             this.label3.Text = "Violation Types";
-            // 
-            // selectall
-            // 
-            this.selectall.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.selectall.AutoSize = true;
-            this.selectall.BackColor = System.Drawing.Color.Transparent;
-            this.selectall.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectall.ForeColor = System.Drawing.SystemColors.Control;
-            this.selectall.Location = new System.Drawing.Point(316, 219);
-            this.selectall.Margin = new System.Windows.Forms.Padding(2);
-            this.selectall.Name = "selectall";
-            this.selectall.Size = new System.Drawing.Size(105, 28);
-            this.selectall.TabIndex = 33;
-            this.selectall.Text = "Select all";
-            this.selectall.UseVisualStyleBackColor = false;
-            this.selectall.CheckedChanged += new System.EventHandler(this.selectall_CheckedChanged);
             // 
             // txtDrivingLicense
             // 
@@ -364,7 +347,6 @@
             this.Controls.Add(this.overspeed);
             this.Controls.Add(this.lowspeed);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.selectall);
             this.Controls.Add(this.txtDrivingLicense);
             this.Controls.Add(this.label2);
             this.Name = "Form15";
@@ -389,14 +371,13 @@
         private System.Windows.Forms.CheckBox collision;
         private System.Windows.Forms.CheckBox littering;
         private System.Windows.Forms.CheckBox mobilephone;
-        private System.Windows.Forms.CheckBox drugs;
         private System.Windows.Forms.CheckBox signal;
         private System.Windows.Forms.CheckBox seatbelts;
         private System.Windows.Forms.CheckBox overspeed;
         private System.Windows.Forms.CheckBox lowspeed;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox selectall;
         private System.Windows.Forms.TextBox txtDrivingLicense;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox drugs;
     }
 }
