@@ -47,7 +47,7 @@
             this.lowspeed = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.selectall = new System.Windows.Forms.CheckBox();
-            this.txtDL = new System.Windows.Forms.TextBox();
+            this.txtDrivingLicense = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sosbox)).BeginInit();
             this.SuspendLayout();
@@ -311,19 +311,20 @@
             this.selectall.TabIndex = 33;
             this.selectall.Text = "Select all";
             this.selectall.UseVisualStyleBackColor = false;
+            this.selectall.CheckedChanged += new System.EventHandler(this.selectall_CheckedChanged);
             // 
-            // txtDL
+            // txtDrivingLicense
             // 
-            this.txtDL.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDL.BackColor = System.Drawing.Color.White;
-            this.txtDL.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDL.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDL.Location = new System.Drawing.Point(315, 168);
-            this.txtDL.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDL.Multiline = true;
-            this.txtDL.Name = "txtDL";
-            this.txtDL.Size = new System.Drawing.Size(330, 32);
-            this.txtDL.TabIndex = 32;
+            this.txtDrivingLicense.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDrivingLicense.BackColor = System.Drawing.Color.White;
+            this.txtDrivingLicense.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDrivingLicense.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDrivingLicense.Location = new System.Drawing.Point(315, 168);
+            this.txtDrivingLicense.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDrivingLicense.Multiline = true;
+            this.txtDrivingLicense.Name = "txtDrivingLicense";
+            this.txtDrivingLicense.Size = new System.Drawing.Size(330, 32);
+            this.txtDrivingLicense.TabIndex = 32;
             // 
             // label2
             // 
@@ -364,7 +365,7 @@
             this.Controls.Add(this.lowspeed);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.selectall);
-            this.Controls.Add(this.txtDL);
+            this.Controls.Add(this.txtDrivingLicense);
             this.Controls.Add(this.label2);
             this.Name = "Form15";
             this.Text = "Form15";
@@ -395,7 +396,7 @@
         private System.Windows.Forms.CheckBox lowspeed;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox selectall;
-        private System.Windows.Forms.TextBox txtDL;
+        private System.Windows.Forms.TextBox txtDrivingLicense;
         private System.Windows.Forms.Label label2;
     }
 }

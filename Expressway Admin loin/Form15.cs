@@ -14,14 +14,19 @@ namespace Expressway_Admin_loin
     public partial class Form15 : Form
     {
         private string DriversLicense;
-        private string id;
+        private int userId;
+        string Violations;
+        string EorE;
+        string VehicleNumber;
 
 
-        public Form15()
+        public Form15(int UserId, string violations, string eorE, string vehicleNumber)
         {
             InitializeComponent();
-            id = id;
-
+            userId = UserId;
+            Violations = violations;
+            EorE = eorE;
+            VehicleNumber = vehicleNumber;
         }
 
         private void Form15_Load(object sender, EventArgs e)
@@ -33,37 +38,23 @@ namespace Expressway_Admin_loin
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     conn.Open();
-                    string DriversLicense = txtDL.Text;
-                    string ViolationTypes = "";
-
-                    foreach (CheckBox checkBox in this.Controls.OfType<CheckBox>())
-                    {
-                        if (checkBox.Checked)
-                        {
-                            ViolationTypes += checkBox.Text + ",";
-                        }
-                    }
-                    String query = "INSERT INTO ex_violation ([id], driver_licence, violations) VALUES (@vehicle_number, @driver_license, @violations);";
-
-                    using (SqlCommand command = new SqlCommand(query, conn))
-                    {
-                        command.Parameters.AddWithValue("@id", id);
-                        command.Parameters.AddWithValue("@DriversLicense", DriversLicense);
-                        command.Parameters.AddWithValue("@ViolationTypes", ViolationTypes);
-
-                        command.ExecuteNonQuery();
-                    }
-                    MessageBox.Show("Successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
+                    
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+
+            }
+        }
+
+        private void selectall_CheckedChanged(object sender, EventArgs e)
+        {
+            if(selectall.Checked)
+            {
 
             }
         }

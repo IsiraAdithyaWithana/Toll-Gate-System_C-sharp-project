@@ -62,18 +62,19 @@ namespace Expressway_Admin_loin
                         command.Parameters.AddWithValue("@VehicleNumber", VehicleNumber);
 
                         SqlDataReader reader = command.ExecuteReader();
-                        if (reader.Read()) // Check if there are rows returned by the query
+                        if (reader.Read())
+                        {
+                            MessageBox.Show("Alert: - One or more violations are found");
+                            string Violations = reader["violations"].ToString();
+                            Form15 form15 = new Form15(userId,Violations,EorE,VehicleNumber);
+                            form15.Show();
+                            this.Hide();
+                        }
+                        else
                         {
                             MessageBox.Show("There is no violation. The Bill is printed");
                             lblStatus.Text = ".............................";
                             txtVehicleNumber.Text = "";
-                        }
-                        else
-                        {
-                            string ExecutedReader = reader["violations"].ToString();
-                            Form15 form15 = new Form15();
-                            form15.Show();
-                            this.Hide();
                         }
                     }
                 }
