@@ -27,6 +27,29 @@ namespace Expressway_Admin_loin
             Violations = violations;
             EorE = eorE;
             VehicleNumber = vehicleNumber;
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
+                    con.Open();
+                    string query = $"SELECT violations FROM ex_violation WHERE vehicle_number = '{VehicleNumber}';";
+
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        SqlDataReader reader = command.ExecuteReader();
+                        if(reader.Read())
+                        {
+                            Violations = reader["violations"].ToString();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+
+            }
         }
 
         private void Form15_Load(object sender, EventArgs e)
@@ -36,19 +59,7 @@ namespace Expressway_Admin_loin
 
         private void btnNX_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
-                {
-                    conn.Open();
-                    
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-
-            }
+            
         }
 
         private void selectall_CheckedChanged(object sender, EventArgs e)
