@@ -61,27 +61,66 @@ namespace Expressway_Admin_loin
                     {
                         command.Parameters.AddWithValue("@VehicleNumber", VehicleNumber);
 
-                        SqlDataReader reader = command.ExecuteReader();
-                        if (reader.Read())
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            MessageBox.Show("Alert: - One or more violations are found");
-                            string Violations = reader["violations"].ToString();
-                            Form15 form15 = new Form15(userId,Violations,EorE,VehicleNumber);
-                            form15.Show();
-                            this.Hide();
-                        }
-                        else
-                        {
-                            MessageBox.Show("There is no violation. The Bill is printed");
-                            lblStatus.Text = ".............................";
-                            txtVehicleNumber.Text = "";
+                            if (reader.Read())
+                            {
+                                string violations = reader["violations"].ToString();
+                                if (string.IsNullOrEmpty(violations))
+                                {
+                                    DeleteData();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Alert: One or more violations are found");
+                                    Form15 form15 = new Form15(userId, violations, EorE, VehicleNumber);
+                                    form15.Show();
+                                    this.Hide();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("No record found for the specified vehicle number.");
+                            }
                         }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        public void DeleteData()
+        {
+
+            try
+            {
+                using(SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
+                    con.Open();
+                    string deleteQuery = "DELETE FROM ex_violation WHERE vehicle_number = @VehicleNumber";
+                    using (SqlCommand deleteCommand = new SqlCommand(deleteQuery, con))
+                    {
+                        deleteCommand.Parameters.AddWithValue("@VehicleNumber", VehicleNumber);
+                        int rowsAffected = deleteCommand.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("No violations found. The record has been deleted.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No violations found, but the record was not deleted.");
+                        }
+                    }
+                    lblStatus.Text = ".............................";
+                    txtVehicleNumber.Text = "";
+                }
+            }
             catch(Exception ex)
             {
-                MessageBox.Show("Error: "+ ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
