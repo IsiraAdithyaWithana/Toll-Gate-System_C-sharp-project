@@ -12,7 +12,9 @@ using System.Windows.Forms;
 namespace Expressway_Admin_loin
 {
     public partial class Form14 : Form
+      
     {
+        private int userId;
         public Form14()
         {
             InitializeComponent();
@@ -32,6 +34,11 @@ namespace Expressway_Admin_loin
 
             string message = $"Name: {name}\nCard Number: {cardnumber}\nCVV: {cvc}\nExpiration Date: {expiredate}";
             MessageBox.Show(message, "Details Enterd");
+
+            ClearDetails();
+
+            OpenNextPage();
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -49,9 +56,27 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             MessageBox.Show("Ticket is printed");
 
-            ClearDetails();
+            
+        }
+
+        private void ClearDetails()
+        {
+           
+            txtName.Text = "";
+            txtCNumber.Text = "";
+            txtCVC.Text = "";
+            dateTimePicker1.Value = DateTime.Now;
+        }
+
+        private void OpenNextPage()
+        {
+            // Assuming you have another form named Form15
+            Form9 form9 = new Form9(userId);
+            form9.Show();
+            this.Hide(); // Optionally, hide the current form
         }
     }
 }
