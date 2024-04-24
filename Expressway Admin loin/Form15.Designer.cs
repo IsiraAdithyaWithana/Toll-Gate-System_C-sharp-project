@@ -34,7 +34,6 @@
             this.sosbox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNX = new System.Windows.Forms.Button();
-            this.btnBK = new System.Windows.Forms.Button();
             this.btnCL = new System.Windows.Forms.Button();
             this.parkinglane = new System.Windows.Forms.CheckBox();
             this.collision = new System.Windows.Forms.CheckBox();
@@ -123,18 +122,6 @@
             this.btnNX.UseVisualStyleBackColor = true;
             this.btnNX.Click += new System.EventHandler(this.btnNX_Click);
             // 
-            // btnBK
-            // 
-            this.btnBK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBK.Font = new System.Drawing.Font("Franklin Gothic Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBK.Location = new System.Drawing.Point(735, 574);
-            this.btnBK.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBK.Name = "btnBK";
-            this.btnBK.Size = new System.Drawing.Size(98, 41);
-            this.btnBK.TabIndex = 45;
-            this.btnBK.Text = "<< Back";
-            this.btnBK.UseVisualStyleBackColor = true;
-            // 
             // btnCL
             // 
             this.btnCL.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -146,6 +133,7 @@
             this.btnCL.TabIndex = 44;
             this.btnCL.Text = "Clear";
             this.btnCL.UseVisualStyleBackColor = true;
+            this.btnCL.Click += new System.EventHandler(this.btnCL_Click);
             // 
             // parkinglane
             // 
@@ -308,6 +296,7 @@
             this.txtDrivingLicense.Name = "txtDrivingLicense";
             this.txtDrivingLicense.Size = new System.Drawing.Size(330, 32);
             this.txtDrivingLicense.TabIndex = 32;
+            this.txtDrivingLicense.TextChanged += new System.EventHandler(this.txtDrivingLicense_TextChanged);
             // 
             // label2
             // 
@@ -335,7 +324,6 @@
             this.Controls.Add(this.sosbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNX);
-            this.Controls.Add(this.btnBK);
             this.Controls.Add(this.btnCL);
             this.Controls.Add(this.parkinglane);
             this.Controls.Add(this.collision);
@@ -365,7 +353,6 @@
         private System.Windows.Forms.PictureBox sosbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNX;
-        private System.Windows.Forms.Button btnBK;
         private System.Windows.Forms.Button btnCL;
         private System.Windows.Forms.CheckBox parkinglane;
         private System.Windows.Forms.CheckBox collision;

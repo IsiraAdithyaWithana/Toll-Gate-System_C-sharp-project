@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -96,12 +97,55 @@ namespace Expressway_Admin_loin
 
         private void btnNX_Click(object sender, EventArgs e)
         {
-            
+            string drivingLicense = txtDrivingLicense.Text;
+            if (string.IsNullOrEmpty(drivingLicense))
+            {
+                MessageBox.Show("Please enter the driving license number");
+                return;
+            }
+            else
+            {
+                try
+                {
+                    DriversLicense = drivingLicense;
+                    using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                    {
+                        con.Open();
+                        string query1 = $"UPDATE ex_violation SET driver_license = '{DriversLicense}' WHERE vehicle_number = '{VehicleNumber}';";
+
+                        using (SqlCommand command = new SqlCommand(query1, con))
+                        {
+                            command.ExecuteNonQuery();
+
+                            MessageBox.Show("Completed");
+
+                            Form11 form11 = new Form11();
+                            form11.Show();
+                            this.Hide();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+
+                }
+            }
         }
 
         private void selectall_CheckedChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void btnCL_Click(object sender, EventArgs e)
+        {
+            txtDrivingLicense.Text = "";
+        }
+
+        private void txtDrivingLicense_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
