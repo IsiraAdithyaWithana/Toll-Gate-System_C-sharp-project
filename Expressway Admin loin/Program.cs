@@ -16,7 +16,7 @@ namespace Expressway_Admin_loin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form14());
+            Application.Run(new Form2());
         }
     }
 }

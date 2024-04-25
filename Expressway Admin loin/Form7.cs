@@ -31,8 +31,9 @@ namespace Expressway_Admin_loin
         {
             if (checkSelectAll.Checked)
             {
-                MessageBox.Show("Are you sure?");
-
+                string Message = "Are you sure?";
+                string title = "Conformation";
+                DialogResult result = MessageBox.Show(Message, title, MessageBoxButtons.YesNo);
                 checkLights.Checked = true;
                 checkBrakes.Checked = true;
                 checkTires.Checked = true;
@@ -91,6 +92,7 @@ namespace Expressway_Admin_loin
             }
             Form6 form6 = new Form6(userId, EorE, VehicleType, VehicleNumber, VehicleCondition, PageNumber);
             form6.Show();
+            this.Hide();
         }
     }
 }
