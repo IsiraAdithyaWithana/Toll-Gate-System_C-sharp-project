@@ -75,7 +75,14 @@ namespace Expressway_Admin_loin
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }
