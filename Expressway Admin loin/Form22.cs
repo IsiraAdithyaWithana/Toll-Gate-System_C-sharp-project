@@ -16,15 +16,16 @@ namespace Expressway_Admin_loin
         string ReferenceNumber;
         private string DriversLicense;
         private int userId;
-        string Violations;
         string EorE;
-        string VehicleNumber;
-        string PaymentMethod;
         int TotalFine;
         string PaymentStatus;
-        public Form22()
+        public Form22(int userid, string driversLicense, int totalFine, string eorE)
         {
             InitializeComponent();
+            userId = userid;
+            DriversLicense = driversLicense;
+            TotalFine = totalFine;
+            EorE = eorE;
         }
 
         private void button1_Click(object sender, EventArgs e)

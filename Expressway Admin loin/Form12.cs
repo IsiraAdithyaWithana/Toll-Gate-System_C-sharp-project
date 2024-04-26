@@ -75,7 +75,7 @@ namespace Expressway_Admin_loin
             }
             else if (chonlinetransfer.Checked)
             {
-                Form22 form22 = new Form22();
+                Form22 form22 = new Form22(userId,DriversLicense,TotalFine,EorE);
                 form22.ShowDialog();
             }
             else if (ch14days.Checked)
