@@ -108,5 +108,17 @@ namespace Expressway_Admin_loin
         {
 
         }
+
+        private void checkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkShowPassword.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

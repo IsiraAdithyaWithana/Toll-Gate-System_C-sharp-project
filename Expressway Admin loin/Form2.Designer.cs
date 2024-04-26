@@ -37,6 +37,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkShowPassword = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -144,6 +145,19 @@
             this.panel1.Size = new System.Drawing.Size(80, 77);
             this.panel1.TabIndex = 8;
             // 
+            // checkShowPassword
+            // 
+            this.checkShowPassword.AutoSize = true;
+            this.checkShowPassword.BackColor = System.Drawing.Color.Transparent;
+            this.checkShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkShowPassword.Location = new System.Drawing.Point(615, 496);
+            this.checkShowPassword.Name = "checkShowPassword";
+            this.checkShowPassword.Size = new System.Drawing.Size(154, 24);
+            this.checkShowPassword.TabIndex = 9;
+            this.checkShowPassword.Text = "Show Password";
+            this.checkShowPassword.UseVisualStyleBackColor = false;
+            this.checkShowPassword.CheckedChanged += new System.EventHandler(this.checkShowPassword_CheckedChanged);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +166,7 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.WhatsApp_Image_2024_04_08_at_00_59_25_2162efe0;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.checkShowPassword);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPassword);
@@ -183,5 +198,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox checkShowPassword;
     }
 }
