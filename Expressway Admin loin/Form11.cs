@@ -30,8 +30,6 @@ namespace Expressway_Admin_loin
             VehicleNumber = vehicleNumber;
             DriversLicense = driverLicense;
         }
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ASUS\source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
-
         private void Form11_Load(object sender, EventArgs e)
         {
             Dictionary<int, string> checkboxNameMap = new Dictionary<int, string>
