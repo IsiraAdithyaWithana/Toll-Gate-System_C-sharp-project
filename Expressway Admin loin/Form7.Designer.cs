@@ -50,7 +50,7 @@
             this.checkSeatBelts.Location = new System.Drawing.Point(578, 344);
             this.checkSeatBelts.Margin = new System.Windows.Forms.Padding(2);
             this.checkSeatBelts.Name = "checkSeatBelts";
-            this.checkSeatBelts.Size = new System.Drawing.Size(171, 42);
+            this.checkSeatBelts.Size = new System.Drawing.Size(139, 34);
             this.checkSeatBelts.TabIndex = 20;
             this.checkSeatBelts.Text = "Seat Belts";
             this.checkSeatBelts.UseVisualStyleBackColor = false;
@@ -64,7 +64,7 @@
             this.checkDashIndicators.Location = new System.Drawing.Point(578, 306);
             this.checkDashIndicators.Margin = new System.Windows.Forms.Padding(2);
             this.checkDashIndicators.Name = "checkDashIndicators";
-            this.checkDashIndicators.Size = new System.Drawing.Size(313, 42);
+            this.checkDashIndicators.Size = new System.Drawing.Size(253, 34);
             this.checkDashIndicators.TabIndex = 19;
             this.checkDashIndicators.Text = "Dashboard indicators";
             this.checkDashIndicators.UseVisualStyleBackColor = false;
@@ -78,7 +78,7 @@
             this.checkWindAndMirrors.Location = new System.Drawing.Point(578, 269);
             this.checkWindAndMirrors.Margin = new System.Windows.Forms.Padding(2);
             this.checkWindAndMirrors.Name = "checkWindAndMirrors";
-            this.checkWindAndMirrors.Size = new System.Drawing.Size(336, 42);
+            this.checkWindAndMirrors.Size = new System.Drawing.Size(271, 34);
             this.checkWindAndMirrors.TabIndex = 18;
             this.checkWindAndMirrors.Text = "Windshield and Mirrors";
             this.checkWindAndMirrors.UseVisualStyleBackColor = false;
@@ -92,7 +92,7 @@
             this.checkTires.Location = new System.Drawing.Point(578, 228);
             this.checkTires.Margin = new System.Windows.Forms.Padding(2);
             this.checkTires.Name = "checkTires";
-            this.checkTires.Size = new System.Drawing.Size(101, 42);
+            this.checkTires.Size = new System.Drawing.Size(82, 34);
             this.checkTires.TabIndex = 17;
             this.checkTires.Text = "Tires";
             this.checkTires.UseVisualStyleBackColor = false;
@@ -106,7 +106,7 @@
             this.checkBrakes.Location = new System.Drawing.Point(578, 191);
             this.checkBrakes.Margin = new System.Windows.Forms.Padding(2);
             this.checkBrakes.Name = "checkBrakes";
-            this.checkBrakes.Size = new System.Drawing.Size(129, 42);
+            this.checkBrakes.Size = new System.Drawing.Size(105, 34);
             this.checkBrakes.TabIndex = 16;
             this.checkBrakes.Text = "Brakes";
             this.checkBrakes.UseVisualStyleBackColor = false;
@@ -120,7 +120,7 @@
             this.checkLights.Location = new System.Drawing.Point(578, 153);
             this.checkLights.Margin = new System.Windows.Forms.Padding(2);
             this.checkLights.Name = "checkLights";
-            this.checkLights.Size = new System.Drawing.Size(117, 42);
+            this.checkLights.Size = new System.Drawing.Size(94, 34);
             this.checkLights.TabIndex = 15;
             this.checkLights.Text = "Lights";
             this.checkLights.UseVisualStyleBackColor = false;
@@ -134,7 +134,7 @@
             this.label4.Location = new System.Drawing.Point(218, 144);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(363, 50);
+            this.label4.Size = new System.Drawing.Size(296, 41);
             this.label4.TabIndex = 14;
             this.label4.Text = "Vehical Conditions";
             // 
@@ -149,6 +149,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(60, 63);
             this.panel1.TabIndex = 21;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button1
             // 
@@ -171,7 +172,7 @@
             this.checkSelectAll.Location = new System.Drawing.Point(490, 411);
             this.checkSelectAll.Margin = new System.Windows.Forms.Padding(2);
             this.checkSelectAll.Name = "checkSelectAll";
-            this.checkSelectAll.Size = new System.Drawing.Size(159, 42);
+            this.checkSelectAll.Size = new System.Drawing.Size(129, 34);
             this.checkSelectAll.TabIndex = 23;
             this.checkSelectAll.Text = "Select All";
             this.checkSelectAll.UseVisualStyleBackColor = false;

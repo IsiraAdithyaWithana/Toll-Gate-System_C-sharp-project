@@ -73,10 +73,10 @@ namespace Expressway_Admin_loin
 
         private void OpenNextPage()
         {
-            // Assuming you have another form named Form15
+            
             Form9 form9 = new Form9(userId);
             form9.Show();
-            this.Hide(); // Optionally, hide the current form
+            this.Hide();
         }
     }
 }
