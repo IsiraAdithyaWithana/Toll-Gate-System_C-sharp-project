@@ -12,16 +12,20 @@ namespace Expressway_Admin_loin
 {
     public partial class Form12 : Form
     {
+        private string DriversLicense;
         private int userId;
-        private string EorE = "Payment";
-        int pageNum = 12;
+        string Violations;
+        string EorE;
+        string VehicleNumber;
         string PaymentMethod;
-        public Form12(int id)
-
+        public Form12(int UserId, string violations, string eorE, string vehicleNumber, string driverLicense)
         {
             InitializeComponent();
-            userId = id;
-
+            userId = UserId;
+            Violations = violations;
+            EorE = eorE;
+            VehicleNumber = vehicleNumber;
+            DriversLicense = driverLicense;
         }
 
         private void button1_Click(object sender, EventArgs e)

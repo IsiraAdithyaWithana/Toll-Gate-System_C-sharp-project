@@ -19,14 +19,16 @@ namespace Expressway_Admin_loin
         string Violations;
         string EorE;
         string VehicleNumber;
+        int TotalFine = 0;
 
-        public Form11(int UserId, string violations, string eorE, string vehicleNumber)
+        public Form11(int UserId, string violations, string eorE, string vehicleNumber, string driverLicense)
         {
             InitializeComponent();
             userId = UserId;
             Violations = violations;
             EorE = eorE;
             VehicleNumber = vehicleNumber;
+            DriversLicense = driverLicense;
         }
         SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ASUS\source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
@@ -70,19 +72,42 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (checkInvalidLicense.Checked)
+            {
+                TotalFine += 1000;
+            }
+            if (checkDrunkDriving.Checked)
+            {
+                TotalFine += 25000;
+            }
+            if(checkLeftSideOvertake.Checked)
+            {
+                TotalFine += 1000;
+            }
+            if (checkSpeed.Checked)
+            {
+                TotalFine += 3000;
+            }
+            if (checkMobilePhones.Checked)
+            {
+                TotalFine += 1000;
+            }
+            if (checkNoise.Checked)
+            {
+                TotalFine += 1000;
+            }
+            if (checkSpecificClassVehicle.Checked)
+            {
+                TotalFine += 1000;
+            }
+            Form12 form12 = new Form12(userId, Violations, EorE, VehicleNumber, DriversLicense);
+            form12.Show();
+            this.Hide();
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
-            try
-            {
-
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+            
         }
     }
 }
