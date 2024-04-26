@@ -119,7 +119,7 @@ namespace Expressway_Admin_loin
 
                             MessageBox.Show("Completed");
 
-                            Form11 form11 = new Form11();
+                            Form11 form11 = new Form11(userId, Violations, EorE, VehicleNumber);
                             form11.Show();
                             this.Hide();
                         }

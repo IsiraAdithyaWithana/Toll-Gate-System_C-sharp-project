@@ -14,9 +14,19 @@ namespace Expressway_Admin_loin
 {
     public partial class Form11 : Form
     {
-        public Form11()
+        private string DriversLicense;
+        private int userId;
+        string Violations;
+        string EorE;
+        string VehicleNumber;
+
+        public Form11(int UserId, string violations, string eorE, string vehicleNumber)
         {
             InitializeComponent();
+            userId = UserId;
+            Violations = violations;
+            EorE = eorE;
+            VehicleNumber = vehicleNumber;
         }
         SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ASUS\source\Repos\Toll-Gate-System_C-sharp-project\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
@@ -60,33 +70,7 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Open the connection
-                connection.Open();
-
-                // Loop through all checkboxes on the form
-                foreach (CheckBox checkbox in this.Controls.OfType<CheckBox>())
-                {
-                    // If checkbox is checked, insert its value into database
-                    if (checkbox.Checked)
-                    {
-                        SqlCommand cmd = new SqlCommand("INSERT INTO YourTable (ColumnName) VALUES (@Value)", connection);
-                        cmd.Parameters.AddWithValue("@Value", checkbox.Text);
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-            }
-             
             
-            catch
-            {
-               
-                    Form12 form12 = new Form12(12);
-                    form12.Show();
-                    this.Hide();
-                 
-            }
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
