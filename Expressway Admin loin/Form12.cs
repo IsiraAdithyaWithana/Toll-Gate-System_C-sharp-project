@@ -71,14 +71,12 @@ namespace Expressway_Admin_loin
             else if (chcardpayment.Checked)
             {
                 Form14 form14 = new Form14();
-                this.Hide();
-                form14.Show();
+                form14.ShowDialog();
             }
             else if (chonlinetransfer.Checked)
             {
                 Form22 form22 = new Form22();
-                this.Hide();
-                form22.Show();
+                form22.ShowDialog();
             }
             else if (ch14days.Checked)
             {

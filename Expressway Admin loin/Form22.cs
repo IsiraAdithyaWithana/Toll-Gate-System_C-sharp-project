@@ -13,12 +13,15 @@ namespace Expressway_Admin_loin
 {
     public partial class Form22 : Form
     {
+        string ReferenceNumber;
         private string DriversLicense;
         private int userId;
         string Violations;
         string EorE;
         string VehicleNumber;
         string PaymentMethod;
+        int TotalFine;
+        string PaymentStatus;
         public Form22()
         {
             InitializeComponent();
@@ -26,9 +29,21 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
-        /*
+        
+
+        private void Form22_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VehicalTypeB_Click(object sender, EventArgs e)
+        {
+            ReferenceNumber = txtReferenceNumber.Text;
+            SqlInjectionOnline();
+        }
+
         void SqlInjectionOnline()
         {
             try
@@ -37,7 +52,7 @@ namespace Expressway_Admin_loin
                 {
                     PaymentStatus = "Payed";
                     con.Open();
-                    string query = "INSERT INTO Payment ([userId],license_number,[fine_cost],payment_status) VALUES (@userId,@DriversLicense,@TotalFine,@PaymentStatus);";
+                    string query = "INSERT INTO Payment ([userId],license_number,[fine_cost],payment_status,online_reference) VALUES (@userId,@DriversLicense,@TotalFine,@PaymentStatus,@ReferenceNumber);";
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
@@ -45,6 +60,7 @@ namespace Expressway_Admin_loin
                         command.Parameters.AddWithValue("@DriversLicense", DriversLicense);
                         command.Parameters.AddWithValue("@TotalFine", TotalFine);
                         command.Parameters.AddWithValue("@PaymentStatus", PaymentStatus);
+                        command.Parameters.AddWithValue("@ReferenceNumber", ReferenceNumber);
 
                         command.ExecuteNonQuery();
                     }
@@ -54,12 +70,6 @@ namespace Expressway_Admin_loin
             {
                 MessageBox.Show("Error: " + Ex.Message);
             }
-        }
-        */
-
-        private void Form22_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

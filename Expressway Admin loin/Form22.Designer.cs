@@ -79,6 +79,7 @@
             this.VehicalTypeB.TabIndex = 16;
             this.VehicalTypeB.Text = "OK";
             this.VehicalTypeB.UseVisualStyleBackColor = true;
+            this.VehicalTypeB.Click += new System.EventHandler(this.VehicalTypeB_Click);
             // 
             // panel1
             // 
