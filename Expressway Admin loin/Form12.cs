@@ -81,7 +81,7 @@ namespace Expressway_Admin_loin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form11 form11 = new Form11();
+            Form11 form11 = new Form11(userId, Violations, EorE, VehicleNumber, DriversLicense);
             form11.Show();
             this.Hide();
         }

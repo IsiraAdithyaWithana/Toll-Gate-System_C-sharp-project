@@ -12,6 +12,12 @@ namespace Expressway_Admin_loin
 {
     public partial class Form22 : Form
     {
+        private string DriversLicense;
+        private int userId;
+        string Violations;
+        string EorE;
+        string VehicleNumber;
+        string PaymentMethod;
         public Form22()
         {
             InitializeComponent();
@@ -20,9 +26,6 @@ namespace Expressway_Admin_loin
         private void button1_Click(object sender, EventArgs e)
         {
             
-            Form12 form12 = new Form12(12);
-            form12.Show();
-            this.Hide();
         }
 
         private void Form22_Load(object sender, EventArgs e)
