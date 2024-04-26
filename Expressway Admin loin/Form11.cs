@@ -98,7 +98,7 @@ namespace Expressway_Admin_loin
             {
                 TotalFine += 1000;
             }
-            Form12 form12 = new Form12(userId, Violations, EorE, VehicleNumber, DriversLicense);
+            Form12 form12 = new Form12(userId, Violations, EorE, VehicleNumber, DriversLicense, TotalFine);
             form12.Show();
             this.Hide();
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,9 @@ namespace Expressway_Admin_loin
         string EorE;
         string VehicleNumber;
         string PaymentMethod;
-        public Form12(int UserId, string violations, string eorE, string vehicleNumber, string driverLicense)
+        int TotalFine;
+        string PaymentStatus;
+        public Form12(int UserId, string violations, string eorE, string vehicleNumber, string driverLicense, int totalFine)
         {
             InitializeComponent();
             userId = UserId;
@@ -26,6 +29,7 @@ namespace Expressway_Admin_loin
             EorE = eorE;
             VehicleNumber = vehicleNumber;
             DriversLicense = driverLicense;
+            TotalFine = totalFine;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,11 +57,16 @@ namespace Expressway_Admin_loin
         {
             if (chcashpayment.Checked)
             {
-                string Message = "Print the penalty sheet";
-                string title = "Conformation";
-                DialogResult result = MessageBox.Show(Message, title, MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show("Did money get paid?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-
+                if (result == DialogResult.Yes)
+                {
+                    SqlInjectionYes();
+                }
+                else
+                {
+                    return;
+                }
             }
             else if (chcardpayment.Checked)
             {
@@ -71,11 +80,63 @@ namespace Expressway_Admin_loin
                 this.Hide();
                 form22.Show();
             }
-            else
+            else if (ch14days.Checked)
             {
-                string Message = "Print the penalty sheet";
-                string title = "Conformation";
-                DialogResult result = MessageBox.Show(Message, title, MessageBoxButtons.YesNo);
+                SqlInjectionNo();
+            }
+        }
+
+        void SqlInjectionYes()
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
+                    PaymentStatus = "Payed";
+                    con.Open();
+                    string query = "INSERT INTO Payment ([userId],license_number,[fine_cost],payment_status) VALUES (@userId,@DriversLicense,@TotalFine,@PaymentStatus);";
+
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        command.Parameters.AddWithValue("@userId", userId);
+                        command.Parameters.AddWithValue("@DriversLicense", DriversLicense);
+                        command.Parameters.AddWithValue("@TotalFine", TotalFine);
+                        command.Parameters.AddWithValue("@PaymentStatus", PaymentStatus);
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error: " + Ex.Message);
+            }
+        }
+
+        void SqlInjectionNo()
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
+                    PaymentStatus = "Pending";
+                    con.Open();
+                    string query = "INSERT INTO Payment ([userId],license_number,[fine_cost],payment_status) VALUES (@userId,@DriversLicense,@TotalFine,@PaymentStatus);";
+
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        command.Parameters.AddWithValue("@userId", userId);
+                        command.Parameters.AddWithValue("@DriversLicense", DriversLicense);
+                        command.Parameters.AddWithValue("@TotalFine", TotalFine);
+                        command.Parameters.AddWithValue("@PaymentStatus", PaymentStatus);
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error: " + Ex.Message);
             }
         }
 
