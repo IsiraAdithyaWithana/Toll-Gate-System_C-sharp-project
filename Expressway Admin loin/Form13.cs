@@ -60,7 +60,7 @@ namespace Expressway_Admin_loin
                                     if (dbPassword == Password)
                                     {
                                         int id = Convert.ToInt32(reader["Id"]);
-                                        Form12 form12 = new Form12(userId, Violations, EorE, VehicleNumber, DriversLicense);
+                                        Form12 form12 = new Form12(userId, Violations, EorE, VehicleNumber, DriversLicense,1);
                                         form12.Show();
                                         this.Hide();
                                     }
