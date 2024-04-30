@@ -72,9 +72,6 @@ namespace Expressway_Admin_loin
         private void button1_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Ticket is printed");
-
-            
         }
 
         private void ClearDetails()
