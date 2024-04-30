@@ -78,7 +78,7 @@ namespace Expressway_Admin_loin
             {
                 TotalFine += 25000;
             }
-            if(checkLeftSideOvertake.Checked)
+            if (checkLeftSideOvertake.Checked)
             {
                 TotalFine += 1000;
             }
@@ -105,7 +105,7 @@ namespace Expressway_Admin_loin
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
