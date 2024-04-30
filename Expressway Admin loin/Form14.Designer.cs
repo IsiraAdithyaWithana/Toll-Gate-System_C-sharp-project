@@ -32,7 +32,6 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblCNumber = new System.Windows.Forms.Label();
             this.lblCVC = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -76,7 +75,7 @@
             this.lblCNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblCNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCNumber.ForeColor = System.Drawing.Color.White;
-            this.lblCNumber.Location = new System.Drawing.Point(218, 236);
+            this.lblCNumber.Location = new System.Drawing.Point(218, 257);
             this.lblCNumber.Name = "lblCNumber";
             this.lblCNumber.Size = new System.Drawing.Size(150, 30);
             this.lblCNumber.TabIndex = 2;
@@ -89,23 +88,11 @@
             this.lblCVC.BackColor = System.Drawing.Color.Transparent;
             this.lblCVC.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCVC.ForeColor = System.Drawing.Color.White;
-            this.lblCVC.Location = new System.Drawing.Point(218, 316);
+            this.lblCVC.Location = new System.Drawing.Point(218, 341);
             this.lblCVC.Name = "lblCVC";
             this.lblCVC.Size = new System.Drawing.Size(54, 30);
             this.lblCVC.TabIndex = 3;
             this.lblCVC.Text = "CVC";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(553, 492);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 35);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Proceed to pay";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -144,7 +131,7 @@
             // 
             this.txtCNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCNumber.Location = new System.Drawing.Point(426, 236);
+            this.txtCNumber.Location = new System.Drawing.Point(426, 257);
             this.txtCNumber.Name = "txtCNumber";
             this.txtCNumber.Size = new System.Drawing.Size(300, 35);
             this.txtCNumber.TabIndex = 8;
@@ -153,7 +140,7 @@
             // 
             this.txtCVC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCVC.Location = new System.Drawing.Point(426, 316);
+            this.txtCVC.Location = new System.Drawing.Point(426, 341);
             this.txtCVC.Name = "txtCVC";
             this.txtCVC.Size = new System.Drawing.Size(200, 35);
             this.txtCVC.TabIndex = 9;
@@ -175,7 +162,7 @@
             this.dateTimePicker1.CustomFormat = "MM/yyyy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(426, 388);
+            this.dateTimePicker1.Location = new System.Drawing.Point(426, 420);
             this.dateTimePicker1.MaxDate = new System.DateTime(9998, 12, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 31);
@@ -189,7 +176,7 @@
             this.txtExpire.BackColor = System.Drawing.Color.Transparent;
             this.txtExpire.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExpire.ForeColor = System.Drawing.Color.White;
-            this.txtExpire.Location = new System.Drawing.Point(218, 389);
+            this.txtExpire.Location = new System.Drawing.Point(218, 421);
             this.txtExpire.Name = "txtExpire";
             this.txtExpire.Size = new System.Drawing.Size(133, 30);
             this.txtExpire.TabIndex = 12;
@@ -211,7 +198,6 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblCVC);
             this.Controls.Add(this.lblCNumber);
             this.Controls.Add(this.lblName);
@@ -230,7 +216,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblCNumber;
         private System.Windows.Forms.Label lblCVC;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtName;
