@@ -42,10 +42,18 @@ namespace Expressway_Admin_loin
         private void VehicalTypeB_Click(object sender, EventArgs e)
         {
             ReferenceNumber = txtReferenceNumber.Text;
-            SqlInjectionOnline();
+            if(string.IsNullOrEmpty(ReferenceNumber))
+            {
+                MessageBox.Show("Please Enter the Reference Number");
+                return;
+            }
+            else
+            {
+                SqlInjectionOnline(ReferenceNumber);
+            }
         }
 
-        void SqlInjectionOnline()
+        void SqlInjectionOnline(string rN)
         {
             try
             {
@@ -53,7 +61,7 @@ namespace Expressway_Admin_loin
                 {
                     PaymentStatus = "Payed";
                     con.Open();
-                    string query = "INSERT INTO Payment ([userId],license_number,[fine_cost],payment_status,online_reference) VALUES (@userId,@DriversLicense,@TotalFine,@PaymentStatus,@ReferenceNumber);";
+                    string query = "INSERT INTO Payment ([userId],license_number,[fine_cost],payment_status,online_reference) VALUES (@userId,@DriversLicense,@TotalFine,@PaymentStatus,@rN);";
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
@@ -61,10 +69,12 @@ namespace Expressway_Admin_loin
                         command.Parameters.AddWithValue("@DriversLicense", DriversLicense);
                         command.Parameters.AddWithValue("@TotalFine", TotalFine);
                         command.Parameters.AddWithValue("@PaymentStatus", PaymentStatus);
-                        command.Parameters.AddWithValue("@ReferenceNumber", ReferenceNumber);
+                        command.Parameters.AddWithValue("@rN", rN);
 
                         command.ExecuteNonQuery();
                     }
+                    MessageBox.Show("The reference number was inserted");
+                    Form9 form9 = new Form9(userId);
                 }
             }
             catch (Exception Ex)
