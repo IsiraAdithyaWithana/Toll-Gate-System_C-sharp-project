@@ -19,34 +19,34 @@ namespace Expressway_Admin_loin
 
         private string DriversLicense;
         private int userId;
-        string violations;
-        string eorE;
-        string vehicleNumber;
+        string Violations;
+        string EorE;
+        string VehicleNumber;
 
         SqlConnection con1 = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway Project\Expressway project C#\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security = True");
 
-        public Form10(int UserID, string Violations, string EorE, string VehicleNumber)
+        public Form10(int UserID, string violations, string eorE, string vehicleNumber)
         {
             InitializeComponent();
 
             userId = UserID;
-            violations = Violations;
-            eorE = EorE;
-            vehicleNumber = VehicleNumber;
+            Violations = violations;
+            EorE = eorE;
+            VehicleNumber = vehicleNumber;
 
             try
             {
                 
                  con1.Open();
 
-                string query1 = $"SELECT violations FROM ex_violation WHERE vehicle_number = '{vehicleNumber}';";
+                string query1 = $"SELECT violations FROM ex_violation WHERE vehicle_number = '{VehicleNumber}';";
 
                 using (SqlCommand cmd1 = new SqlCommand(query1, con1))
                 {
                     SqlDataReader reader = cmd1.ExecuteReader();
                     if (reader.Read())
                     {
-                        violations = reader["Violations"].ToString(); //check here
+                        Violations = reader["violations"].ToString(); //check here
                     }
                 }
                 
@@ -82,13 +82,13 @@ namespace Expressway_Admin_loin
                 { 9,"parkinglane" },
                 { 10, "specificDL" }
             };
-            if (!string.IsNullOrEmpty(violations))
+            if (!string.IsNullOrEmpty(Violations))
             {
-                string[] violationValues = violations.Split(' ');
+                string[] violationValues = Violations.Split(' ');
 
-                foreach (string Violation in violationValues)
+                foreach (string violation in violationValues)
                 {
-                    if (int.TryParse(Violation, out int violationNumber))
+                    if (int.TryParse(violation, out int violationNumber))
                     {
                         if (checkboxNameMap.ContainsKey(violationNumber))
                         {
@@ -151,7 +151,7 @@ namespace Expressway_Admin_loin
                     
                         con1.Open();
 
-                        string query2 = $"UPDATE ex_violation SET driver_license = '{DriversLicense}' WHERE vehicle_number = '{vehicleNumber}'; ";
+                        string query2 = $"UPDATE ex_violation SET driver_license = '{DriversLicense}' WHERE vehicle_number = '{VehicleNumber}'; ";
 
                         using (SqlCommand cmd1 = new SqlCommand(query2, con1))
                         {
@@ -159,7 +159,7 @@ namespace Expressway_Admin_loin
 
                             MessageBox.Show("Data Inserted Successfully");
 
-                            Form11 form11 = new Form11(userId, violations, eorE, vehicleNumber, DriversLicense);
+                            Form11 form11 = new Form11(userId, Violations, EorE, VehicleNumber, DriversLicense);
                             form11.Show();
                             this.Hide();
                         }
