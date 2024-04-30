@@ -11,11 +11,12 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Xml.Linq;
 using System.Linq.Expressions;
+using System.Data.SqlTypes;
 namespace Expressway_Admin_loin
 {
     public partial class Form10 : Form
     {
-        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
+        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway Project\Expressway project C#\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
         public Form10()
         {
@@ -64,7 +65,7 @@ namespace Expressway_Admin_loin
 
                 con1.Open();
 
-                int IDDL = int.Parse(txtDL.Text);
+                string IDDL = txtDL.Text;
                 bool selectAll = selectall.Checked;
                 bool overSpeed = overspeed.Checked;
                 bool lowSpeed = lowspeed.Checked;
@@ -77,6 +78,7 @@ namespace Expressway_Admin_loin
                 bool collisionLC = collision.Checked;
                 bool parkingLane = parkinglane.Checked;
                 bool specificLicense = specificDL.Checked;
+                
 
                 foreach (Control control in this.Controls)
                 {
@@ -117,7 +119,7 @@ namespace Expressway_Admin_loin
 
                                 using (SqlCommand cmd2 = new SqlCommand(query2, con1))
                                 {
-                                    cmd2.Parameters.AddWithValue("IDDL", txtDL); //check here if something went wrong
+                                    cmd2.Parameters.AddWithValue("IDDL",txtDL); //check here if something went wrong
                                     cmd2.Parameters.AddWithValue("Id", Id);
 
 
@@ -145,7 +147,7 @@ namespace Expressway_Admin_loin
                         }
                     }
 
-
+                    
                     MessageBox.Show("Data saved Successfully!");
 
                 }
@@ -157,6 +159,7 @@ namespace Expressway_Admin_loin
                 MessageBox.Show("Error" + ex.Message);
             }
 
+            con1.Close();
 
             /*try
             {
