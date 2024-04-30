@@ -47,6 +47,7 @@ namespace Expressway_Admin_loin
             string expiredate = dateTimePicker1.Text;
 
             string message = $"Name: {name}\nCard Number: {cardnumber}\nCVV: {cvc}\nExpiration Date: {expiredate}";
+            SqlInjectionYes();
             MessageBox.Show(message, "Details Enterd");
 
             ClearDetails();
