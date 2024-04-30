@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkSpecificClassVehicle = new System.Windows.Forms.CheckBox();
+            this.checkNoise = new System.Windows.Forms.CheckBox();
+            this.checkMobilePhones = new System.Windows.Forms.CheckBox();
+            this.checkSpeed = new System.Windows.Forms.CheckBox();
+            this.checkLeftSideOvertake = new System.Windows.Forms.CheckBox();
+            this.checkDrunkDriving = new System.Windows.Forms.CheckBox();
+            this.checkInvalidLicense = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -52,116 +52,118 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox8
+            // checkSpecificClassVehicle
             // 
-            this.checkBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox8.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.ForeColor = System.Drawing.Color.White;
-            this.checkBox8.Location = new System.Drawing.Point(129, 408);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(884, 42);
-            this.checkBox8.TabIndex = 29;
-            this.checkBox8.Text = "Not having a license to drive a specific class of vehicles - Rs.1000";
-            this.checkBox8.UseVisualStyleBackColor = false;
+            this.checkSpecificClassVehicle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkSpecificClassVehicle.AutoSize = true;
+            this.checkSpecificClassVehicle.BackColor = System.Drawing.Color.Transparent;
+            this.checkSpecificClassVehicle.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSpecificClassVehicle.ForeColor = System.Drawing.Color.White;
+            this.checkSpecificClassVehicle.Location = new System.Drawing.Point(129, 408);
+            this.checkSpecificClassVehicle.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSpecificClassVehicle.Name = "checkSpecificClassVehicle";
+            this.checkSpecificClassVehicle.Size = new System.Drawing.Size(710, 34);
+            this.checkSpecificClassVehicle.TabIndex = 29;
+            this.checkSpecificClassVehicle.Text = "Not having a license to drive a specific class of vehicles - Rs.1000";
+            this.checkSpecificClassVehicle.UseVisualStyleBackColor = false;
             // 
-            // checkBox7
+            // checkNoise
             // 
-            this.checkBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox7.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.ForeColor = System.Drawing.Color.White;
-            this.checkBox7.Location = new System.Drawing.Point(129, 369);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(893, 42);
-            this.checkBox7.TabIndex = 28;
-            this.checkBox7.Text = "Excessive use of noise                                                      - Rs." +
-    "1000 ";
-            this.checkBox7.UseVisualStyleBackColor = false;
+            this.checkNoise.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkNoise.AutoSize = true;
+            this.checkNoise.BackColor = System.Drawing.Color.Transparent;
+            this.checkNoise.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkNoise.ForeColor = System.Drawing.Color.White;
+            this.checkNoise.Location = new System.Drawing.Point(129, 369);
+            this.checkNoise.Margin = new System.Windows.Forms.Padding(2);
+            this.checkNoise.Name = "checkNoise";
+            this.checkNoise.Size = new System.Drawing.Size(718, 34);
+            this.checkNoise.TabIndex = 28;
+            this.checkNoise.Text = "Excessive use of noise                                                          -" +
+    " Rs.1000 ";
+            this.checkNoise.UseVisualStyleBackColor = false;
             // 
-            // checkBox6
+            // checkMobilePhones
             // 
-            this.checkBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox6.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.Color.White;
-            this.checkBox6.Location = new System.Drawing.Point(129, 330);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(881, 42);
-            this.checkBox6.TabIndex = 27;
-            this.checkBox6.Text = "Avoid Using Mobile Phones                                              - Rs.1000";
-            this.checkBox6.UseVisualStyleBackColor = false;
+            this.checkMobilePhones.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkMobilePhones.AutoSize = true;
+            this.checkMobilePhones.BackColor = System.Drawing.Color.Transparent;
+            this.checkMobilePhones.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkMobilePhones.ForeColor = System.Drawing.Color.White;
+            this.checkMobilePhones.Location = new System.Drawing.Point(129, 330);
+            this.checkMobilePhones.Margin = new System.Windows.Forms.Padding(2);
+            this.checkMobilePhones.Name = "checkMobilePhones";
+            this.checkMobilePhones.Size = new System.Drawing.Size(710, 34);
+            this.checkMobilePhones.TabIndex = 27;
+            this.checkMobilePhones.Text = "Avoid Using Mobile Phones                                                  - Rs.1" +
+    "000";
+            this.checkMobilePhones.UseVisualStyleBackColor = false;
             // 
-            // checkBox5
+            // checkSpeed
             // 
-            this.checkBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.ForeColor = System.Drawing.Color.White;
-            this.checkBox5.Location = new System.Drawing.Point(129, 291);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(880, 42);
-            this.checkBox5.TabIndex = 26;
-            this.checkBox5.Text = "Speeding (>100km/h)                                                     - Rs.3000" +
-    "";
-            this.checkBox5.UseVisualStyleBackColor = false;
-            this.checkBox5.Visible = false;
+            this.checkSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkSpeed.AutoSize = true;
+            this.checkSpeed.BackColor = System.Drawing.Color.Transparent;
+            this.checkSpeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSpeed.ForeColor = System.Drawing.Color.White;
+            this.checkSpeed.Location = new System.Drawing.Point(129, 291);
+            this.checkSpeed.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSpeed.Name = "checkSpeed";
+            this.checkSpeed.Size = new System.Drawing.Size(711, 34);
+            this.checkSpeed.TabIndex = 26;
+            this.checkSpeed.Text = "Speeding (>100km/h)                                                          - Rs" +
+    ".3000";
+            this.checkSpeed.UseVisualStyleBackColor = false;
+            this.checkSpeed.Visible = false;
             // 
-            // checkBox4
+            // checkLeftSideOvertake
             // 
-            this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(129, 252);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(881, 42);
-            this.checkBox4.TabIndex = 25;
-            this.checkBox4.Text = "Left side Overtake                                                            - R" +
-    "s.1000";
-            this.checkBox4.UseVisualStyleBackColor = false;
+            this.checkLeftSideOvertake.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkLeftSideOvertake.AutoSize = true;
+            this.checkLeftSideOvertake.BackColor = System.Drawing.Color.Transparent;
+            this.checkLeftSideOvertake.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkLeftSideOvertake.ForeColor = System.Drawing.Color.White;
+            this.checkLeftSideOvertake.Location = new System.Drawing.Point(129, 252);
+            this.checkLeftSideOvertake.Margin = new System.Windows.Forms.Padding(2);
+            this.checkLeftSideOvertake.Name = "checkLeftSideOvertake";
+            this.checkLeftSideOvertake.Size = new System.Drawing.Size(712, 34);
+            this.checkLeftSideOvertake.TabIndex = 25;
+            this.checkLeftSideOvertake.Text = "Left side Overtake                                                               " +
+    "  - Rs.1000";
+            this.checkLeftSideOvertake.UseVisualStyleBackColor = false;
+            this.checkLeftSideOvertake.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
-            // checkBox3
+            // checkDrunkDriving
             // 
-            this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(129, 213);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(903, 42);
-            this.checkBox3.TabIndex = 24;
-            this.checkBox3.Text = "Drunk Driving                                                                    " +
-    "- Rs.25000";
-            this.checkBox3.UseVisualStyleBackColor = false;
+            this.checkDrunkDriving.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkDrunkDriving.AutoSize = true;
+            this.checkDrunkDriving.BackColor = System.Drawing.Color.Transparent;
+            this.checkDrunkDriving.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkDrunkDriving.ForeColor = System.Drawing.Color.White;
+            this.checkDrunkDriving.Location = new System.Drawing.Point(129, 213);
+            this.checkDrunkDriving.Margin = new System.Windows.Forms.Padding(2);
+            this.checkDrunkDriving.Name = "checkDrunkDriving";
+            this.checkDrunkDriving.Size = new System.Drawing.Size(725, 34);
+            this.checkDrunkDriving.TabIndex = 24;
+            this.checkDrunkDriving.Text = "Drunk Driving                                                                    " +
+    "     - Rs.25000";
+            this.checkDrunkDriving.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // checkInvalidLicense
             // 
-            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(129, 172);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(883, 42);
-            this.checkBox2.TabIndex = 23;
-            this.checkBox2.Text = "Invalid License                                                                  " +
-    "- Rs.1000";
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.checkInvalidLicense.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkInvalidLicense.AutoSize = true;
+            this.checkInvalidLicense.BackColor = System.Drawing.Color.Transparent;
+            this.checkInvalidLicense.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkInvalidLicense.ForeColor = System.Drawing.Color.White;
+            this.checkInvalidLicense.Location = new System.Drawing.Point(129, 172);
+            this.checkInvalidLicense.Margin = new System.Windows.Forms.Padding(2);
+            this.checkInvalidLicense.Name = "checkInvalidLicense";
+            this.checkInvalidLicense.Size = new System.Drawing.Size(711, 34);
+            this.checkInvalidLicense.TabIndex = 23;
+            this.checkInvalidLicense.Text = "Invalid License                                                                  " +
+    "     - Rs.1000";
+            this.checkInvalidLicense.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -183,7 +185,7 @@
             this.label1.Location = new System.Drawing.Point(129, 95);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 50);
+            this.label1.Size = new System.Drawing.Size(249, 41);
             this.label1.TabIndex = 31;
             this.label1.Text = "Type of the fine";
             // 
@@ -196,13 +198,13 @@
             this.ClientSize = new System.Drawing.Size(946, 547);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkSpecificClassVehicle);
+            this.Controls.Add(this.checkNoise);
+            this.Controls.Add(this.checkMobilePhones);
+            this.Controls.Add(this.checkSpeed);
+            this.Controls.Add(this.checkLeftSideOvertake);
+            this.Controls.Add(this.checkDrunkDriving);
+            this.Controls.Add(this.checkInvalidLicense);
             this.Controls.Add(this.panel1);
             this.Name = "Form11";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -216,13 +218,13 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkSpecificClassVehicle;
+        private System.Windows.Forms.CheckBox checkNoise;
+        private System.Windows.Forms.CheckBox checkMobilePhones;
+        private System.Windows.Forms.CheckBox checkSpeed;
+        private System.Windows.Forms.CheckBox checkLeftSideOvertake;
+        private System.Windows.Forms.CheckBox checkDrunkDriving;
+        private System.Windows.Forms.CheckBox checkInvalidLicense;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
     }

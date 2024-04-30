@@ -94,5 +94,10 @@ namespace Expressway_Admin_loin
             form6.Show();
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

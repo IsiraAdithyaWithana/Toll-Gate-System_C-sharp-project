@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form22));
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtReferenceNumber = new System.Windows.Forms.TextBox();
             this.VehicalTypeB = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -61,13 +61,13 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Reference  Number";
             // 
-            // textBox2
+            // txtReferenceNumber
             // 
-            this.textBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(854, 258);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(375, 35);
-            this.textBox2.TabIndex = 9;
+            this.txtReferenceNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReferenceNumber.Location = new System.Drawing.Point(854, 258);
+            this.txtReferenceNumber.Name = "txtReferenceNumber";
+            this.txtReferenceNumber.Size = new System.Drawing.Size(375, 35);
+            this.txtReferenceNumber.TabIndex = 9;
             // 
             // VehicalTypeB
             // 
@@ -79,6 +79,7 @@
             this.VehicalTypeB.TabIndex = 16;
             this.VehicalTypeB.Text = "OK";
             this.VehicalTypeB.UseVisualStyleBackColor = true;
+            this.VehicalTypeB.Click += new System.EventHandler(this.VehicalTypeB_Click);
             // 
             // panel1
             // 
@@ -113,7 +114,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.VehicalTypeB);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtReferenceNumber);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "Form22";
@@ -129,7 +130,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtReferenceNumber;
         private System.Windows.Forms.Button VehicalTypeB;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;

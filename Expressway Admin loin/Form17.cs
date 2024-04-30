@@ -12,9 +12,11 @@ namespace Expressway_Admin_loin
 {
     public partial class Form17 : Form
     {
-        public Form17()
+        private int userId;
+        public Form17(int UserId)
         {
             InitializeComponent();
+            userId = UserId;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,6 +48,11 @@ namespace Expressway_Admin_loin
         {
             Accident_report button1 = new Accident_report();
             addUserControle(button1); 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

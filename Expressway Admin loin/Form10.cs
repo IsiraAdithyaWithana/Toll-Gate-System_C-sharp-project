@@ -16,17 +16,96 @@ namespace Expressway_Admin_loin
 {
     public partial class Form10 : Form
     {
-        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway Project\Expressway project C#\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
-        public Form10()
+        private string DriversLicense;
+        private int userId;
+        string violations;
+        string eorE;
+        string vehicleNumber;
+
+        SqlConnection con1 = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway Project\Expressway project C#\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security = True");
+
+        public Form10(int UserID, string Violations, string EorE, string VehicleNumber)
         {
-
             InitializeComponent();
+
+            userId = UserID;
+            violations = Violations;
+            eorE = EorE;
+            vehicleNumber = VehicleNumber;
+
+            try
+            {
+                
+                 con1.Open();
+
+                string query1 = $"SELECT violations FROM ex_violation WHERE vehicle_number = '{vehicleNumber}';";
+
+                using (SqlCommand cmd1 = new SqlCommand(query1, con1))
+                {
+                    SqlDataReader reader = cmd1.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        violations = reader["Violations"].ToString(); //check here
+                    }
+                }
+                
+                
+
+            }
+
+            catch (Exception ex)
+
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+
         }
+
+        
+    
 
         private void Form10_Load(object sender, EventArgs e)
         {
 
+            Dictionary<int, string> checkboxNameMap = new Dictionary<int, string>
+            {
+                { 0, "lowspeed" },
+                { 1, "overspeed" },
+                { 2, "seatbelts" },
+                { 3, "signal" },
+                { 4, "drugs" },
+                { 5, "mobilephone" },
+                { 6, "invalidDL" },
+                { 7, "littering" },
+                { 8, "collision" },
+                { 9,"parkinglane" },
+                { 10, "specificDL" }
+            };
+            if (!string.IsNullOrEmpty(violations))
+            {
+                string[] violationValues = violations.Split(' ');
+
+                foreach (string Violation in violationValues)
+                {
+                    if (int.TryParse(Violation, out int violationNumber))
+                    {
+                        if (checkboxNameMap.ContainsKey(violationNumber))
+                        {
+                            string checkboxName = checkboxNameMap[violationNumber];
+
+                            Control[] foundControls = Controls.Find(checkboxName, true);
+
+                            if (foundControls.Length > 0 && foundControls[0] is CheckBox)
+                            {
+                                CheckBox checkBox = (CheckBox)foundControls[0];
+
+                                checkBox.Checked = true;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -58,126 +137,41 @@ namespace Expressway_Admin_loin
         private void btnNX_Click(object sender, EventArgs e)
         {
 
-            try
+            string drivingLicense = txtDL.Text;
+            if (string.IsNullOrEmpty(drivingLicense))
             {
-
-
-
-                con1.Open();
-
-                string IDDL = txtDL.Text;
-                bool selectAll = selectall.Checked;
-                bool overSpeed = overspeed.Checked;
-                bool lowSpeed = lowspeed.Checked;
-                bool seatBelts = seatbelts.Checked;
-                bool Signals = signal.Checked;
-                bool Drugs = drugs.Checked;
-                bool mobilePhone = mobilephone.Checked;
-                bool invalidLicense = invalidDL.Checked;
-                bool Littering = littering.Checked;
-                bool collisionLC = collision.Checked;
-                bool parkingLane = parkinglane.Checked;
-                bool specificLicense = specificDL.Checked;
-                
-
-                foreach (Control control in this.Controls)
+                MessageBox.Show("Please enter the driving license number");
+                return;
+            }
+            else
+            {
+                try
                 {
-                    if (control is CheckBox && ((CheckBox)control).Checked)
-                    {
-                        string Violation = control.Text;
-
-                        string query1 = $"SELECT Id FROM Violation WHERE Violation = violation";
-
-                        using (SqlCommand cmd = new SqlCommand(query1, con1))
-                        {
-                            cmd.Parameters.AddWithValue("IDDL", txtDL);
-                            cmd.Parameters.AddWithValue("selectAll", selectall.Checked);
-                            cmd.Parameters.AddWithValue("overSpeed", overspeed.Checked);
-                            cmd.Parameters.AddWithValue("lowspeed", lowspeed.Checked);
-                            cmd.Parameters.AddWithValue("seatBelts", seatbelts.Checked);
-                            cmd.Parameters.AddWithValue("Signals", signal.Checked);
-                            cmd.Parameters.AddWithValue("Drugs", drugs.Checked);
-                            cmd.Parameters.AddWithValue("mobilePhone", mobilephone.Checked);
-                            cmd.Parameters.AddWithValue("invalidlicense", invalidDL.Checked);
-                            cmd.Parameters.AddWithValue("Littering", littering.Checked);
-                            cmd.Parameters.AddWithValue("collisionLC", collision.Checked);
-                            cmd.Parameters.AddWithValue("parkingLane", parkinglane.Checked);
-                            cmd.Parameters.AddWithValue("specificLicese", specificDL.Checked);
-
-                            object result = cmd.ExecuteScalar();
-
-                            if (result != null)
-                            {
-                                int Id = (int)result;    //check here again if something went wrong
-
-                                string query2 = $"INSERT INTO ex_violation (driver_license,violations) " +
-                                $"VALUES ({IDDL},{Id});";
-
-                                /* string query2 = $"INSERT INTO Violation (Id,Select All,Low Speed/inner lane,Overspeed,Not using seat belts,Drunk driving,Using mobile phones,Invalid driver license,Littering the road,Collision during lane change,Misuse E.Parklane,Classless driver license) " +
-                             $"VALUES ({IDDL},'{selectAll}',{lowSpeed},{overSpeed},{seatBelts},{Signals},{Drugs},{mobilePhone},{invalidLicense},{Littering},{collisionLC},{parkingLane},{specificLicense});";
-                                */
-
-                                using (SqlCommand cmd2 = new SqlCommand(query2, con1))
-                                {
-                                    cmd2.Parameters.AddWithValue("IDDL",txtDL); //check here if something went wrong
-                                    cmd2.Parameters.AddWithValue("Id", Id);
-
-
-
-
-                                    /* cmd.Parameters.AddWithValue("IDDL", txtDL);
-                                     cmd.Parameters.AddWithValue("selectAll", selectall.Checked);
-                                     cmd.Parameters.AddWithValue("overSpeed", overspeed.Checked);
-                                     cmd.Parameters.AddWithValue("lowspeed", lowspeed.Checked);
-                                     cmd.Parameters.AddWithValue("seatBelts", seatbelts.Checked);
-                                     cmd.Parameters.AddWithValue("Signals", signal.Checked);
-                                     cmd.Parameters.AddWithValue("Drugs", drugs.Checked);
-                                     cmd.Parameters.AddWithValue("mobilePhone", mobilephone.Checked);
-                                     cmd.Parameters.AddWithValue("invalidlicense", invalidDL.Checked);
-                                     cmd.Parameters.AddWithValue("Littering", littering.Checked);
-                                     cmd.Parameters.AddWithValue("collisionLC", collision.Checked);
-                                     cmd.Parameters.AddWithValue("parkingLane", parkinglane.Checked);
-                                     cmd.Parameters.AddWithValue("specificLicese", specificDL.Checked);
-
-                                     */
-
-                                    cmd2.ExecuteNonQuery();
-                                }
-                            }
-                        }
-                    }
-
+                    DriversLicense = drivingLicense;
                     
-                    MessageBox.Show("Data saved Successfully!");
+                        con1.Open();
+
+                        string query2 = $"UPDATE ex_violation SET driver_license = '{DriversLicense}' WHERE vehicle_number = '{vehicleNumber}'; ";
+
+                        using (SqlCommand cmd1 = new SqlCommand(query2, con1))
+                        {
+                            cmd1.ExecuteNonQuery();
+
+                            MessageBox.Show("Data Inserted Successfully");
+
+                            Form11 form11 = new Form11(userId, violations, eorE, vehicleNumber, DriversLicense);
+                            form11.Show();
+                            this.Hide();
+                        }
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
 
                 }
             }
-
-
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error" + ex.Message);
-            }
-
-            con1.Close();
-
-            /*try
-            {
-                con1.Open();
-                cmd.ExecuteNonQuery();
-                con1.Close();
-                MessageBox.Show("Violations selected Successfully!");
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            */
-
-
-
-
+            
 
         }
 

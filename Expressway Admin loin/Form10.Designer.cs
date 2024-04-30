@@ -76,7 +76,7 @@
             this.label2.Location = new System.Drawing.Point(213, 196);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 29);
+            this.label2.Size = new System.Drawing.Size(133, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Drivers License";
             // 
@@ -90,7 +90,7 @@
             this.littering.Location = new System.Drawing.Point(751, 349);
             this.littering.Margin = new System.Windows.Forms.Padding(2);
             this.littering.Name = "littering";
-            this.littering.Size = new System.Drawing.Size(203, 33);
+            this.littering.Size = new System.Drawing.Size(168, 28);
             this.littering.TabIndex = 21;
             this.littering.Text = "Littering the road";
             this.littering.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@
             this.mobilephone.Location = new System.Drawing.Point(376, 546);
             this.mobilephone.Margin = new System.Windows.Forms.Padding(2);
             this.mobilephone.Name = "mobilephone";
-            this.mobilephone.Size = new System.Drawing.Size(229, 33);
+            this.mobilephone.Size = new System.Drawing.Size(191, 28);
             this.mobilephone.TabIndex = 20;
             this.mobilephone.Text = "Using mobile phone";
             this.mobilephone.UseVisualStyleBackColor = false;
@@ -120,7 +120,7 @@
             this.drugs.Location = new System.Drawing.Point(377, 496);
             this.drugs.Margin = new System.Windows.Forms.Padding(2);
             this.drugs.Name = "drugs";
-            this.drugs.Size = new System.Drawing.Size(394, 33);
+            this.drugs.Size = new System.Drawing.Size(325, 28);
             this.drugs.TabIndex = 19;
             this.drugs.Text = "Driving under drug/alcohol influence";
             this.drugs.UseVisualStyleBackColor = false;
@@ -135,7 +135,7 @@
             this.signal.Location = new System.Drawing.Point(377, 448);
             this.signal.Margin = new System.Windows.Forms.Padding(2);
             this.signal.Name = "signal";
-            this.signal.Size = new System.Drawing.Size(166, 33);
+            this.signal.Size = new System.Drawing.Size(138, 28);
             this.signal.TabIndex = 18;
             this.signal.Text = "Not Signaling";
             this.signal.UseVisualStyleBackColor = false;
@@ -150,7 +150,7 @@
             this.seatbelts.Location = new System.Drawing.Point(377, 399);
             this.seatbelts.Margin = new System.Windows.Forms.Padding(2);
             this.seatbelts.Name = "seatbelts";
-            this.seatbelts.Size = new System.Drawing.Size(227, 33);
+            this.seatbelts.Size = new System.Drawing.Size(191, 28);
             this.seatbelts.TabIndex = 17;
             this.seatbelts.Text = "Not using seat belts";
             this.seatbelts.UseVisualStyleBackColor = false;
@@ -165,7 +165,7 @@
             this.overspeed.Location = new System.Drawing.Point(377, 349);
             this.overspeed.Margin = new System.Windows.Forms.Padding(2);
             this.overspeed.Name = "overspeed";
-            this.overspeed.Size = new System.Drawing.Size(234, 33);
+            this.overspeed.Size = new System.Drawing.Size(193, 28);
             this.overspeed.TabIndex = 16;
             this.overspeed.Text = "Over speed driving   ";
             this.overspeed.UseVisualStyleBackColor = false;
@@ -180,7 +180,7 @@
             this.lowspeed.Location = new System.Drawing.Point(377, 298);
             this.lowspeed.Margin = new System.Windows.Forms.Padding(2);
             this.lowspeed.Name = "lowspeed";
-            this.lowspeed.Size = new System.Drawing.Size(344, 33);
+            this.lowspeed.Size = new System.Drawing.Size(285, 28);
             this.lowspeed.TabIndex = 15;
             this.lowspeed.Text = "Inner lane / low speed driving   ";
             this.lowspeed.UseVisualStyleBackColor = false;
@@ -195,7 +195,7 @@
             this.label3.Location = new System.Drawing.Point(213, 245);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 29);
+            this.label3.Size = new System.Drawing.Size(132, 24);
             this.label3.TabIndex = 14;
             this.label3.Text = "Violation Types";
             // 
@@ -209,7 +209,7 @@
             this.selectall.Location = new System.Drawing.Point(377, 245);
             this.selectall.Margin = new System.Windows.Forms.Padding(2);
             this.selectall.Name = "selectall";
-            this.selectall.Size = new System.Drawing.Size(126, 33);
+            this.selectall.Size = new System.Drawing.Size(105, 28);
             this.selectall.TabIndex = 13;
             this.selectall.Text = "Select all";
             this.selectall.UseVisualStyleBackColor = false;
@@ -225,7 +225,7 @@
             this.parkinglane.Location = new System.Drawing.Point(751, 448);
             this.parkinglane.Margin = new System.Windows.Forms.Padding(2);
             this.parkinglane.Name = "parkinglane";
-            this.parkinglane.Size = new System.Drawing.Size(354, 33);
+            this.parkinglane.Size = new System.Drawing.Size(294, 28);
             this.parkinglane.TabIndex = 23;
             this.parkinglane.Text = "Misuing Emergency parking lane";
             this.parkinglane.UseVisualStyleBackColor = false;
@@ -240,7 +240,7 @@
             this.collision.Location = new System.Drawing.Point(751, 399);
             this.collision.Margin = new System.Windows.Forms.Padding(2);
             this.collision.Name = "collision";
-            this.collision.Size = new System.Drawing.Size(335, 33);
+            this.collision.Size = new System.Drawing.Size(279, 28);
             this.collision.TabIndex = 22;
             this.collision.Text = "Collision during lane changing ";
             this.collision.UseVisualStyleBackColor = false;
@@ -280,7 +280,7 @@
             this.btnNX.Name = "btnNX";
             this.btnNX.Size = new System.Drawing.Size(95, 41);
             this.btnNX.TabIndex = 26;
-            this.btnNX.Text = "Next >>";
+            this.btnNX.Text = "Next";
             this.btnNX.UseVisualStyleBackColor = true;
             this.btnNX.Click += new System.EventHandler(this.btnNX_Click);
             // 
@@ -294,7 +294,7 @@
             this.label1.Location = new System.Drawing.Point(463, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(521, 46);
+            this.label1.Size = new System.Drawing.Size(414, 36);
             this.label1.TabIndex = 27;
             this.label1.Text = "EXPRESSWAY VIOLATIONS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -323,7 +323,7 @@
             this.invalidDL.Location = new System.Drawing.Point(751, 298);
             this.invalidDL.Margin = new System.Windows.Forms.Padding(2);
             this.invalidDL.Name = "invalidDL";
-            this.invalidDL.Size = new System.Drawing.Size(244, 33);
+            this.invalidDL.Size = new System.Drawing.Size(201, 28);
             this.invalidDL.TabIndex = 29;
             this.invalidDL.Text = "Invalid Driver License";
             this.invalidDL.UseVisualStyleBackColor = false;
@@ -338,7 +338,7 @@
             this.specificDL.Location = new System.Drawing.Point(751, 496);
             this.specificDL.Margin = new System.Windows.Forms.Padding(2);
             this.specificDL.Name = "specificDL";
-            this.specificDL.Size = new System.Drawing.Size(503, 33);
+            this.specificDL.Size = new System.Drawing.Size(421, 28);
             this.specificDL.TabIndex = 30;
             this.specificDL.Text = "Not having the license  specific class of vehicles";
             this.specificDL.UseVisualStyleBackColor = false;
