@@ -48,5 +48,12 @@ namespace Expressway_Admin_loin
         {
 
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Close();
+        }
     }
 }
