@@ -23,19 +23,19 @@ namespace Expressway_Admin_loin
             
 
             try
-                {
+            {
                 using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway Project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
                     con.Open();
 
-                string query = "SELECT accident (user ,[nearest_point],[vehicle_type],date_time) FROM (@User, @NerestPoint, @VehicleType, @DateTime)";
-                DataSet dataSet = new DataSet();
+                    string query = "SELECT accident (user ,[nearest_point],[vehicle_type],date_time) FROM (@User, @NerestPoint, @VehicleType, @DateTime)";
+                    DataSet dataSet = new DataSet();
 
-                adapter.Fill(dataSet, "accident");
+                    adapter.Fill(dataSet, "accident");
 
-                chart1.DataSource = dataSet.Tables["accident"];
-                chart1.Series[""]
-
-
+                    chart1.DataSource = dataSet.Tables["accident"];
+                    chart1.Series[""];
+                }
             }
         }
 
