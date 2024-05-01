@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -97,7 +98,34 @@ namespace Expressway_Admin_loin
 
         private void Form4_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
+                    con1.Open();
+                    string query1 = $"SELECT user_position FROM [User] WHERE id = '{userId}';";
+                    using (SqlCommand cmd = new SqlCommand(query1, con1))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            string userPosition = reader["user_position"].ToString();
+                            if (userPosition == "admin")
+                            {
+                                btnMenu.Visible = true;
+                            }
+                            else
+                            {
+                                btnMenu.Visible = false;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -113,6 +141,13 @@ namespace Expressway_Admin_loin
             Form20 form20 = new Form20(userId,EorE, pageNum);
             form20.Show();
             this.Hide();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Form16 form16 = new Form16(userId);
+            form16.Show();
+            this.Close();
         }
     }
 }

@@ -49,6 +49,7 @@
             this.radioD = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -66,7 +67,7 @@
             this.label1.Location = new System.Drawing.Point(521, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 68);
+            this.label1.Size = new System.Drawing.Size(191, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Entrance";
             // 
@@ -79,7 +80,7 @@
             this.txtVehicalNum.Location = new System.Drawing.Point(266, 219);
             this.txtVehicalNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtVehicalNum.Name = "txtVehicalNum";
-            this.txtVehicalNum.Size = new System.Drawing.Size(315, 50);
+            this.txtVehicalNum.Size = new System.Drawing.Size(257, 41);
             this.txtVehicalNum.TabIndex = 1;
             this.txtVehicalNum.Text = "Vehical Number";
             this.txtVehicalNum.Click += new System.EventHandler(this.label2_Click);
@@ -93,7 +94,7 @@
             this.label3.Location = new System.Drawing.Point(266, 306);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(253, 50);
+            this.label3.Size = new System.Drawing.Size(205, 41);
             this.label3.TabIndex = 2;
             this.label3.Text = "Vehical Type";
             // 
@@ -115,7 +116,7 @@
             this.txtVehicleNumber.Location = new System.Drawing.Point(568, 225);
             this.txtVehicleNumber.Margin = new System.Windows.Forms.Padding(2);
             this.txtVehicleNumber.Name = "txtVehicleNumber";
-            this.txtVehicleNumber.Size = new System.Drawing.Size(253, 41);
+            this.txtVehicleNumber.Size = new System.Drawing.Size(253, 35);
             this.txtVehicleNumber.TabIndex = 14;
             // 
             // VehicalTypeB
@@ -213,7 +214,7 @@
             this.radioB.Location = new System.Drawing.Point(544, 274);
             this.radioB.Margin = new System.Windows.Forms.Padding(2);
             this.radioB.Name = "radioB";
-            this.radioB.Size = new System.Drawing.Size(136, 42);
+            this.radioB.Size = new System.Drawing.Size(106, 34);
             this.radioB.TabIndex = 28;
             this.radioB.TabStop = true;
             this.radioB.Text = "   B       ";
@@ -228,7 +229,7 @@
             this.radioC1.Location = new System.Drawing.Point(544, 314);
             this.radioC1.Margin = new System.Windows.Forms.Padding(2);
             this.radioC1.Name = "radioC1";
-            this.radioC1.Size = new System.Drawing.Size(145, 42);
+            this.radioC1.Size = new System.Drawing.Size(113, 34);
             this.radioC1.TabIndex = 29;
             this.radioC1.TabStop = true;
             this.radioC1.Text = "   C1      ";
@@ -244,7 +245,7 @@
             this.radioC.Location = new System.Drawing.Point(544, 361);
             this.radioC.Margin = new System.Windows.Forms.Padding(2);
             this.radioC.Name = "radioC";
-            this.radioC.Size = new System.Drawing.Size(135, 42);
+            this.radioC.Size = new System.Drawing.Size(105, 34);
             this.radioC.TabIndex = 30;
             this.radioC.TabStop = true;
             this.radioC.Text = "   C       ";
@@ -259,7 +260,7 @@
             this.radioCE.Location = new System.Drawing.Point(544, 405);
             this.radioCE.Margin = new System.Windows.Forms.Padding(2);
             this.radioCE.Name = "radioCE";
-            this.radioCE.Size = new System.Drawing.Size(151, 42);
+            this.radioCE.Size = new System.Drawing.Size(118, 34);
             this.radioCE.TabIndex = 31;
             this.radioCE.TabStop = true;
             this.radioCE.Text = "   CE       ";
@@ -274,7 +275,7 @@
             this.radioD1.Location = new System.Drawing.Point(544, 456);
             this.radioD1.Margin = new System.Windows.Forms.Padding(2);
             this.radioD1.Name = "radioD1";
-            this.radioD1.Size = new System.Drawing.Size(156, 42);
+            this.radioD1.Size = new System.Drawing.Size(121, 34);
             this.radioD1.TabIndex = 32;
             this.radioD1.TabStop = true;
             this.radioD1.Text = "   D1       ";
@@ -289,7 +290,7 @@
             this.radioD.Location = new System.Drawing.Point(544, 502);
             this.radioD.Margin = new System.Windows.Forms.Padding(2);
             this.radioD.Name = "radioD";
-            this.radioD.Size = new System.Drawing.Size(138, 42);
+            this.radioD.Size = new System.Drawing.Size(107, 34);
             this.radioD.TabIndex = 33;
             this.radioD.TabStop = true;
             this.radioD.Text = "   D       ";
@@ -318,6 +319,21 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btnMenu
+            // 
+            this.btnMenu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMenu.BackColor = System.Drawing.Color.Gray;
+            this.btnMenu.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.Black;
+            this.btnMenu.Location = new System.Drawing.Point(50, 101);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(183, 53);
+            this.btnMenu.TabIndex = 36;
+            this.btnMenu.Text = "Back to Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Visible = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,6 +341,7 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.radioD);
@@ -383,5 +400,6 @@
         private System.Windows.Forms.RadioButton radioD;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

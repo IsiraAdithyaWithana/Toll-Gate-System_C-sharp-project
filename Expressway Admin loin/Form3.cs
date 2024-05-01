@@ -23,16 +23,17 @@ namespace Expressway_Admin_loin
             userId = id;
         }
 
-        public Form3()
-        {
-        }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
         private void button4_Click(object sender, EventArgs e)
+        {
+            button4click();
+        }
+
+        public void button4click()
         {
             if (string.IsNullOrEmpty(txtGateNumber.Text))
             {
@@ -121,31 +122,18 @@ namespace Expressway_Admin_loin
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            button_hide();
-        }
-
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
-            Form16 form16 = new Form16(userId);
-            form16.Show();
-            this.Close();
-        }
-
-        public void button_hide()
-        {
             try
             {
-                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
-                    con.Open();
-                    string query1 = $"SELECT user_position FROM [User] WHERE username = '{userId}';";
-                    using (SqlCommand cmd = new SqlCommand(query1, con))
+                    con1.Open();
+                    string query1 = $"SELECT user_position FROM [User] WHERE id = '{userId}';";
+                    using (SqlCommand cmd = new SqlCommand(query1, con1))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
                         if (reader.Read())
                         {
                             string userPosition = reader["user_position"].ToString();
-
                             if (userPosition == "admin")
                             {
                                 btnMenu.Visible = true;
@@ -163,5 +151,13 @@ namespace Expressway_Admin_loin
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Form16 form16 = new Form16(userId);
+            form16.Show();
+            this.Close();
+        }
+
     }
 }
