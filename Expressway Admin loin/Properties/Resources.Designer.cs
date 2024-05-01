@@ -113,6 +113,16 @@ namespace Expressway_Admin_loin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Untitled_112 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled-112", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Untitled_design_blue_4 {
             get {
                 object obj = ResourceManager.GetObject("Untitled design blue 4", resourceCulture);

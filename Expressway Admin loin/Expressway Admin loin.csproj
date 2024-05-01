@@ -325,6 +325,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Untitled-112.png" />
     <None Include="Resources\Untitled design blue 4.jpg" />
     <None Include="Resources\Welcome To The 32.jpg" />
   </ItemGroup>
