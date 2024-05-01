@@ -55,6 +55,7 @@ namespace Expressway_Admin_loin
                     conn.Open();
                     string AccidentSite = txtAccidentSite.Text;
                     string VehicleType = "";
+                    DateTime dateAndTime = DateTime.Now;
 
                     foreach (CheckBox checkBox in this.Controls.OfType<CheckBox>())
                     {
@@ -64,13 +65,14 @@ namespace Expressway_Admin_loin
                         }
                     }
 
-                    string query = "INSERT INTO accident ([user], nearest_point, vehicle_type) VALUES (@User, @Accidentsite, @Vehicletype);";
+                    string query = "INSERT INTO accident ([user], nearest_point, vehicle_type, [date_time]) VALUES (@User, @Accidentsite, @Vehicletype, @DateAndTime);";
 
                     using (SqlCommand command = new SqlCommand(query, conn))
                     {
                         command.Parameters.AddWithValue("@User", userId);
                         command.Parameters.AddWithValue("@Accidentsite", AccidentSite);
                         command.Parameters.AddWithValue("@Vehicletype", VehicleType);
+                        command.Parameters.AddWithValue("@DateAndTime", dateAndTime);
 
                         command.ExecuteNonQuery();
                     }
