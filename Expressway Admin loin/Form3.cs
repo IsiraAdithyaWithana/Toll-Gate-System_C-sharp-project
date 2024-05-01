@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -120,7 +121,47 @@ namespace Expressway_Admin_loin
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            button_hide();
+        }
 
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Form16 form16 = new Form16(userId);
+            form16.Show();
+            this.Close();
+        }
+
+        public void button_hide()
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                {
+                    con.Open();
+                    string query1 = $"SELECT user_position FROM [User] WHERE username = '{userId}';";
+                    using (SqlCommand cmd = new SqlCommand(query1, con))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            string userPosition = reader["user_position"].ToString();
+
+                            if (userPosition == "admin")
+                            {
+                                btnMenu.Visible = true;
+                            }
+                            else
+                            {
+                                btnMenu.Visible = false;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

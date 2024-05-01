@@ -38,6 +38,7 @@
             this.radioExit = new System.Windows.Forms.RadioButton();
             this.lblgateno = new System.Windows.Forms.Label();
             this.txtGateNumber = new System.Windows.Forms.TextBox();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +50,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(429, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(585, 68);
+            this.label1.Size = new System.Drawing.Size(467, 55);
             this.label1.TabIndex = 1;
             this.label1.Text = "Southern Expressway";
             // 
@@ -59,7 +60,7 @@
             this.txtPoliceID.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPoliceID.Location = new System.Drawing.Point(668, 323);
             this.txtPoliceID.Name = "txtPoliceID";
-            this.txtPoliceID.Size = new System.Drawing.Size(300, 46);
+            this.txtPoliceID.Size = new System.Drawing.Size(300, 38);
             this.txtPoliceID.TabIndex = 7;
             this.txtPoliceID.TextChanged += new System.EventHandler(this.txtPoliceID_TextChanged);
             // 
@@ -72,7 +73,7 @@
             this.lblpoliceid.ForeColor = System.Drawing.Color.White;
             this.lblpoliceid.Location = new System.Drawing.Point(368, 323);
             this.lblpoliceid.Name = "lblpoliceid";
-            this.lblpoliceid.Size = new System.Drawing.Size(350, 51);
+            this.lblpoliceid.Size = new System.Drawing.Size(279, 41);
             this.lblpoliceid.TabIndex = 6;
             this.lblpoliceid.Text = "Police officer\'s ID";
             this.lblpoliceid.Click += new System.EventHandler(this.label5_Click);
@@ -86,7 +87,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(368, 204);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(311, 51);
+            this.label2.Size = new System.Drawing.Size(246, 41);
             this.label2.TabIndex = 8;
             this.label2.Text = "Select the Gate";
             // 
@@ -123,7 +124,7 @@
             this.radioEntrance.ForeColor = System.Drawing.Color.White;
             this.radioEntrance.Location = new System.Drawing.Point(668, 204);
             this.radioEntrance.Name = "radioEntrance";
-            this.radioEntrance.Size = new System.Drawing.Size(180, 47);
+            this.radioEntrance.Size = new System.Drawing.Size(147, 41);
             this.radioEntrance.TabIndex = 14;
             this.radioEntrance.TabStop = true;
             this.radioEntrance.Text = "Entrance";
@@ -138,7 +139,7 @@
             this.radioExit.ForeColor = System.Drawing.Color.White;
             this.radioExit.Location = new System.Drawing.Point(844, 204);
             this.radioExit.Name = "radioExit";
-            this.radioExit.Size = new System.Drawing.Size(97, 47);
+            this.radioExit.Size = new System.Drawing.Size(80, 41);
             this.radioExit.TabIndex = 15;
             this.radioExit.TabStop = true;
             this.radioExit.Text = "Exit";
@@ -153,7 +154,7 @@
             this.lblgateno.ForeColor = System.Drawing.Color.White;
             this.lblgateno.Location = new System.Drawing.Point(368, 262);
             this.lblgateno.Name = "lblgateno";
-            this.lblgateno.Size = new System.Drawing.Size(275, 51);
+            this.lblgateno.Size = new System.Drawing.Size(218, 41);
             this.lblgateno.TabIndex = 16;
             this.lblgateno.Text = "Gate Number";
             this.lblgateno.Click += new System.EventHandler(this.label3_Click);
@@ -164,9 +165,24 @@
             this.txtGateNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGateNumber.Location = new System.Drawing.Point(668, 262);
             this.txtGateNumber.Name = "txtGateNumber";
-            this.txtGateNumber.Size = new System.Drawing.Size(300, 46);
+            this.txtGateNumber.Size = new System.Drawing.Size(300, 38);
             this.txtGateNumber.TabIndex = 17;
             this.txtGateNumber.TextChanged += new System.EventHandler(this.txtGateNumber_TextChanged);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMenu.BackColor = System.Drawing.Color.Gray;
+            this.btnMenu.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.Black;
+            this.btnMenu.Location = new System.Drawing.Point(23, 58);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(183, 53);
+            this.btnMenu.TabIndex = 18;
+            this.btnMenu.Text = "Back to Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Visible = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // Form3
             // 
@@ -175,6 +191,7 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.txtGateNumber);
             this.Controls.Add(this.lblgateno);
             this.Controls.Add(this.radioExit);
@@ -207,5 +224,6 @@
         private System.Windows.Forms.RadioButton radioExit;
         private System.Windows.Forms.Label lblgateno;
         private System.Windows.Forms.TextBox txtGateNumber;
+        private System.Windows.Forms.Button btnMenu;
     }
 }
