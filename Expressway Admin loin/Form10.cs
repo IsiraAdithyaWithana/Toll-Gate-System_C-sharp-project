@@ -23,13 +23,13 @@ namespace Expressway_Admin_loin
         string EorE;
         string VehicleNumber;
 
-        SqlConnection con1 = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway Project\Expressway project C#\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security = True");
+        SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Desktop\NSBM\C#lab\Highway Project\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True");
 
-        public Form10(int UserID, string violations, string eorE, string vehicleNumber)
+        public Form10(int UserId, string violations, string eorE, string vehicleNumber)
         {
             InitializeComponent();
 
-            userId = UserID;
+            userId = UserId;
             Violations = violations;
             EorE = eorE;
             VehicleNumber = vehicleNumber;
