@@ -70,7 +70,7 @@ namespace Expressway_Admin_loin
             }
             else if (chcardpayment.Checked)
             {
-                Form14 form14 = new Form14();
+                Form14 form14 = new Form14(userId,Violations,EorE,VehicleNumber,DriversLicense,TotalFine);
                 form14.ShowDialog();
             }
             else if (chonlinetransfer.Checked)
