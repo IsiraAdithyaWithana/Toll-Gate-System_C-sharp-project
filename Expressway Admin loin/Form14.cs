@@ -95,11 +95,12 @@ namespace Expressway_Admin_loin
         {
             try
             {
-                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway Project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                 {
                     PaymentStatus = "Payed By Card";
+                    DateTime dateAndTime = DateTime.Now;
                     con.Open();
-                    string query = "INSERT INTO Payment ([userId],license_number,[fine_cost],payment_status) VALUES (@userId,@DriversLicense,@TotalFine,@PaymentStatus);";
+                    string query = "INSERT INTO Payment ([userId],license_number,[fine_cost],payment_status,date_time) VALUES (@userId,@DriversLicense,@TotalFine,@PaymentStatus, @DateAndTime);";
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
@@ -107,6 +108,7 @@ namespace Expressway_Admin_loin
                         command.Parameters.AddWithValue("@DriversLicense", DriversLicense);
                         command.Parameters.AddWithValue("@TotalFine", TotalFine);
                         command.Parameters.AddWithValue("@PaymentStatus", PaymentStatus);
+                        command.Parameters.AddWithValue("@DateAndTime", dateAndTime);
 
                         command.ExecuteNonQuery();
                     }
