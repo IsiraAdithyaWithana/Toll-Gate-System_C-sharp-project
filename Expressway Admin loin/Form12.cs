@@ -71,16 +71,22 @@ namespace Expressway_Admin_loin
             else if (chcardpayment.Checked)
             {
                 Form14 form14 = new Form14(userId,Violations,EorE,VehicleNumber,DriversLicense,TotalFine);
-                form14.ShowDialog();
+                form14.Show();
+                this.Close();
             }
             else if (chonlinetransfer.Checked)
             {
                 Form22 form22 = new Form22(userId,DriversLicense,TotalFine,EorE);
-                form22.ShowDialog();
+                form22.Show();
+                this.Close();
             }
             else if (ch14days.Checked)
             {
                 SqlInjectionNo();
+                MessageBox.Show("14 days left to pay");
+                Form9 form9 = new Form9(userId);
+                form9.Show();
+                this.Close();
             }
         }
 
