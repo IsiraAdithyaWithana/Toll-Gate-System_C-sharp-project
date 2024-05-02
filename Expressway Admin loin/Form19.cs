@@ -53,7 +53,7 @@ namespace Expressway_Admin_loin
                     adapter.Fill(dataTable);
 
                     dataGridView1.DataSource = dataTable;
-                }
+                }//
             }
             catch (Exception ex)
             {
