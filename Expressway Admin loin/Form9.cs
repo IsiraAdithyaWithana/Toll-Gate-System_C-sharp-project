@@ -75,7 +75,7 @@ namespace Expressway_Admin_loin
                                     MessageBox.Show("Alert: One or more violations are found");
                                     Form15 form15 = new Form15(userId, violations, EorE, VehicleNumber);
                                     form15.Show();
-                                    this.Hide();
+                                    this.Close();
                                 }
                             }
                             else
@@ -128,7 +128,7 @@ namespace Expressway_Admin_loin
         {
             Form20 form20 = new Form20(userId,EorE,pageNum);
             form20.Show();
-            this.Hide ();
+            this.Close();
         }
 
         private void Form9_Load(object sender, EventArgs e)
@@ -174,6 +174,13 @@ namespace Expressway_Admin_loin
         {
             Form2 form2 = new Form2();
             form2.Show();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(userId);
+            form3.Show();
             this.Close();
         }
     }

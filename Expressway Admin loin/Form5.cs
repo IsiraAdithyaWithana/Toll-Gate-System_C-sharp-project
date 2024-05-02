@@ -61,7 +61,7 @@ namespace Expressway_Admin_loin
         {
             Form4 form4 = new Form4(userId);
             form4.Show();
-            this.Hide();
+            this.Close();
 
         }
 
@@ -107,12 +107,19 @@ namespace Expressway_Admin_loin
             }
             Form6 form6 = new Form6(userId,EorE,VehicleType,VehicleNumber,VehicleCondition, PageNumber);
             form6.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Form5_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4(userId);
+            form4.Show();
+            this.Close();
         }
     }
 }

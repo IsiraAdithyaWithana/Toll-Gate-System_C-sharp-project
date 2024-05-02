@@ -23,14 +23,16 @@ namespace Expressway_Admin_loin
         private void button1_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3(userId);
-            form3.ShowDialog();
+            form3.Show();
+            this.Close();
            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Form17 form17 = new Form17(userId);
-            form17.ShowDialog();
+            form17.Show();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -40,8 +42,9 @@ namespace Expressway_Admin_loin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form19 form19 = new Form19();
-            form19.ShowDialog();
+            Form19 form19 = new Form19(userId);
+            form19.Show();
+            this.Close();
         }
 
         private void Form16_Load(object sender, EventArgs e)

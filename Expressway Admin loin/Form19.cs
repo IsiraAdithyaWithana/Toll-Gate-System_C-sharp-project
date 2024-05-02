@@ -13,11 +13,12 @@ namespace Expressway_Admin_loin
 {
     public partial class Form19 : Form
     {
-        
 
-        public Form19()
+        private int userId;
+        public Form19(int id)
         {
             InitializeComponent();
+            userId = id;
         }
 
 
@@ -83,6 +84,20 @@ namespace Expressway_Admin_loin
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Form16 form16 = new Form16(userId);
+            form16.Show();
+            this.Close();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Close();
         }
     }
 }

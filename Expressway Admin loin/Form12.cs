@@ -152,7 +152,7 @@ namespace Expressway_Admin_loin
         {
             Form11 form11 = new Form11(userId, Violations, EorE, VehicleNumber, DriversLicense);
             form11.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Form12_Load(object sender, EventArgs e)

@@ -88,7 +88,7 @@ namespace Expressway_Admin_loin
             
             Form9 form9 = new Form9(userId);
             form9.Show();
-            this.Hide();
+            this.Close();
         }
 
         void SqlInjectionYes()

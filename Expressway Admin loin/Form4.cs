@@ -44,7 +44,7 @@ namespace Expressway_Admin_loin
                 VehicleType = "B";
                 Form7 form7 = new Form7(userId, EorE, VehicleType, VehicleNumber);
                 form7.Show();
-                this.Hide();
+                this.Close();
             }
             else
             {
@@ -53,7 +53,7 @@ namespace Expressway_Admin_loin
                     VehicleType = "C1";
                     Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
-                    this.Hide();
+                    this.Close();
                 }
                 else if (radioC.Checked)
                 {
@@ -67,21 +67,21 @@ namespace Expressway_Admin_loin
                     VehicleType = "CE";
                     Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
-                    this.Hide();
+                    this.Close();
                 }
                 else if (radioD1.Checked)
                 {
                     VehicleType = "D1";
                     Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
-                    this.Hide();
+                    this.Close();
                 }
                 else
                 {
                     VehicleType = "D";
                     Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                     form5.Show();
-                    this.Hide();
+                    this.Close();
                 }
             }
         }
@@ -132,7 +132,7 @@ namespace Expressway_Admin_loin
         {
             Form3 form3 = new Form3(userId);
             form3.Show();
-            this.Hide();
+            this.Close();
           
         }
 
@@ -140,7 +140,7 @@ namespace Expressway_Admin_loin
         {
             Form20 form20 = new Form20(userId,EorE, pageNum);
             form20.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)

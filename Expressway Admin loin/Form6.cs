@@ -83,7 +83,7 @@ namespace Expressway_Admin_loin
 
                         Form8 form8 = new Form8(userId,EorE,VehicleType,VehicleNumber,VehicleCondition);
                         form8.Show();
-                        this.Hide();
+                        this.Close();
                     }
                 }
             }
@@ -109,13 +109,13 @@ namespace Expressway_Admin_loin
             {
                 Form7 form7 = new Form7(userId,EorE,VehicleType,VehicleNumber);
                 form7.Show();
-                this.Hide();
+                this.Close();
             }
             else
             {
                 Form5 form5 = new Form5(userId, EorE, VehicleType, VehicleNumber);
                 form5.Show();
-                this.Hide();
+                this.Close();
             }
         }
 

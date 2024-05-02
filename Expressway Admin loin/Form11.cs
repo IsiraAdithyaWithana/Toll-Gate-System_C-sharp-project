@@ -100,7 +100,7 @@ namespace Expressway_Admin_loin
             }
             Form12 form12 = new Form12(userId, Violations, EorE, VehicleNumber, DriversLicense, TotalFine);
             form12.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)

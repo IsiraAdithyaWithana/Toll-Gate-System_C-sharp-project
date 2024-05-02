@@ -69,7 +69,7 @@ namespace Expressway_Admin_loin
                                     int id = Convert.ToInt32(reader["Id"]);
                                     Form3 form3 = new Form3(id);
                                     form3.Show();
-                                    this.Hide();
+                                    this.Close();
                                 }
                                 else
                                 {
@@ -83,7 +83,7 @@ namespace Expressway_Admin_loin
                                     int id = Convert.ToInt32(reader["Id"]);
                                     Form16 form16 = new Form16(id);
                                     form16.Show();
-                                    this.Hide();
+                                    this.Close();
                                 }
                                 else
                                 {
