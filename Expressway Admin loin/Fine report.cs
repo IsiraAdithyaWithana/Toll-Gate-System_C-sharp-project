@@ -45,10 +45,10 @@ namespace Expressway_Admin_loin
         {
             Dictionary<string, int> FineCounts = new Dictionary<string, int>();
 
-            using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\Expressway Project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+            using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\isira\Desktop\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
             {
                 con.Open();
-                string query = "SELECT date_time FROM accident";
+                string query = "SELECT date_time FROM Payment";
 
                 SqlCommand command = new SqlCommand(query, con);
                 SqlDataReader reader = command.ExecuteReader();
