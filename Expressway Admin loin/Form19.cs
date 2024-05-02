@@ -7,15 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Expressway_Admin_loin
 {
     public partial class Form19 : Form
     {
+        private string connectionString = ("@Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\balas\\OneDrive\\Desktop\\Expressway project C#\\Expressway Admin loin\\Database1.mdf\";Integrated Security=True"))
         public Form19()
         {
             InitializeComponent();
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -30,7 +33,7 @@ namespace Expressway_Admin_loin
 
         private void Form19_Load(object sender, EventArgs e)
         {
-
+            PopulateDataGridView();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
