@@ -26,7 +26,7 @@ namespace Expressway_Admin_loin
         {
             Form2 form2 = new Form2();
             form2.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
