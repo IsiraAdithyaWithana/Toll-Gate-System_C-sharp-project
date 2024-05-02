@@ -118,7 +118,6 @@
             this.btnMenu.TabIndex = 19;
             this.btnMenu.Text = "Back to Menu";
             this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Visible = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // panel2
