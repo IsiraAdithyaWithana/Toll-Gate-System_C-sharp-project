@@ -33,14 +33,15 @@
             this.lblpoliceid = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.butOK = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.radioEntrance = new System.Windows.Forms.RadioButton();
             this.radioExit = new System.Windows.Forms.RadioButton();
             this.lblgateno = new System.Windows.Forms.Label();
             this.txtGateNumber = new System.Windows.Forms.TextBox();
             this.btnMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -106,18 +107,6 @@
             this.butOK.Text = "OK";
             this.butOK.UseVisualStyleBackColor = false;
             this.butOK.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.fotor_2024040612533__1_;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(1172, 592);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(80, 77);
-            this.panel1.TabIndex = 13;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // radioEntrance
             // 
@@ -199,6 +188,18 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.fotor_2024040612533__1_;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(1172, 592);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 77);
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,13 +207,13 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.txtGateNumber);
             this.Controls.Add(this.lblgateno);
             this.Controls.Add(this.radioExit);
             this.Controls.Add(this.radioEntrance);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.butOK);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPoliceID);
@@ -224,6 +225,7 @@
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,12 +238,12 @@
         private System.Windows.Forms.Label lblpoliceid;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button butOK;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton radioEntrance;
         private System.Windows.Forms.RadioButton radioExit;
         private System.Windows.Forms.Label lblgateno;
         private System.Windows.Forms.TextBox txtGateNumber;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

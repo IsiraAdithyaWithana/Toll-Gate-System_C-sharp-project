@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form15));
             this.specificDL = new System.Windows.Forms.CheckBox();
             this.invalidDL = new System.Windows.Forms.CheckBox();
-            this.sosbox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNX = new System.Windows.Forms.Button();
             this.btnCL = new System.Windows.Forms.Button();
@@ -47,7 +45,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtDrivingLicense = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.sosbox)).BeginInit();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // specificDL
@@ -79,21 +78,6 @@
             this.invalidDL.TabIndex = 49;
             this.invalidDL.Text = "Invalid Driver License";
             this.invalidDL.UseVisualStyleBackColor = false;
-            // 
-            // sosbox
-            // 
-            this.sosbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sosbox.BackColor = System.Drawing.Color.Transparent;
-            this.sosbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sosbox.Image = ((System.Drawing.Image)(resources.GetObject("sosbox.Image")));
-            this.sosbox.Location = new System.Drawing.Point(1172, 592);
-            this.sosbox.Margin = new System.Windows.Forms.Padding(2);
-            this.sosbox.Name = "sosbox";
-            this.sosbox.Size = new System.Drawing.Size(80, 77);
-            this.sosbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.sosbox.TabIndex = 48;
-            this.sosbox.TabStop = false;
-            this.sosbox.Click += new System.EventHandler(this.sosbox_Click);
             // 
             // label1
             // 
@@ -313,6 +297,18 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "Drivers License";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.fotor_2024040612533__1_;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(1172, 592);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(80, 77);
+            this.pictureBox7.TabIndex = 51;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
             // Form15
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,9 +316,9 @@
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.specificDL);
             this.Controls.Add(this.invalidDL);
-            this.Controls.Add(this.sosbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNX);
             this.Controls.Add(this.btnCL);
@@ -341,7 +337,7 @@
             this.Name = "Form15";
             this.Text = "Form15";
             this.Load += new System.EventHandler(this.Form15_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.sosbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,7 +347,6 @@
 
         private System.Windows.Forms.CheckBox specificDL;
         private System.Windows.Forms.CheckBox invalidDL;
-        private System.Windows.Forms.PictureBox sosbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNX;
         private System.Windows.Forms.Button btnCL;
@@ -367,5 +362,6 @@
         private System.Windows.Forms.TextBox txtDrivingLicense;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox drugs;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
