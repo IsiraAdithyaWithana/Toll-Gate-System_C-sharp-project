@@ -147,5 +147,10 @@ namespace Expressway_Admin_loin
         {
 
         }
+
+        private void sosbox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("EMERGENCY !!. Supervisor will be there soon.", "Emergency", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

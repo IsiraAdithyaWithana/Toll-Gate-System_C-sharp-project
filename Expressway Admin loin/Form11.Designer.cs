@@ -43,7 +43,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(726, 479);
+            this.button1.Location = new System.Drawing.Point(1002, 603);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 41);
@@ -59,7 +59,7 @@
             this.checkSpecificClassVehicle.BackColor = System.Drawing.Color.Transparent;
             this.checkSpecificClassVehicle.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkSpecificClassVehicle.ForeColor = System.Drawing.Color.White;
-            this.checkSpecificClassVehicle.Location = new System.Drawing.Point(129, 408);
+            this.checkSpecificClassVehicle.Location = new System.Drawing.Point(287, 471);
             this.checkSpecificClassVehicle.Margin = new System.Windows.Forms.Padding(2);
             this.checkSpecificClassVehicle.Name = "checkSpecificClassVehicle";
             this.checkSpecificClassVehicle.Size = new System.Drawing.Size(710, 34);
@@ -74,7 +74,7 @@
             this.checkNoise.BackColor = System.Drawing.Color.Transparent;
             this.checkNoise.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkNoise.ForeColor = System.Drawing.Color.White;
-            this.checkNoise.Location = new System.Drawing.Point(129, 369);
+            this.checkNoise.Location = new System.Drawing.Point(287, 432);
             this.checkNoise.Margin = new System.Windows.Forms.Padding(2);
             this.checkNoise.Name = "checkNoise";
             this.checkNoise.Size = new System.Drawing.Size(718, 34);
@@ -90,7 +90,7 @@
             this.checkMobilePhones.BackColor = System.Drawing.Color.Transparent;
             this.checkMobilePhones.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkMobilePhones.ForeColor = System.Drawing.Color.White;
-            this.checkMobilePhones.Location = new System.Drawing.Point(129, 330);
+            this.checkMobilePhones.Location = new System.Drawing.Point(287, 393);
             this.checkMobilePhones.Margin = new System.Windows.Forms.Padding(2);
             this.checkMobilePhones.Name = "checkMobilePhones";
             this.checkMobilePhones.Size = new System.Drawing.Size(710, 34);
@@ -106,7 +106,7 @@
             this.checkSpeed.BackColor = System.Drawing.Color.Transparent;
             this.checkSpeed.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkSpeed.ForeColor = System.Drawing.Color.White;
-            this.checkSpeed.Location = new System.Drawing.Point(129, 291);
+            this.checkSpeed.Location = new System.Drawing.Point(287, 354);
             this.checkSpeed.Margin = new System.Windows.Forms.Padding(2);
             this.checkSpeed.Name = "checkSpeed";
             this.checkSpeed.Size = new System.Drawing.Size(711, 34);
@@ -123,7 +123,7 @@
             this.checkLeftSideOvertake.BackColor = System.Drawing.Color.Transparent;
             this.checkLeftSideOvertake.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkLeftSideOvertake.ForeColor = System.Drawing.Color.White;
-            this.checkLeftSideOvertake.Location = new System.Drawing.Point(129, 252);
+            this.checkLeftSideOvertake.Location = new System.Drawing.Point(287, 315);
             this.checkLeftSideOvertake.Margin = new System.Windows.Forms.Padding(2);
             this.checkLeftSideOvertake.Name = "checkLeftSideOvertake";
             this.checkLeftSideOvertake.Size = new System.Drawing.Size(712, 34);
@@ -140,7 +140,7 @@
             this.checkDrunkDriving.BackColor = System.Drawing.Color.Transparent;
             this.checkDrunkDriving.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkDrunkDriving.ForeColor = System.Drawing.Color.White;
-            this.checkDrunkDriving.Location = new System.Drawing.Point(129, 213);
+            this.checkDrunkDriving.Location = new System.Drawing.Point(287, 276);
             this.checkDrunkDriving.Margin = new System.Windows.Forms.Padding(2);
             this.checkDrunkDriving.Name = "checkDrunkDriving";
             this.checkDrunkDriving.Size = new System.Drawing.Size(725, 34);
@@ -156,7 +156,7 @@
             this.checkInvalidLicense.BackColor = System.Drawing.Color.Transparent;
             this.checkInvalidLicense.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkInvalidLicense.ForeColor = System.Drawing.Color.White;
-            this.checkInvalidLicense.Location = new System.Drawing.Point(129, 172);
+            this.checkInvalidLicense.Location = new System.Drawing.Point(287, 235);
             this.checkInvalidLicense.Margin = new System.Windows.Forms.Padding(2);
             this.checkInvalidLicense.Name = "checkInvalidLicense";
             this.checkInvalidLicense.Size = new System.Drawing.Size(711, 34);
@@ -170,11 +170,12 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.fotor_2024040612533__1_;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(878, 474);
+            this.panel1.Location = new System.Drawing.Point(1172, 592);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(60, 63);
+            this.panel1.Size = new System.Drawing.Size(80, 77);
             this.panel1.TabIndex = 22;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -195,7 +196,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Expressway_Admin_loin.Properties.Resources.Untitled_design_blue_4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(946, 547);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkSpecificClassVehicle);

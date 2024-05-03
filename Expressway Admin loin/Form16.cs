@@ -58,5 +58,10 @@ namespace Expressway_Admin_loin
             form2.Show();
             this.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("EMERGENCY !!. Supervisor will be there soon.", "Emergency", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

@@ -86,13 +86,14 @@
             this.sosbox.BackColor = System.Drawing.Color.Transparent;
             this.sosbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sosbox.Image = ((System.Drawing.Image)(resources.GetObject("sosbox.Image")));
-            this.sosbox.Location = new System.Drawing.Point(1053, 551);
+            this.sosbox.Location = new System.Drawing.Point(1172, 592);
             this.sosbox.Margin = new System.Windows.Forms.Padding(2);
             this.sosbox.Name = "sosbox";
-            this.sosbox.Size = new System.Drawing.Size(60, 63);
+            this.sosbox.Size = new System.Drawing.Size(80, 77);
             this.sosbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sosbox.TabIndex = 48;
             this.sosbox.TabStop = false;
+            this.sosbox.Click += new System.EventHandler(this.sosbox_Click);
             // 
             // label1
             // 

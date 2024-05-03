@@ -97,7 +97,7 @@ namespace Expressway_Admin_loin
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            MessageBox.Show("EMERGENCY !!. Supervisor will be there soon.", "Emergency", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

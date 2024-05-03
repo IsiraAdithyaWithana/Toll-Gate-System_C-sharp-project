@@ -82,5 +82,15 @@ namespace Expressway_Admin_loin
                 MessageBox.Show("Error: " + Ex.Message);
             }
         }
+
+        private void txtReferenceNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            MessageBox.Show("EMERGENCY !!. Supervisor will be there soon.", "Emergency", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }
