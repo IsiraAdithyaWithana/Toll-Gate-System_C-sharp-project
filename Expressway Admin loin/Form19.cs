@@ -24,8 +24,7 @@ namespace Expressway_Admin_loin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form18 form18 = new Form18();
-            form18.ShowDialog();
+            
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
