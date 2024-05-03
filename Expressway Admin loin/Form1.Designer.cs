@@ -48,6 +48,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -58,7 +59,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label1.Location = new System.Drawing.Point(221, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1038, 68);
+            this.label1.Size = new System.Drawing.Size(830, 55);
             this.label1.TabIndex = 8;
             this.label1.Text = "Welcome To The  Southern Expressway";
             // 
