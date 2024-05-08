@@ -75,6 +75,8 @@ namespace Expressway_Admin_loin
                     }
                     MessageBox.Show("The reference number was inserted");
                     Form9 form9 = new Form9(userId);
+                    form9.Show();
+                    this.Close();
                 }
             }
             catch (Exception Ex)

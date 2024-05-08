@@ -55,7 +55,7 @@ namespace Expressway_Admin_loin
 
         private void Form15_Load(object sender, EventArgs e)
         {
-            Dictionary<int, string> checkboxNameMap = new Dictionary<int, string>
+                Dictionary<int, string> checkboxNameMap = new Dictionary<int, string>
             {
                 { 0, "lowspeed" },
                 { 1, "overspeed" },
@@ -108,7 +108,7 @@ namespace Expressway_Admin_loin
                 try
                 {
                     DriversLicense = drivingLicense;
-                    using (SqlConnection con = new SqlConnection(@"\Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\C# project group AB\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
+                    using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\balas\OneDrive\Desktop\C# project group AB\Expressway project C#\Expressway Admin loin\Database1.mdf"";Integrated Security=True"))
                     {
                         con.Open();
                         string query1 = $"UPDATE ex_violation SET driver_license = '{DriversLicense}' WHERE vehicle_number = '{VehicleNumber}';";
